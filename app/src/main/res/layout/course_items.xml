@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="127dp">
+
+
+    <View
+        android:layout_width="@dimen/empty_gap"
+        android:layout_height="match_parent"
+        android:background="@color/colorGap"
+        />
+    <LinearLayout
+        android:id="@+id/item_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--up, the little gap-->
+        <View
+            android:id="@+id/gapID"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/empty_gap"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/texts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorSep"
+                android:text="hello"
+                android:textSize="10dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

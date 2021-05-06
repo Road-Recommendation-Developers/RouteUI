@@ -377,6 +377,9 @@ kotlin.collections.ArraysKt___ArraysJvmKt:
 com.bumptech.glide.gifdecoder.GifHeader:
     public static final int NETSCAPE_LOOP_COUNT_FOREVER
     public static final int NETSCAPE_LOOP_COUNT_DOES_NOT_EXIST
+com.Route.project.utils.service.JsonSerializationService:
+    public java.lang.String object2Json(java.lang.Object)
+    public java.lang.Object parseObject(java.lang.String,java.lang.reflect.Type)
 com.xuexiang.xui.adapter.recyclerview.RecyclerViewHolder:
     public android.view.View getView(int)
     public android.widget.TextView getTextView(int)
@@ -484,9 +487,6 @@ io.reactivex.internal.operators.flowable.AbstractFlowableWithUpstream:
 com.bumptech.glide.load.MultiTransformation:
     public varargs void <init>(com.bumptech.glide.load.Transformation[])
     public void <init>(java.util.Collection)
-com.xuexiang.templateproject.core.webview.XPageWebViewFragment:
-    public static androidx.fragment.app.Fragment openUrl(com.xuexiang.xpage.base.XPageActivity,java.lang.String)
-    public static androidx.fragment.app.Fragment openUrl(com.xuexiang.xpage.base.XPageFragment,java.lang.String)
 kotlin.UIntKt:
     private static final int toUInt(byte)
     private static final int toUInt(short)
@@ -1120,9 +1120,6 @@ butterknife.internal.ImmutableList:
     void <init>(java.lang.Object[])
 com.just.agentweb.core.url.UrlLoaderImpl$1:
     void <init>(com.just.agentweb.core.url.UrlLoaderImpl,java.lang.String)
-com.xuexiang.templateproject.core.SimpleListAdapter:
-    public static final java.lang.String KEY_TITLE
-    public static final java.lang.String KEY_SUB_TITLE
 com.xuexiang.xutil.common.LanguageUtils:
     public static java.util.Locale getDefaultLocale()
     public static java.lang.String getLanguage()
@@ -1380,6 +1377,20 @@ com.xuexiang.xutil.display.DensityUtils:
 android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$6:
     void <init>(android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase,android.support.v4.media.MediaBrowserCompat$CustomActionCallback,java.lang.String,android.os.Bundle)
     final synthetic android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase this$0
+com.Route.project.core.BaseSimpleListFragment:
+    public androidx.fragment.app.Fragment openNewPage(java.lang.Class)
+    public androidx.fragment.app.Fragment openNewPage(java.lang.String)
+    public androidx.fragment.app.Fragment openNewPage(java.lang.Class,java.lang.Class)
+    public androidx.fragment.app.Fragment openNewPage(java.lang.Class,java.lang.String,java.lang.Object)
+    public androidx.fragment.app.Fragment openPage(com.xuexiang.xpage.core.PageOption,java.lang.String,java.lang.Object)
+    public androidx.fragment.app.Fragment openPage(java.lang.Class,boolean,java.lang.String,java.lang.String)
+    public androidx.fragment.app.Fragment openPage(java.lang.Class,java.lang.String,java.lang.Object)
+    public androidx.fragment.app.Fragment openPage(java.lang.Class,boolean,java.lang.String,java.lang.Object)
+    public androidx.fragment.app.Fragment openPage(java.lang.Class,java.lang.String,java.lang.String)
+    public androidx.fragment.app.Fragment openPageForResult(java.lang.Class,java.lang.String,java.lang.Object,int)
+    public androidx.fragment.app.Fragment openPageForResult(java.lang.Class,java.lang.String,java.lang.String,int)
+    public androidx.fragment.app.Fragment openPageForResult(java.lang.Class,int)
+    public java.lang.String serializeObject(java.lang.Object)
 com.just.agentweb.js.BaseJsAccessEntrace:
     public void callJs(java.lang.String)
     public void quickCallJs(java.lang.String)
@@ -1867,9 +1878,6 @@ com.bumptech.glide.load.engine.Engine:
     public void shutdown()
     private static final java.lang.String TAG
     private static final int JOB_POOL_SIZE
-com.xuexiang.templateproject.adapter.base.delegate.SimpleDelegateAdapter:
-    public void <init>(int,com.alibaba.android.vlayout.LayoutHelper)
-    public void <init>(int,com.alibaba.android.vlayout.LayoutHelper,java.lang.Object[])
 com.xuexiang.xui.widget.banner.widget.banner.BannerItem:
     public java.lang.String getImgUrl()
     public com.xuexiang.xui.widget.banner.widget.banner.BannerItem setImgUrl(java.lang.String)
@@ -2037,8 +2045,6 @@ kotlin.UInt:
     public static final int MAX_VALUE
     public static final int SIZE_BYTES
     public static final int SIZE_BITS
-com.xuexiang.templateproject.core.webview.UIController:
-    public void onSelectItemsPrompt(android.webkit.WebView,java.lang.String,java.lang.String[],android.os.Handler$Callback)
 kotlin.io.FilesKt__FilePathComponentsKt:
     private static final int getRootLength$FilesKt__FilePathComponentsKt(java.lang.String)
     public static final java.lang.String getRootName(java.io.File)
@@ -2313,14 +2319,22 @@ com.xuexiang.xui.adapter.recyclerview.GridDividerItemDecoration:
     public void <init>(android.content.Context,int,int,int)
 com.bumptech.glide.request.transition.ViewPropertyAnimationFactory:
     public void <init>(com.bumptech.glide.request.transition.ViewPropertyTransition$Animator)
-com.xuexiang.templateproject.adapter.base.broccoli.BroccoliSimpleDelegateAdapter:
-    public void <init>(int,com.alibaba.android.vlayout.LayoutHelper)
-    public void <init>(int,com.alibaba.android.vlayout.LayoutHelper,java.lang.Object[])
-    public void recycle()
-com.xuexiang.templateproject.adapter.base.broccoli.BroccoliRecyclerAdapter:
-    public void <init>(java.util.Collection)
-    public com.xuexiang.xui.adapter.recyclerview.XRecyclerAdapter refresh(java.util.Collection)
-    public void recycle()
+com.Route.project.utils.XToastUtils:
+    public static void toast(int)
+    public static void toast(java.lang.CharSequence,int)
+    public static void toast(int,int)
+    public static void error(int)
+    public static void error(java.lang.CharSequence,int)
+    public static void error(int,int)
+    public static void success(int)
+    public static void success(java.lang.CharSequence,int)
+    public static void success(int,int)
+    public static void info(int)
+    public static void info(java.lang.CharSequence,int)
+    public static void info(int,int)
+    public static void warning(int)
+    public static void warning(java.lang.CharSequence,int)
+    public static void warning(int,int)
 io.reactivex.internal.operators.completable.CompletableDisposeOn:
     public void <init>(io.reactivex.CompletableSource,io.reactivex.Scheduler)
 io.reactivex.schedulers.Schedulers:
@@ -3734,14 +3748,6 @@ kotlin.ranges.RangesKt__RangesKt:
     public static final kotlin.ranges.ClosedFloatingPointRange rangeTo(double,double)
     private static final boolean contains(java.lang.Iterable,java.lang.Object)
     public static final void checkStepIsPositive(boolean,java.lang.Number)
-com.xuexiang.templateproject.utils.MMKVUtils:
-    public static java.lang.Object get(java.lang.String,java.lang.Object)
-    public static long getLong(java.lang.String,long)
-    public static float getFloat(java.lang.String,float)
-    public static int getInt(java.lang.String,int)
-    public static double getDouble(java.lang.String,double)
-    public static android.os.Parcelable getObject(java.lang.String,java.lang.Class)
-    public static android.os.Parcelable getObject(java.lang.String,java.lang.Class,android.os.Parcelable)
 io.reactivex.internal.operators.flowable.FlowableInterval:
     public void <init>(long,long,java.util.concurrent.TimeUnit,io.reactivex.Scheduler)
 io.reactivex.Single:
@@ -4781,11 +4787,6 @@ kotlin.random.PlatformRandomKt:
     public static final java.util.Random asJavaRandom(kotlin.random.Random)
     public static final kotlin.random.Random asKotlinRandom(java.util.Random)
     private static final kotlin.random.Random defaultPlatformRandom()
-com.xuexiang.templateproject.core.BaseActivity:
-    public com.xuexiang.xpage.base.XPageFragment openPage(java.lang.Class,boolean)
-    public com.xuexiang.xpage.base.XPageFragment switchPage(java.lang.Class)
-    public java.lang.String serializeObject(java.lang.Object)
-    public static final java.lang.String KEY_SUPPORT_SLIDE_BACK
 kotlin.text.TypeAliasesKt:
     public static synthetic void Appendable$annotations()
     public static synthetic void StringBuilder$annotations()
@@ -4834,10 +4835,6 @@ com.alibaba.android.vlayout.layout.StaggeredGridLayoutHelper$Span:
     static final int INVALID_OFFSET
 io.reactivex.internal.operators.flowable.FlowableFlatMap:
     public void <init>(io.reactivex.Flowable,io.reactivex.functions.Function,boolean,int,int)
-com.xuexiang.templateproject.core.webview.WebViewInterceptDialog:
-    private static final java.lang.String KEY_INTERCEPT_URL
-    public static final java.lang.String APP_LINK_HOST
-    public static final java.lang.String APP_LINK_ACTION
 com.xuexiang.xui.widget.layout.linkage.LinkageScrollHandlerAdapter:
     public void stopContentScroll(android.view.View)
     public int getVerticalScrollExtent()
@@ -4846,6 +4843,14 @@ io.reactivex.internal.operators.completable.CompletableError:
 org.aspectj.runtime.internal.cflowstack.ThreadStack:
     public abstract java.util.Stack getThreadStack()
     public abstract void removeThreadStack()
+com.Route.project.utils.MMKVUtils:
+    public static java.lang.Object get(java.lang.String,java.lang.Object)
+    public static long getLong(java.lang.String,long)
+    public static float getFloat(java.lang.String,float)
+    public static int getInt(java.lang.String,int)
+    public static double getDouble(java.lang.String,double)
+    public static android.os.Parcelable getObject(java.lang.String,java.lang.Class)
+    public static android.os.Parcelable getObject(java.lang.String,java.lang.Class,android.os.Parcelable)
 io.reactivex.internal.util.LinkedArrayList:
     public void <init>(int)
     public void add(java.lang.Object)
@@ -4918,6 +4923,9 @@ org.aspectj.internal.lang.annotation.ajcDeclareAnnotation:
     public abstract java.lang.String kind()
 kotlin.text.StringsKt___StringsKt$asIterable$$inlined$Iterable$1:
     public void <init>(java.lang.CharSequence)
+com.Route.project.utils.update.XHttpUpdateHttpServiceImpl:
+    public void asyncGet(java.lang.String,java.util.Map,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
+    public void asyncPost(java.lang.String,java.util.Map,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
 com.xuexiang.xhttp2.request.BaseRequest$3:
     void <init>(com.xuexiang.xhttp2.request.BaseRequest,com.xuexiang.xhttp2.callback.CallBack)
     final synthetic com.xuexiang.xhttp2.request.BaseRequest this$0
@@ -6298,6 +6306,8 @@ io.reactivex.functions.IntFunction:
     public abstract java.lang.Object apply(int)
 org.reactivestreams.FlowAdapters$ReactiveToFlowProcessor:
     public void <init>(java.util.concurrent.Flow$Processor)
+com.Route.project.core.webview.UIController:
+    public void onSelectItemsPrompt(android.webkit.WebView,java.lang.String,java.lang.String[],android.os.Handler$Callback)
 io.reactivex.internal.subscribers.BasicFuseableConditionalSubscriber:
     public final boolean offer(java.lang.Object,java.lang.Object)
 com.xuexiang.xaop.cache.XMemoryCache:
@@ -6331,9 +6341,6 @@ io.reactivex.internal.operators.completable.CompletableResumeNext:
     public void <init>(io.reactivex.CompletableSource,io.reactivex.functions.Function)
 com.bumptech.glide.load.Option:
     public static com.bumptech.glide.load.Option disk(java.lang.String,com.bumptech.glide.load.Option$CacheKeyUpdater)
-com.xuexiang.templateproject.core.webview.LollipopFixedWebView:
-    public void <init>(android.content.Context,android.util.AttributeSet,int,int)
-    public void <init>(android.content.Context,android.util.AttributeSet,int,boolean)
 kotlin.sequences.SequencesKt__SequencesKt:
     private static final kotlin.sequences.Sequence Sequence(kotlin.jvm.functions.Function0)
     public static final kotlin.sequences.Sequence asSequence(java.util.Iterator)
@@ -6887,6 +6894,10 @@ com.xuexiang.xutil.resource.ResourceUtils:
 com.bumptech.glide.manager.DefaultConnectivityMonitorFactory:
     private static final java.lang.String TAG
     private static final java.lang.String NETWORK_PERMISSION
+com.Route.project.core.http.loader.MiniLoadingDialogLoader:
+    public void <init>(android.content.Context)
+    public void <init>(android.content.Context,java.lang.String)
+    public void updateMessage(java.lang.String)
 com.xuexiang.xui.widget.imageview.crop.CropOverlayView:
     private static final int SNAP_RADIUS_DP
     private static final float DEFAULT_SHOW_GUIDELINES_LIMIT
@@ -7040,6 +7051,15 @@ com.xuexiang.xui.widget.popupwindow.easypopup.ListPopup:
     private android.widget.AdapterView$OnItemClickListener mOnItemClickListener
 org.aspectj.lang.annotation.RequiredTypes:
     public abstract java.lang.String[] value()
+com.Route.project.adapter.entity.NewInfo:
+    public void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,java.lang.String)
+    public void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    public com.Route.project.adapter.entity.NewInfo setUserName(java.lang.String)
+    public com.Route.project.adapter.entity.NewInfo setTag(java.lang.String)
+    public com.Route.project.adapter.entity.NewInfo setTitle(java.lang.String)
+    public com.Route.project.adapter.entity.NewInfo setPraise(int)
+    public com.Route.project.adapter.entity.NewInfo setComment(int)
+    public com.Route.project.adapter.entity.NewInfo setRead(int)
 kotlin.ULongArray:
     public static synthetic void storage$annotations()
     private synthetic void <init>(long[])
@@ -7256,6 +7276,10 @@ com.xuexiang.xupdate.utils.ApkInstallUtils:
     private static final int APP_INSTALL_INTERNAL
     private static final int APP_INSTALL_EXTERNAL
     public static final int REQUEST_CODE_INSTALL_APP
+com.Route.project.core.webview.WebViewInterceptDialog:
+    private static final java.lang.String KEY_INTERCEPT_URL
+    public static final java.lang.String APP_LINK_HOST
+    public static final java.lang.String APP_LINK_ACTION
 kotlin.text.StringsKt__StringBuilderJVMKt:
     private static final void set(java.lang.StringBuilder,int,char)
     public static final java.lang.StringBuilder clear(java.lang.StringBuilder)
@@ -7277,6 +7301,22 @@ kotlin.text.StringsKt__StringBuilderJVMKt:
     private static final java.lang.StringBuilder appendln(java.lang.StringBuilder,long)
     private static final java.lang.StringBuilder appendln(java.lang.StringBuilder,float)
     private static final java.lang.StringBuilder appendln(java.lang.StringBuilder,double)
+com.Route.project.core.BaseFragment:
+    public com.xuexiang.xhttp2.subsciber.impl.IProgressLoader getProgressLoader()
+    public com.xuexiang.xhttp2.subsciber.impl.IProgressLoader getProgressLoader(java.lang.String)
+    public androidx.fragment.app.Fragment openNewPage(java.lang.String)
+    public androidx.fragment.app.Fragment openNewPage(java.lang.Class,java.lang.Class)
+    public androidx.fragment.app.Fragment openNewPage(java.lang.Class,java.lang.String,java.lang.Object)
+    public androidx.fragment.app.Fragment openPage(com.xuexiang.xpage.core.PageOption,java.lang.String,java.lang.Object)
+    public androidx.fragment.app.Fragment openPage(java.lang.Class,boolean,java.lang.String,java.lang.String)
+    public androidx.fragment.app.Fragment openPage(java.lang.Class,java.lang.String,java.lang.Object)
+    public androidx.fragment.app.Fragment openPage(java.lang.Class,boolean,java.lang.String,java.lang.Object)
+    public androidx.fragment.app.Fragment openPage(java.lang.Class,java.lang.String,java.lang.String)
+    public androidx.fragment.app.Fragment openPageForResult(java.lang.Class,java.lang.String,java.lang.Object,int)
+    public androidx.fragment.app.Fragment openPageForResult(java.lang.Class,java.lang.String,java.lang.String,int)
+    public androidx.fragment.app.Fragment openPageForResult(java.lang.Class,int)
+    public java.lang.String serializeObject(java.lang.Object)
+    public java.lang.Object deserializeObject(java.lang.String,java.lang.reflect.Type)
 io.reactivex.internal.operators.maybe.MaybeUnsafeCreate:
     public void <init>(io.reactivex.MaybeSource)
 org.aspectj.lang.Aspects:
@@ -7446,6 +7486,9 @@ okhttp3.internal.http.StatusLine:
     public static final int HTTP_TEMP_REDIRECT
     public static final int HTTP_PERM_REDIRECT
     public static final int HTTP_CONTINUE
+com.Route.project.core.http.callback.NoTipCallBack:
+    public void <init>(com.xuexiang.xhttp2.model.XHttpRequest)
+    public void <init>(java.lang.String)
 com.xuexiang.xutil.app.AppUtils$AppInfo:
     public void <init>(java.lang.String,java.lang.String,android.graphics.drawable.Drawable,java.lang.String,java.lang.String,int,boolean)
     public android.graphics.drawable.Drawable getIcon()
@@ -7825,6 +7868,10 @@ com.zzhoujay.markdown.style.QuotaBulletSpan:
     private static final int BULLET_RADIUS
     private static final int STRIPE_WIDTH
     private static final int GAP_WIDTH
+com.Route.project.adapter.base.broccoli.BroccoliSimpleDelegateAdapter:
+    public void <init>(int,com.alibaba.android.vlayout.LayoutHelper)
+    public void <init>(int,com.alibaba.android.vlayout.LayoutHelper,java.lang.Object[])
+    public void recycle()
 io.reactivex.internal.operators.single.SingleEquals:
     public void <init>(io.reactivex.SingleSource,io.reactivex.SingleSource)
 com.xuexiang.xui.utils.DrawableUtils:
@@ -7857,6 +7904,10 @@ io.reactivex.internal.operators.maybe.MaybeFromAction:
     public void <init>(io.reactivex.functions.Action)
 kotlin.collections.AbstractMutableSet:
     public abstract boolean add(java.lang.Object)
+com.Route.project.utils.sdkinit.ANRWatchDogInit:
+    public static com.github.anrwatchdog.ANRWatchDog getANRWatchDog()
+    private static final java.lang.String TAG
+    private static final int ANR_DURATION
 io.reactivex.internal.operators.maybe.MaybeCount:
     public void <init>(io.reactivex.MaybeSource)
     public io.reactivex.MaybeSource source()
@@ -8098,8 +8149,6 @@ io.reactivex.internal.operators.single.SingleSubscribeOn:
     public void <init>(io.reactivex.SingleSource,io.reactivex.Scheduler)
 io.reactivex.internal.operators.maybe.MaybeErrorCallable:
     public void <init>(java.util.concurrent.Callable)
-com.xuexiang.templateproject.core.webview.AgentWebFragment:
-    public static final java.lang.String KEY_URL
 io.reactivex.internal.operators.single.SingleFlatMapIterableFlowable:
     public void <init>(io.reactivex.SingleSource,io.reactivex.functions.Function)
 com.zzhoujay.richtext.ext.Base64:
@@ -8114,9 +8163,6 @@ io.reactivex.internal.operators.maybe.MaybeZipIterable:
 okhttp3.internal.http2.Http2Connection$Builder:
     public okhttp3.internal.http2.Http2Connection$Builder socket(java.net.Socket)
     public okhttp3.internal.http2.Http2Connection$Builder pushObserver(okhttp3.internal.http2.PushObserver)
-com.xuexiang.templateproject.core.http.loader.MiniProgressLoaderFactory:
-    public com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context)
-    public com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context,java.lang.String)
 org.aspectj.lang.reflect.InterTypeDeclaration:
     public abstract org.aspectj.lang.reflect.AjType getDeclaringType()
     public abstract org.aspectj.lang.reflect.AjType getTargetType()
@@ -8268,8 +8314,6 @@ okhttp3.Interceptor$Chain:
     public abstract okhttp3.Interceptor$Chain withConnectTimeout(int,java.util.concurrent.TimeUnit)
     public abstract okhttp3.Interceptor$Chain withReadTimeout(int,java.util.concurrent.TimeUnit)
     public abstract okhttp3.Interceptor$Chain withWriteTimeout(int,java.util.concurrent.TimeUnit)
-com.xuexiang.templateproject.utils.update.UpdateTipDialog:
-    public static final java.lang.String KEY_CONTENT
 kotlin.collections.CollectionsKt__MutableCollectionsKt:
     private static final boolean remove(java.util.Collection,java.lang.Object)
     private static final boolean removeAll(java.util.Collection,java.util.Collection)
@@ -8372,6 +8416,9 @@ com.xuexiang.constant.PermissionConstants:
     public static final java.lang.String SENSORS
     public static final java.lang.String SMS
     public static final java.lang.String STORAGE
+com.Route.project.core.http.subscriber.TipRequestSubscriber:
+    public void <init>(com.xuexiang.xhttp2.model.XHttpRequest)
+    public void <init>(java.lang.String)
 okhttp3.OkHttpClient$1:
     public okhttp3.Call newWebSocketCall(okhttp3.OkHttpClient,okhttp3.Request)
 com.scwang.smartrefresh.header.BuildConfig:
@@ -8547,6 +8594,9 @@ kotlin.ranges.RangesKt___RangesKt:
     public static final java.lang.Comparable coerceIn(java.lang.Comparable,kotlin.ranges.ClosedRange)
     public static final int coerceIn(int,kotlin.ranges.ClosedRange)
     public static final long coerceIn(long,kotlin.ranges.ClosedRange)
+com.Route.project.utils.update.XHttpUpdateHttpServiceImpl$1:
+    void <init>(com.Route.project.utils.update.XHttpUpdateHttpServiceImpl,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
+    final synthetic com.Route.project.utils.update.XHttpUpdateHttpServiceImpl this$0
 com.xuexiang.xui.widget.progress.loading.RotateLoadingView:
     private void pause()
     public com.xuexiang.xui.widget.progress.loading.RotateLoadingView setLoadingIcon(android.graphics.drawable.Drawable)
@@ -8588,11 +8638,6 @@ io.github.inflationx.viewpump.internal.-ViewPumpActivityFactory:
     public abstract android.view.View onActivityCreateView(android.view.View,android.view.View,java.lang.String,android.content.Context,android.util.AttributeSet)
 kotlin.text.MatcherMatchResult$groupValues$1:
     void <init>(kotlin.text.MatcherMatchResult)
-com.xuexiang.templateproject.utils.SettingUtils:
-    public static boolean isFirstOpen()
-    public static void setIsFirstOpen(boolean)
-    private static final java.lang.String IS_FIRST_OPEN_KEY
-    private static final java.lang.String IS_AGREE_PRIVACY_KEY
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$7:
     void <init>(boolean[])
 org.aspectj.runtime.reflect.CatchClauseSignatureImpl:
@@ -8707,8 +8752,9 @@ okio.Utf8:
     public static long size(java.lang.String,int,int)
 okhttp3.internal.ws.RealWebSocket$CancelRunnable:
     void <init>(okhttp3.internal.ws.RealWebSocket)
-com.xuexiang.templateproject.utils.Utils:
-    private static final java.lang.String PRIVACY_URL
+com.Route.project.core.webview.XPageWebViewFragment:
+    public static androidx.fragment.app.Fragment openUrl(com.xuexiang.xpage.base.XPageActivity,java.lang.String)
+    public static androidx.fragment.app.Fragment openUrl(com.xuexiang.xpage.base.XPageFragment,java.lang.String)
 io.reactivex.internal.operators.flowable.FlowableDistinct:
     public void <init>(io.reactivex.Flowable,io.reactivex.functions.Function,java.util.concurrent.Callable)
 com.xuexiang.xui.UIConfig:
@@ -8719,8 +8765,6 @@ com.meituan.android.walle.PayloadReader:
     public static byte[] get(java.io.File,int)
     private static byte[] getBytes(java.nio.ByteBuffer)
     private static java.util.Map getAll(java.io.File)
-com.xuexiang.templateproject.widget.GuideTipsDialog:
-    private static final java.lang.String KEY_IS_IGNORE_TIPS
 com.scwang.smartrefresh.header.PhoenixHeader:
     protected static final int ANIMATION_DURATION
     protected static final float SUN_INITIAL_ROTATE_GROWTH
@@ -9107,22 +9151,6 @@ org.aspectj.lang.annotation.After:
     public abstract java.lang.String argNames()
 kotlin.coroutines.experimental.SequenceBuilderKt__SequenceBuilderKt$buildSequence$$inlined$Sequence$1:
     public void <init>(kotlin.jvm.functions.Function2)
-com.xuexiang.templateproject.utils.XToastUtils:
-    public static void toast(int)
-    public static void toast(java.lang.CharSequence,int)
-    public static void toast(int,int)
-    public static void error(int)
-    public static void error(java.lang.CharSequence,int)
-    public static void error(int,int)
-    public static void success(int)
-    public static void success(java.lang.CharSequence,int)
-    public static void success(int,int)
-    public static void info(int)
-    public static void info(java.lang.CharSequence,int)
-    public static void info(int,int)
-    public static void warning(int)
-    public static void warning(java.lang.CharSequence,int)
-    public static void warning(int,int)
 com.xuexiang.xutil.common.RegexUtils:
     public static boolean isMobileSimple(java.lang.CharSequence)
     public static boolean isMobileExact(java.lang.CharSequence)
@@ -9181,9 +9209,6 @@ com.xuexiang.xui.logs.UILog:
     private static final int MIN_LOG_PRIORITY
 io.reactivex.internal.operators.maybe.MaybeFlatMapBiSelector:
     public void <init>(io.reactivex.MaybeSource,io.reactivex.functions.Function,io.reactivex.functions.BiFunction)
-com.xuexiang.templateproject.core.http.loader.IProgressLoaderFactory:
-    public abstract com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context)
-    public abstract com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context,java.lang.String)
 io.reactivex.SingleEmitter:
     public abstract void onSuccess(java.lang.Object)
     public abstract void onError(java.lang.Throwable)
@@ -9303,9 +9328,6 @@ org.aspectj.runtime.reflect.JoinPointImpl:
     public final java.lang.String toShortString()
     public final java.lang.String toLongString()
     public java.lang.Object proceed(java.lang.Object[])
-com.xuexiang.templateproject.core.http.subscriber.NoTipRequestSubscriber:
-    public void <init>(com.xuexiang.xhttp2.model.XHttpRequest)
-    public void <init>(java.lang.String)
 io.reactivex.internal.operators.flowable.FlowableConcatMap:
     public void <init>(io.reactivex.Flowable,io.reactivex.functions.Function,int,io.reactivex.internal.util.ErrorMode)
 io.reactivex.internal.functions.Functions$FutureAction:
@@ -9490,6 +9512,9 @@ okhttp3.internal.connection.RealConnection:
     private static final int MAX_TUNNEL_ATTEMPTS
 com.just.agentweb.core.url.UrlLoaderImpl$2:
     void <init>(com.just.agentweb.core.url.UrlLoaderImpl)
+com.Route.project.utils.update.XHttpUpdateHttpServiceImpl$2:
+    void <init>(com.Route.project.utils.update.XHttpUpdateHttpServiceImpl,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
+    final synthetic com.Route.project.utils.update.XHttpUpdateHttpServiceImpl this$0
 io.reactivex.internal.observers.BasicFuseableObserver:
     public final boolean offer(java.lang.Object,java.lang.Object)
 org.reactivestreams.FlowAdapters$ReactivePublisherFromFlow:
@@ -9979,14 +10004,14 @@ com.bumptech.glide.load.model.LazyHeaders$Builder:
 com.bumptech.glide.load.resource.gif.GifFrameLoader$FrameLoaderCallback:
     static final int MSG_DELAY
     static final int MSG_CLEAR
-com.xuexiang.templateproject.adapter.base.delegate.BaseDelegateAdapter:
-    public void <init>(java.lang.Object[])
 com.bumptech.glide.load.engine.GlideException$IndentedAppendable:
     private static final java.lang.String EMPTY_SEQUENCE
     private static final java.lang.String INDENT
 com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$1:
     void <init>(com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy,android.content.DialogInterface$OnClickListener)
     final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
+com.Route.project.activity.MainActivity_ViewBinding:
+    public void <init>(com.Route.project.activity.MainActivity)
 android.support.v4.media.session.MediaSessionCompat$3:
     void <init>(android.support.v4.media.session.MediaSessionCompat)
     final synthetic android.support.v4.media.session.MediaSessionCompat this$0
@@ -10184,6 +10209,9 @@ com.xuexiang.xaop.XAOP:
     public static void initDiskCache(com.xuexiang.xaop.cache.XCache$Builder)
 io.reactivex.internal.operators.single.SingleUsing:
     public void <init>(java.util.concurrent.Callable,io.reactivex.functions.Function,io.reactivex.functions.Consumer,boolean)
+com.Route.project.adapter.base.delegate.SimpleDelegateAdapter:
+    public void <init>(int,com.alibaba.android.vlayout.LayoutHelper)
+    public void <init>(int,com.alibaba.android.vlayout.LayoutHelper,java.lang.Object[])
 io.reactivex.internal.operators.completable.CompletableDoOnEvent:
     public void <init>(io.reactivex.CompletableSource,io.reactivex.functions.Consumer)
 com.bumptech.glide.Glide:
@@ -10609,6 +10637,23 @@ kotlin.concurrent.ThreadsKt:
 android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$3:
     void <init>(android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21,android.support.v4.media.MediaBrowserCompat$ItemCallback,java.lang.String)
     final synthetic android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21 this$0
+com.Route.project.adapter.base.delegate.XDelegateAdapter:
+    public void <init>(java.lang.Object[])
+    private boolean checkPosition(int)
+    public java.lang.Object getItem(int)
+    public boolean isEmpty()
+    public java.util.List getData()
+    public com.Route.project.adapter.base.delegate.XDelegateAdapter add(int,java.lang.Object)
+    public com.Route.project.adapter.base.delegate.XDelegateAdapter add(java.lang.Object)
+    public com.Route.project.adapter.base.delegate.XDelegateAdapter delete(int)
+    public com.Route.project.adapter.base.delegate.XDelegateAdapter refresh(int,java.lang.Object)
+    public com.Route.project.adapter.base.delegate.XDelegateAdapter refresh(java.lang.Object[])
+    public com.Route.project.adapter.base.delegate.XDelegateAdapter loadMore(java.lang.Object[])
+    public com.Route.project.adapter.base.delegate.XDelegateAdapter load(java.lang.Object)
+    public int getSelectPosition()
+    public com.Route.project.adapter.base.delegate.XDelegateAdapter setSelectPosition(int)
+    public java.lang.Object getSelectItem()
+    public void clear()
 com.xuexiang.xui.widget.dialog.materialdialog.simplelist.MaterialSimpleListItem$Builder:
     public void <init>(android.content.Context)
     public com.xuexiang.xui.widget.dialog.materialdialog.simplelist.MaterialSimpleListItem$Builder icon(android.graphics.drawable.Drawable)
@@ -11150,10 +11195,6 @@ kotlin.collections.MovingSubList:
     public final void move(int,int)
 io.reactivex.internal.operators.mixed.FlowableSwitchMapCompletable:
     public void <init>(io.reactivex.Flowable,io.reactivex.functions.Function,boolean)
-com.xuexiang.templateproject.utils.TokenUtils:
-    public static java.lang.String getToken()
-    private static final java.lang.String KEY_TOKEN
-    private static final java.lang.String KEY_PROFILE_CHANNEL
 io.reactivex.internal.operators.flowable.FlowableSingleMaybe:
     public void <init>(io.reactivex.Flowable)
     public io.reactivex.Flowable fuseToFlowable()
@@ -11244,25 +11285,6 @@ com.bumptech.glide.disklrucache.StrictLineReader:
 io.reactivex.internal.functions.Functions:
     public static io.reactivex.functions.Action futureAction(java.util.concurrent.Future)
     public static io.reactivex.functions.Consumer boundedConsumer(int)
-com.xuexiang.templateproject.core.BaseSimpleListFragment:
-    public androidx.fragment.app.Fragment openNewPage(java.lang.Class)
-    public androidx.fragment.app.Fragment openNewPage(java.lang.String)
-    public androidx.fragment.app.Fragment openNewPage(java.lang.Class,java.lang.Class)
-    public androidx.fragment.app.Fragment openNewPage(java.lang.Class,java.lang.String,java.lang.Object)
-    public androidx.fragment.app.Fragment openPage(com.xuexiang.xpage.core.PageOption,java.lang.String,java.lang.Object)
-    public androidx.fragment.app.Fragment openPage(java.lang.Class,boolean,java.lang.String,java.lang.String)
-    public androidx.fragment.app.Fragment openPage(java.lang.Class,java.lang.String,java.lang.Object)
-    public androidx.fragment.app.Fragment openPage(java.lang.Class,boolean,java.lang.String,java.lang.Object)
-    public androidx.fragment.app.Fragment openPage(java.lang.Class,java.lang.String,java.lang.String)
-    public androidx.fragment.app.Fragment openPageForResult(java.lang.Class,java.lang.String,java.lang.Object,int)
-    public androidx.fragment.app.Fragment openPageForResult(java.lang.Class,java.lang.String,java.lang.String,int)
-    public androidx.fragment.app.Fragment openPageForResult(java.lang.Class,int)
-    public java.lang.String serializeObject(java.lang.Object)
-com.xuexiang.templateproject.core.http.callback.TipProgressLoadingCallBack:
-    public void <init>(com.xuexiang.templateproject.core.BaseFragment)
-    public void <init>(com.xuexiang.xhttp2.subsciber.impl.IProgressLoader)
-    public void <init>(com.xuexiang.xhttp2.model.XHttpRequest,com.xuexiang.xhttp2.subsciber.impl.IProgressLoader)
-    public void <init>(java.lang.String,com.xuexiang.xhttp2.subsciber.impl.IProgressLoader)
 com.xuexiang.xui.widget.imageview.strategy.impl.GlideImageLoadStrategy$1:
     void <init>(com.xuexiang.xui.widget.imageview.strategy.impl.GlideImageLoadStrategy,com.xuexiang.xui.widget.imageview.strategy.ILoadListener)
     final synthetic com.xuexiang.xui.widget.imageview.strategy.impl.GlideImageLoadStrategy this$0
@@ -11688,6 +11710,8 @@ com.scwang.smartrefresh.header.MaterialHeader:
     protected static final float MAX_PROGRESS_ANGLE
     protected static final int CIRCLE_DIAMETER
     protected static final int CIRCLE_DIAMETER_LARGE
+com.Route.project.widget.GuideTipsDialog:
+    private static final java.lang.String KEY_IS_IGNORE_TIPS
 com.bumptech.glide.load.resource.bitmap.LazyBitmapDrawableResource:
     public static com.bumptech.glide.load.resource.bitmap.LazyBitmapDrawableResource obtain(android.content.Context,android.graphics.Bitmap)
     public static com.bumptech.glide.load.resource.bitmap.LazyBitmapDrawableResource obtain(android.content.res.Resources,com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool,android.graphics.Bitmap)
@@ -11896,23 +11920,6 @@ kotlin.ULong:
     public static final int SIZE_BITS
 io.reactivex.internal.operators.flowable.FlowableSwitchMap:
     public void <init>(io.reactivex.Flowable,io.reactivex.functions.Function,int,boolean)
-com.xuexiang.templateproject.utils.RandomUtils:
-    public static java.lang.String getRandomNumbers(int)
-    public static java.lang.String getRandomLetters(int)
-    public static java.lang.String getRandomCapitalLetters(int)
-    public static java.lang.String getRandomLowerCaseLetters(int)
-    public static int getRandom(int)
-    public static int getRandom(int,int)
-    public static int getRandomColor()
-    public static boolean shuffle(java.lang.Object[])
-    public static boolean shuffle(java.lang.Object[],int)
-    public static int[] shuffle(int[])
-    public static int[] shuffle(int[],int)
-    public static final java.lang.String NUMBERS_AND_LETTERS
-    public static final java.lang.String NUMBERS
-    public static final java.lang.String LETTERS
-    public static final java.lang.String CAPITAL_LETTERS
-    public static final java.lang.String LOWER_CASE_LETTERS
 kotlin.jvm.internal.ClassReference:
     public static synthetic void typeParameters$annotations()
     public static synthetic void supertypes$annotations()
@@ -11971,9 +11978,6 @@ com.bumptech.glide.load.model.StringLoader$FileDescriptorFactory:
 io.reactivex.internal.util.QueueDrainHelper:
     static final long COMPLETED_MASK
     static final long REQUESTED_MASK
-com.xuexiang.templateproject.core.http.callback.NoTipCallBack:
-    public void <init>(com.xuexiang.xhttp2.model.XHttpRequest)
-    public void <init>(java.lang.String)
 com.bumptech.glide.request.target.CustomViewTarget$SizeDeterminer:
     void <init>(android.view.View)
     private static final int PENDING_SIZE
@@ -12469,10 +12473,6 @@ com.just.agentweb.widget.indicator.IndicatorController:
     public abstract void showIndicator()
     public abstract void setProgress(int)
     public abstract void finish()
-com.xuexiang.templateproject.core.http.loader.MiniLoadingDialogLoader:
-    public void <init>(android.content.Context)
-    public void <init>(android.content.Context,java.lang.String)
-    public void updateMessage(java.lang.String)
 org.aspectj.lang.reflect.CodeSignature:
     public abstract java.lang.Class[] getParameterTypes()
     public abstract java.lang.Class[] getExceptionTypes()
@@ -12577,9 +12577,6 @@ io.reactivex.FlowableEmitter:
     public abstract boolean isCancelled()
     public abstract io.reactivex.FlowableEmitter serialize()
     public abstract boolean tryOnError(java.lang.Throwable)
-com.xuexiang.templateproject.core.http.callback.TipCallBack:
-    public void <init>(com.xuexiang.xhttp2.model.XHttpRequest)
-    public void <init>(java.lang.String)
 com.xuexiang.xui.widget.banner.widget.loopviewpager.LoopViewPager:
     public static int toRealPosition(int,int)
     private static final boolean DEFAULT_BOUNDARY_CASHING
@@ -12970,6 +12967,9 @@ io.reactivex.subjects.MaybeSubject:
     int observerCount()
 kotlin.js.JsName:
     public abstract java.lang.String name()
+com.Route.project.core.http.loader.MiniProgressLoaderFactory:
+    public com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context)
+    public com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context,java.lang.String)
 io.reactivex.parallel.ParallelTransformer:
     public abstract io.reactivex.parallel.ParallelFlowable apply(io.reactivex.parallel.ParallelFlowable)
 io.reactivex.internal.operators.completable.CompletableSubscribeOn:
@@ -13114,22 +13114,6 @@ com.xuexiang.xaop.annotation.BuildConfig:
     public static final java.lang.String FLAVOR
     public static final int VERSION_CODE
     public static final java.lang.String VERSION_NAME
-com.xuexiang.templateproject.core.BaseFragment:
-    public com.xuexiang.xhttp2.subsciber.impl.IProgressLoader getProgressLoader()
-    public com.xuexiang.xhttp2.subsciber.impl.IProgressLoader getProgressLoader(java.lang.String)
-    public androidx.fragment.app.Fragment openNewPage(java.lang.String)
-    public androidx.fragment.app.Fragment openNewPage(java.lang.Class,java.lang.Class)
-    public androidx.fragment.app.Fragment openNewPage(java.lang.Class,java.lang.String,java.lang.Object)
-    public androidx.fragment.app.Fragment openPage(com.xuexiang.xpage.core.PageOption,java.lang.String,java.lang.Object)
-    public androidx.fragment.app.Fragment openPage(java.lang.Class,boolean,java.lang.String,java.lang.String)
-    public androidx.fragment.app.Fragment openPage(java.lang.Class,java.lang.String,java.lang.Object)
-    public androidx.fragment.app.Fragment openPage(java.lang.Class,boolean,java.lang.String,java.lang.Object)
-    public androidx.fragment.app.Fragment openPage(java.lang.Class,java.lang.String,java.lang.String)
-    public androidx.fragment.app.Fragment openPageForResult(java.lang.Class,java.lang.String,java.lang.Object,int)
-    public androidx.fragment.app.Fragment openPageForResult(java.lang.Class,java.lang.String,java.lang.String,int)
-    public androidx.fragment.app.Fragment openPageForResult(java.lang.Class,int)
-    public java.lang.String serializeObject(java.lang.Object)
-    public java.lang.Object deserializeObject(java.lang.String,java.lang.reflect.Type)
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$9:
     public void <init>(char[])
 com.zzhoujay.richtext.spans.LongClickableURLSpan:
@@ -13542,6 +13526,11 @@ com.just.agentweb.core.url.HttpHeaders:
     public void additionalHttpHeader(java.lang.String,java.lang.String)
     public void removeHttpHeader(java.lang.String)
     public boolean isEmptyHeaders()
+com.Route.project.core.http.callback.TipProgressLoadingCallBack:
+    public void <init>(com.Route.project.core.BaseFragment)
+    public void <init>(com.xuexiang.xhttp2.subsciber.impl.IProgressLoader)
+    public void <init>(com.xuexiang.xhttp2.model.XHttpRequest,com.xuexiang.xhttp2.subsciber.impl.IProgressLoader)
+    public void <init>(java.lang.String,com.xuexiang.xhttp2.subsciber.impl.IProgressLoader)
 io.reactivex.Scheduler$Worker$PeriodicTask:
     public java.lang.Runnable getWrappedRunnable()
 com.xuexiang.xui.widget.banner.recycler.BannerLayout:
@@ -13555,10 +13544,6 @@ com.xuexiang.xui.widget.banner.recycler.BannerLayout:
     public com.xuexiang.xui.widget.banner.recycler.BannerLayout setOrientation(int)
     public com.xuexiang.xui.widget.banner.recycler.BannerLayout setOnIndicatorIndexChangedListener(com.xuexiang.xui.widget.banner.recycler.BannerLayout$OnIndicatorIndexChangedListener)
     private static final int WHAT_AUTO_PLAY
-com.xuexiang.templateproject.utils.sdkinit.ANRWatchDogInit:
-    public static com.github.anrwatchdog.ANRWatchDog getANRWatchDog()
-    private static final java.lang.String TAG
-    private static final int ANR_DURATION
 io.reactivex.internal.fuseable.HasUpstreamObservableSource:
     public abstract io.reactivex.ObservableSource source()
 org.aspectj.lang.reflect.ConstructorSignature:
@@ -13566,6 +13551,8 @@ org.aspectj.lang.reflect.ConstructorSignature:
 com.xuexiang.xui.widget.imageview.edit.MultiTouchListener$ScaleGestureListener:
     private void <init>(com.xuexiang.xui.widget.imageview.edit.MultiTouchListener)
     synthetic void <init>(com.xuexiang.xui.widget.imageview.edit.MultiTouchListener,com.xuexiang.xui.widget.imageview.edit.MultiTouchListener$1)
+com.Route.project.adapter.base.delegate.BaseDelegateAdapter:
+    public void <init>(java.lang.Object[])
 com.xuexiang.xui.widget.spinner.DropDownMenu:
     public boolean isShowing()
 io.reactivex.internal.operators.maybe.MaybeOnErrorComplete:
@@ -14248,6 +14235,9 @@ kotlin.sequences.DropSequence$iterator$1:
     public final java.util.Iterator getIterator()
     public final int getLeft()
     public final void setLeft(int)
+com.Route.project.core.http.loader.IProgressLoaderFactory:
+    public abstract com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context)
+    public abstract com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context,java.lang.String)
 com.xuexiang.xutil.system.PermissionUtils$1:
     public void again(boolean)
 com.bumptech.glide.load.data.InputStreamRewinder:
@@ -14412,6 +14402,9 @@ butterknife.ViewCollections:
     public static void set(java.util.List,android.util.Property,java.lang.Object)
     public static void set(android.view.View[],android.util.Property,java.lang.Object)
     public static void set(android.view.View,android.util.Property,java.lang.Object)
+com.Route.project.core.http.callback.TipCallBack:
+    public void <init>(com.xuexiang.xhttp2.model.XHttpRequest)
+    public void <init>(java.lang.String)
 io.reactivex.internal.operators.flowable.FlowableSkipWhile:
     public void <init>(io.reactivex.Flowable,io.reactivex.functions.Predicate)
 org.aspectj.lang.internal.lang.PlaceHolder:
@@ -14448,8 +14441,6 @@ org.aspectj.internal.lang.annotation.ajcDeclareParents:
     public abstract java.lang.String targetTypePattern()
     public abstract java.lang.String parentTypes()
     public abstract boolean isExtends()
-com.xuexiang.templateproject.activity.MainActivity_ViewBinding:
-    public void <init>(com.xuexiang.templateproject.activity.MainActivity)
 com.xuexiang.xrouter.model.TypeWrapper:
     public java.lang.reflect.Type getType()
 com.meituan.android.walle.BuildConfig:
@@ -14580,6 +14571,8 @@ io.reactivex.internal.operators.parallel.ParallelCollect:
     public void <init>(io.reactivex.parallel.ParallelFlowable,java.util.concurrent.Callable,io.reactivex.functions.BiConsumer)
 io.reactivex.internal.operators.flowable.FlowableReduce:
     public void <init>(io.reactivex.Flowable,io.reactivex.functions.BiFunction)
+com.Route.project.utils.Utils:
+    private static final java.lang.String PRIVACY_URL
 com.xuexiang.xui.widget.dialog.bottomsheet.BottomSheet$BottomGridSheetBuilder$1:
     void <init>(com.xuexiang.xui.widget.dialog.bottomsheet.BottomSheet$BottomGridSheetBuilder)
 org.intellij.lang.annotations.Flow:
@@ -14650,6 +14643,9 @@ com.xuexiang.xutil.data.ConvertTools:
     public static void fillUnsignedShortToBytesBigEndian(int,byte[],int)
     public static short bytesToShortLittleEndian(byte[],int)
     public static short bytesToShortBigEndian(byte[],int)
+com.Route.project.core.http.subscriber.NoTipRequestSubscriber:
+    public void <init>(com.xuexiang.xhttp2.model.XHttpRequest)
+    public void <init>(java.lang.String)
 android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi28:
     void <init>(android.content.Context,java.lang.String,android.os.Bundle)
     void <init>(java.lang.Object)
@@ -14711,6 +14707,11 @@ kotlin.reflect.KTypeProjection$Companion:
     public final kotlin.reflect.KTypeProjection covariant(kotlin.reflect.KType)
 com.bumptech.glide.load.data.AssetPathFetcher:
     private static final java.lang.String TAG
+com.Route.project.core.BaseActivity:
+    public com.xuexiang.xpage.base.XPageFragment openPage(java.lang.Class,boolean)
+    public com.xuexiang.xpage.base.XPageFragment switchPage(java.lang.Class)
+    public java.lang.String serializeObject(java.lang.Object)
+    public static final java.lang.String KEY_SUPPORT_SLIDE_BACK
 com.xuexiang.xui.widget.imageview.edit.CustomEffect$Builder:
     public void <init>(java.lang.String)
     static synthetic java.lang.String access$000(com.xuexiang.xui.widget.imageview.edit.CustomEffect$Builder)
@@ -14784,9 +14785,6 @@ kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$7:
     public void <init>(double[])
 kotlin.coroutines.experimental.SafeContinuation$Companion:
     private static synthetic void RESULT$annotations()
-com.xuexiang.templateproject.core.http.subscriber.TipRequestSubscriber:
-    public void <init>(com.xuexiang.xhttp2.model.XHttpRequest)
-    public void <init>(java.lang.String)
 org.aspectj.internal.lang.reflect.InterTypeDeclarationImpl:
     public void <init>(org.aspectj.lang.reflect.AjType,java.lang.String,int)
     public void <init>(org.aspectj.lang.reflect.AjType,org.aspectj.lang.reflect.AjType,int)
@@ -14812,9 +14810,6 @@ com.bumptech.glide.request.target.DrawableImageViewTarget:
     public void <init>(android.widget.ImageView,boolean)
 com.just.agentweb.download.NotificationCancelReceiver:
     public static final java.lang.String ACTION
-com.xuexiang.templateproject.utils.update.XHttpUpdateHttpServiceImpl$2:
-    void <init>(com.xuexiang.templateproject.utils.update.XHttpUpdateHttpServiceImpl,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
-    final synthetic com.xuexiang.templateproject.utils.update.XHttpUpdateHttpServiceImpl this$0
 org.aspectj.runtime.reflect.AdviceSignatureImpl:
     void <init>(int,java.lang.String,java.lang.Class,java.lang.Class[],java.lang.String[],java.lang.Class[],java.lang.Class)
     void <init>(java.lang.String)
@@ -15146,6 +15141,10 @@ com.bumptech.glide.load.resource.bitmap.TransformationUtils:
     private static final int CIRCLE_CROP_PAINT_FLAGS
 com.xuexiang.xhttp2.cache.RxCache$4:
     void <init>(com.xuexiang.xhttp2.cache.RxCache,java.lang.String)
+com.Route.project.utils.TokenUtils:
+    public static java.lang.String getToken()
+    private static final java.lang.String KEY_TOKEN
+    private static final java.lang.String KEY_PROFILE_CHANNEL
 com.zzhoujay.richtext.drawable.DrawableWrapper:
     public android.graphics.drawable.Drawable getDrawable()
     public void setSizeHolder(com.zzhoujay.richtext.drawable.DrawableSizeHolder)
@@ -15484,6 +15483,9 @@ org.aspectj.internal.lang.reflect.PointcutImpl:
     public org.aspectj.lang.reflect.AjType getDeclaringType()
     public java.lang.String[] getParameterNames()
     private final org.aspectj.lang.reflect.AjType declaringType
+com.Route.project.core.SimpleListAdapter:
+    public static final java.lang.String KEY_TITLE
+    public static final java.lang.String KEY_SUB_TITLE
 kotlin.jvm.PurelyImplements:
     public abstract java.lang.String value()
 kotlin.ranges.CharRange:
@@ -15638,6 +15640,10 @@ com.alibaba.android.vlayout.RecyclablePagerAdapter:
     public abstract int getCount()
 com.bumptech.glide.load.resource.gif.GifDrawableEncoder:
     private static final java.lang.String TAG
+com.Route.project.core.http.loader.ProgressLoader:
+    public static void setIProgressLoaderFactory(com.Route.project.core.http.loader.IProgressLoaderFactory)
+    public static com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context)
+    public static com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context,java.lang.String)
 com.bumptech.glide.request.SingleRequest:
     private static final java.lang.String TAG
     private static final java.lang.String GLIDE_TAG
@@ -16080,9 +16086,6 @@ io.reactivex.internal.operators.flowable.FlowablePublish:
     public int publishBufferSize()
     public org.reactivestreams.Publisher publishSource()
     static final long CANCELLED
-com.xuexiang.templateproject.utils.update.XHttpUpdateHttpServiceImpl$1:
-    void <init>(com.xuexiang.templateproject.utils.update.XHttpUpdateHttpServiceImpl,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
-    final synthetic com.xuexiang.templateproject.utils.update.XHttpUpdateHttpServiceImpl this$0
 butterknife.internal.ListenerClass:
     public abstract java.lang.String targetType()
     public abstract java.lang.String setter()
@@ -16330,6 +16333,19 @@ okhttp3.MultipartBody$Builder:
     public okhttp3.MultipartBody$Builder addFormDataPart(java.lang.String,java.lang.String,okhttp3.RequestBody)
 com.xuexiang.xui.utils.ViewUtils$4:
     void <init>(android.view.animation.Animation$AnimationListener,android.view.View)
+com.Route.project.modules.course.databean.Course:
+    public int getCourseIndex()
+    public void setCourseIndex(int)
+    public void setCourseName(java.lang.String)
+    public java.lang.String getCourseTeacher()
+    public void setCourseTeacher(java.lang.String)
+    public java.lang.String getPlace()
+    public void setPlace(java.lang.String)
+    public void setClassroom(java.lang.String)
+    public java.lang.String getIntroduction()
+    public void setIntroduction(java.lang.String)
+    public void setWeekday(java.lang.String)
+    private int courseIndex
 com.alibaba.android.vlayout.layout.BaseLayoutHelper:
     public int getBgColor()
     public void setBgColor(int)
@@ -16470,6 +16486,8 @@ com.xuexiang.xui.widget.spinner.editspinner.EditSpinner:
     public com.xuexiang.xui.widget.spinner.editspinner.EditSpinner setInputType(int)
     private static final int DEFAULT_MAX_LINE
     private static final int TOGGLE_POPUP_WINDOW_INTERVAL
+com.Route.project.utils.update.UpdateTipDialog:
+    public static final java.lang.String KEY_CONTENT
 com.bumptech.glide.request.transition.ViewAnimationFactory$ResourceViewTransitionAnimationFactory:
     void <init>(int)
 com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinner:
@@ -16485,6 +16503,11 @@ com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinner:
     public com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinner setDropDownBackgroundSelector(int)
 io.reactivex.internal.operators.maybe.MaybeSwitchIfEmpty:
     public void <init>(io.reactivex.MaybeSource,io.reactivex.MaybeSource)
+com.Route.project.core.http.subscriber.TipProgressLoadingSubscriber:
+    public void <init>(com.Route.project.core.BaseFragment)
+    public void <init>(com.xuexiang.xhttp2.subsciber.impl.IProgressLoader)
+    public void <init>(com.xuexiang.xhttp2.model.XHttpRequest)
+    public void <init>(java.lang.String)
 android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$7:
     void <init>(android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21,android.support.v4.media.MediaBrowserCompat$CustomActionCallback,java.lang.String,android.os.Bundle)
     final synthetic android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21 this$0
@@ -16855,6 +16878,9 @@ com.alibaba.android.vlayout.BuildConfig:
     public static final java.lang.String FLAVOR
     public static final int VERSION_CODE
     public static final java.lang.String VERSION_NAME
+com.Route.project.utils.sdkinit.XUpdateInit:
+    public static void checkUpdate(android.content.Context,boolean)
+    private static final java.lang.String KEY_UPDATE_URL
 com.xuexiang.xui.adapter.recyclerview.sticky.StickyHeadContainer:
     public void recycle()
     public com.xuexiang.xui.adapter.recyclerview.sticky.StickyHeadContainer setOnStickyPositionChangedListener(com.xuexiang.xui.adapter.recyclerview.sticky.StickyHeadContainer$OnStickyPositionChangedListener)
@@ -17667,6 +17693,11 @@ com.xuexiang.xutil.common.MapUtils:
     public static java.lang.Object getFirstValue(java.util.LinkedHashMap)
     public static java.lang.Object getFirstKey(java.util.LinkedHashMap)
     public static void modifyMap(java.util.Map,com.xuexiang.xutil.common.MapUtils$OnModifyMapListener)
+com.Route.project.utils.SettingUtils:
+    public static boolean isFirstOpen()
+    public static void setIsFirstOpen(boolean)
+    private static final java.lang.String IS_FIRST_OPEN_KEY
+    private static final java.lang.String IS_AGREE_PRIVACY_KEY
 com.xuexiang.xhttp2.cookie.CookieManager:
     private void <init>(android.content.Context)
     public static com.xuexiang.xhttp2.cookie.CookieManager getInstance(android.content.Context)
@@ -17724,6 +17755,23 @@ com.bumptech.glide.load.engine.DecodeJob:
     private static final java.lang.String TAG
 kotlin.ranges.CharProgressionIterator:
     public final int getStep()
+com.Route.project.utils.RandomUtils:
+    public static java.lang.String getRandomNumbers(int)
+    public static java.lang.String getRandomLetters(int)
+    public static java.lang.String getRandomCapitalLetters(int)
+    public static java.lang.String getRandomLowerCaseLetters(int)
+    public static int getRandom(int)
+    public static int getRandom(int,int)
+    public static int getRandomColor()
+    public static boolean shuffle(java.lang.Object[])
+    public static boolean shuffle(java.lang.Object[],int)
+    public static int[] shuffle(int[])
+    public static int[] shuffle(int[],int)
+    public static final java.lang.String NUMBERS_AND_LETTERS
+    public static final java.lang.String NUMBERS
+    public static final java.lang.String LETTERS
+    public static final java.lang.String CAPITAL_LETTERS
+    public static final java.lang.String LOWER_CASE_LETTERS
 io.reactivex.internal.operators.maybe.MaybeHide:
     public void <init>(io.reactivex.MaybeSource)
 io.reactivex.internal.operators.observable.AbstractObservableWithUpstream:
@@ -17825,16 +17873,15 @@ com.bumptech.glide.request.RequestFutureTarget:
     void <init>(int,int,boolean,com.bumptech.glide.request.RequestFutureTarget$Waiter)
 io.reactivex.internal.operators.flowable.FlowableReplay$ConnectableFlowableReplay:
     void <init>(io.reactivex.flowables.ConnectableFlowable,io.reactivex.Flowable)
+com.Route.project.adapter.base.broccoli.BroccoliRecyclerAdapter:
+    public void <init>(java.util.Collection)
+    public com.xuexiang.xui.adapter.recyclerview.XRecyclerAdapter refresh(java.util.Collection)
+    public void recycle()
 com.alibaba.android.vlayout.layout.BaseLayoutHelper$DefaultLayoutViewHelper:
     public void <init>(com.alibaba.android.vlayout.layout.BaseLayoutHelper$LayoutViewBindListener,com.alibaba.android.vlayout.layout.BaseLayoutHelper$LayoutViewUnBindListener)
     public void onBindViewSuccess(android.view.View,java.lang.String)
 io.reactivex.internal.operators.flowable.FlowablePublishMulticast:
     public void <init>(io.reactivex.Flowable,io.reactivex.functions.Function,int,boolean)
-com.xuexiang.templateproject.core.http.subscriber.TipProgressLoadingSubscriber:
-    public void <init>(com.xuexiang.templateproject.core.BaseFragment)
-    public void <init>(com.xuexiang.xhttp2.subsciber.impl.IProgressLoader)
-    public void <init>(com.xuexiang.xhttp2.model.XHttpRequest)
-    public void <init>(java.lang.String)
 io.reactivex.annotations.SchedulerSupport:
     public abstract java.lang.String value()
     public static final java.lang.String NONE
@@ -18303,23 +18350,6 @@ com.zzhoujay.markdown.parser.StyleBuilderImpl:
     private static final float scale_h5
     private static final float scale_h6
     private static final float scale_normal
-com.xuexiang.templateproject.adapter.base.delegate.XDelegateAdapter:
-    public void <init>(java.lang.Object[])
-    private boolean checkPosition(int)
-    public java.lang.Object getItem(int)
-    public boolean isEmpty()
-    public java.util.List getData()
-    public com.xuexiang.templateproject.adapter.base.delegate.XDelegateAdapter add(int,java.lang.Object)
-    public com.xuexiang.templateproject.adapter.base.delegate.XDelegateAdapter add(java.lang.Object)
-    public com.xuexiang.templateproject.adapter.base.delegate.XDelegateAdapter delete(int)
-    public com.xuexiang.templateproject.adapter.base.delegate.XDelegateAdapter refresh(int,java.lang.Object)
-    public com.xuexiang.templateproject.adapter.base.delegate.XDelegateAdapter refresh(java.lang.Object[])
-    public com.xuexiang.templateproject.adapter.base.delegate.XDelegateAdapter loadMore(java.lang.Object[])
-    public com.xuexiang.templateproject.adapter.base.delegate.XDelegateAdapter load(java.lang.Object)
-    public int getSelectPosition()
-    public com.xuexiang.templateproject.adapter.base.delegate.XDelegateAdapter setSelectPosition(int)
-    public java.lang.Object getSelectItem()
-    public void clear()
 com.bumptech.glide.load.engine.cache.MemorySizeCalculator$Builder:
     public com.bumptech.glide.load.engine.cache.MemorySizeCalculator$Builder setMemoryCacheScreens(float)
     public com.bumptech.glide.load.engine.cache.MemorySizeCalculator$Builder setBitmapPoolScreens(float)
@@ -18359,10 +18389,6 @@ com.scwang.smartrefresh.header.fungame.FunGameView:
     protected static final int STATUS_GAME_FINISHED
     protected static final int STATUS_GAME_FAIL
     protected static final float VIEW_HEIGHT_RATIO
-com.xuexiang.templateproject.core.http.loader.ProgressLoader:
-    public static void setIProgressLoaderFactory(com.xuexiang.templateproject.core.http.loader.IProgressLoaderFactory)
-    public static com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context)
-    public static com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context,java.lang.String)
 io.reactivex.internal.operators.flowable.FlowableSkip:
     public void <init>(io.reactivex.Flowable,long)
 com.zzhoujay.richtext.ig.DefaultImageGetter:
@@ -18508,6 +18534,9 @@ com.xuexiang.xutil.BuildConfig:
     public static final java.lang.String VERSION_NAME
 io.reactivex.internal.operators.flowable.FlowableFromFuture:
     public void <init>(java.util.concurrent.Future,long,java.util.concurrent.TimeUnit)
+com.Route.project.core.webview.LollipopFixedWebView:
+    public void <init>(android.content.Context,android.util.AttributeSet,int,int)
+    public void <init>(android.content.Context,android.util.AttributeSet,int,boolean)
 io.reactivex.Scheduler:
     public static long clockDriftTolerance()
     public void start()
@@ -18741,20 +18770,8 @@ kotlin.sequences.TransformingSequence$iterator$1:
 io.github.inflationx.viewpump.ViewPumpContextWrapper:
     public static final android.view.View onActivityCreateView(android.app.Activity,android.view.View,android.view.View,java.lang.String,android.content.Context,android.util.AttributeSet)
     public static final io.github.inflationx.viewpump.internal.-ViewPumpActivityFactory get$viewpump_release(android.app.Activity)
-com.xuexiang.templateproject.adapter.entity.NewInfo:
-    public void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,java.lang.String)
-    public void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
-    public com.xuexiang.templateproject.adapter.entity.NewInfo setUserName(java.lang.String)
-    public com.xuexiang.templateproject.adapter.entity.NewInfo setTag(java.lang.String)
-    public com.xuexiang.templateproject.adapter.entity.NewInfo setTitle(java.lang.String)
-    public com.xuexiang.templateproject.adapter.entity.NewInfo setPraise(int)
-    public com.xuexiang.templateproject.adapter.entity.NewInfo setComment(int)
-    public com.xuexiang.templateproject.adapter.entity.NewInfo setRead(int)
 butterknife.Action:
     public abstract void apply(android.view.View,int)
-com.xuexiang.templateproject.utils.update.XHttpUpdateHttpServiceImpl:
-    public void asyncGet(java.lang.String,java.util.Map,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
-    public void asyncPost(java.lang.String,java.util.Map,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
 com.xuexiang.xui.widget.textview.label.LabelViewHelper:
     public int getLabelStrokeWidth()
     public void setLabelStrokeWidth(android.view.View,int)
@@ -18816,11 +18833,10 @@ io.reactivex.internal.observers.BasicQueueDisposable:
     public final boolean offer(java.lang.Object,java.lang.Object)
 io.reactivex.internal.operators.maybe.MaybeMaterialize:
     public void <init>(io.reactivex.Maybe)
+com.Route.project.core.webview.AgentWebFragment:
+    public static final java.lang.String KEY_URL
 com.xuexiang.xui.widget.actionbar.TitleUtils$3:
     void <init>(androidx.fragment.app.Fragment)
-com.xuexiang.templateproject.utils.sdkinit.XUpdateInit:
-    public static void checkUpdate(android.content.Context,boolean)
-    private static final java.lang.String KEY_UPDATE_URL
 com.bumptech.glide.manager.DefaultConnectivityMonitor:
     private static final java.lang.String TAG
 com.xuexiang.xui.widget.textview.marqueen.MarqueeFactory$ViewHolder:
@@ -18989,9 +19005,6 @@ com.xuexiang.xui.widget.picker.widget.OptionsPickerView:
     private static final java.lang.String TAG_CANCEL
 kotlin.ranges.LongProgression:
     public final long getStep()
-com.xuexiang.templateproject.utils.service.JsonSerializationService:
-    public java.lang.String object2Json(java.lang.Object)
-    public java.lang.Object parseObject(java.lang.String,java.lang.reflect.Type)
 com.scwang.smartrefresh.layout.adapter.BaseRecyclerAdapter:
     public void <init>(java.util.Collection)
     private void notifyChanged()
@@ -19134,10 +19147,10 @@ com.alibaba.android.vlayout.VirtualLayoutManager$LayoutParams:
     public int zIndex
     private int mOriginWidth
     private int mOriginHeight
-com.xuexiang.templateproject.fragment.LoginFragment_ViewBinding$3:
-    final synthetic com.xuexiang.templateproject.fragment.LoginFragment_ViewBinding this$0
-com.xuexiang.templateproject.core.webview.AgentWebFragment$2:
-    final synthetic com.xuexiang.templateproject.core.webview.AgentWebFragment this$0
+com.Route.project.fragment.LoginFragment_ViewBinding$6:
+    final synthetic com.Route.project.fragment.LoginFragment_ViewBinding this$0
+com.Route.project.utils.Utils$1$2$2:
+    final synthetic com.Route.project.utils.Utils$1$2 this$1
 com.xuexiang.xui.widget.imageview.preview.view.BezierBannerView:
     private boolean autoMove
 okhttp3.internal.cache.DiskLruCache:
@@ -19297,16 +19310,12 @@ okhttp3.CipherSuite:
     public static final okhttp3.CipherSuite TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256
     public static final okhttp3.CipherSuite TLS_AES_128_CCM_SHA256
     public static final okhttp3.CipherSuite TLS_AES_128_CCM_8_SHA256
-com.xuexiang.templateproject.fragment.LoginFragment_ViewBinding$2:
-    final synthetic com.xuexiang.templateproject.fragment.LoginFragment_ViewBinding this$0
 kotlin.ranges.UIntProgression$Companion:
     public synthetic void <init>(kotlin.jvm.internal.DefaultConstructorMarker)
 com.xuexiang.xutil.data.ACache:
     private static final androidx.collection.SimpleArrayMap CACHE_MAP
 kotlin.UInt:
     public static final kotlin.UInt$Companion Companion
-com.xuexiang.templateproject.core.webview.UIController:
-    private java.lang.ref.WeakReference mActivity
 kotlin.random.Random:
     public static final kotlin.random.Random$Companion Companion
 com.bumptech.glide.disklrucache.DiskLruCache$Value:
@@ -19330,8 +19339,6 @@ com.xuexiang.xutil.file.FileIOUtils:
 com.xuexiang.xpage.base.XPageActivity$3:
     final synthetic com.xuexiang.xpage.base.XPageFragment val$opener
     final synthetic com.xuexiang.xpage.base.XPageActivity this$0
-com.xuexiang.templateproject.fragment.LoginFragment_ViewBinding$5:
-    final synthetic com.xuexiang.templateproject.fragment.LoginFragment_ViewBinding this$0
 com.alibaba.android.vlayout.layout.AbstractFullFillLayoutHelper:
     private com.alibaba.android.vlayout.LayoutManagerHelper mTempLayoutHelper
 com.xuexiang.xhttp2.request.BaseRequest$2:
@@ -19361,6 +19368,8 @@ okhttp3.internal.http2.Http2Stream$FramingSource:
     static final synthetic boolean $assertionsDisabled
 kotlin.reflect.KMutableProperty0:
     public abstract void set(java.lang.Object)
+com.Route.project.core.webview.AgentWebFragment$2:
+    final synthetic com.Route.project.core.webview.AgentWebFragment this$0
 io.github.inflationx.viewpump.InflateRequest:
     public static final io.github.inflationx.viewpump.InflateRequest$Companion Companion
 kotlin.sequences.IndexingSequence$iterator$1:
@@ -19398,8 +19407,6 @@ com.just.agentweb.core.web.controller.AbsAgentWebUIController:
     private com.just.agentweb.widget.WebParentLayout mWebParentLayout
 kotlin.jvm.internal.EnumCompanionObject:
     public static final kotlin.jvm.internal.EnumCompanionObject INSTANCE
-com.xuexiang.templateproject.fragment.LoginFragment_ViewBinding$4:
-    final synthetic com.xuexiang.templateproject.fragment.LoginFragment_ViewBinding this$0
 com.xuexiang.xui.utils.SpanUtils:
     private final int mTypeCharSequence
     private final int mTypeImage
@@ -19471,10 +19478,10 @@ com.xuexiang.xpage.utils.TitleBar:
     private int mActionPadding
     private int mActionTextSize
     private int mActionTextColor
+com.Route.project.core.webview.UIController:
+    private java.lang.ref.WeakReference mActivity
 com.just.agentweb.core.client.MiddlewareWebClientBase:
     private static java.lang.String TAG
-com.xuexiang.templateproject.core.webview.XPageWebViewFragment$8:
-    final synthetic com.xuexiang.templateproject.core.webview.XPageWebViewFragment this$0
 com.xuexiang.xui.utils.SpanUtils$CustomImageSpan:
     final synthetic com.xuexiang.xui.utils.SpanUtils this$0
 com.scwang.smartrefresh.layout.adapter.SmartViewHolder:
@@ -19494,8 +19501,6 @@ kotlin.sequences.EmptySequence:
     public static final kotlin.sequences.EmptySequence INSTANCE
 com.bumptech.glide.util.LruCache:
     private final long initialMaxSize
-com.xuexiang.templateproject.fragment.news.NewsFragment$2:
-    final synthetic com.xuexiang.templateproject.fragment.news.NewsFragment this$0
 com.xuexiang.xutil.common.ClickUtils:
     private static long[] sHits
 kotlin.io.ConsoleKt:
@@ -19503,6 +19508,8 @@ kotlin.io.ConsoleKt:
     private static final kotlin.Lazy decoder$delegate
 com.bumptech.glide.load.engine.ActiveResources:
     private final java.util.concurrent.Executor monitorClearedResourcesExecutor
+com.Route.project.fragment.LoginFragment_ViewBinding$2:
+    final synthetic com.Route.project.fragment.LoginFragment_ViewBinding this$0
 kotlin.coroutines.jvm.internal.RunSuspend:
     private kotlin.Result result
 com.xuexiang.xui.widget.imageview.crop.CropOverlayView:
@@ -19528,10 +19535,6 @@ com.just.agentweb.core.AgentWeb:
     private int TAG_TARGET
     private android.webkit.WebChromeClient mTargetChromeClient
     private com.just.agentweb.js.AgentWebJsInterfaceCompat mAgentWebJsInterfaceCompat
-com.xuexiang.templateproject.fragment.LoginFragment_ViewBinding$6:
-    final synthetic com.xuexiang.templateproject.fragment.LoginFragment_ViewBinding this$0
-com.xuexiang.templateproject.utils.Utils$1$2$2:
-    final synthetic com.xuexiang.templateproject.utils.Utils$1$2 this$1
 com.xuexiang.xutil.file.FileUtils:
     private static final java.lang.String LINE_SEP
     private static final char[] hexDigits
@@ -19540,6 +19543,10 @@ kotlin.text.MatcherMatchResult$groups$1:
 com.xuexiang.xui.utils.DrawableUtils:
     private static final java.lang.String TAG
     private static final android.graphics.Canvas CANVAS
+com.Route.project.utils.sdkinit.ANRWatchDogInit:
+    private static final com.github.anrwatchdog.ANRWatchDog$ANRListener CUSTOM_LISTENER
+com.Route.project.fragment.LoginFragment_ViewBinding$3:
+    final synthetic com.Route.project.fragment.LoginFragment_ViewBinding this$0
 io.reactivex.internal.operators.flowable.FlowableReplay$MulticastFlowable$DisposableConsumer:
     final synthetic io.reactivex.internal.operators.flowable.FlowableReplay$MulticastFlowable this$0
 com.bumptech.glide.manager.RequestManagerRetriever:
@@ -19556,8 +19563,6 @@ io.reactivex.internal.schedulers.SingleScheduler:
     final java.util.concurrent.ThreadFactory threadFactory
 com.alibaba.android.vlayout.ExposeLinearLayoutManagerEx$LayoutState:
     public int mFixOffset
-com.xuexiang.templateproject.fragment.news.NewsFragment$1:
-    final synthetic com.xuexiang.templateproject.fragment.news.NewsFragment this$0
 com.xuexiang.xui.widget.tabbar.EasyIndicator:
     public int screenHeight
 okhttp3.internal.http.HttpHeaders:
@@ -19600,6 +19605,8 @@ com.bumptech.glide.load.resource.bitmap.Downsampler:
 com.xuexiang.xhttp2.request.BaseRequest:
     protected android.content.Context mContext
     protected okhttp3.HttpUrl mHttpUrl
+com.Route.project.fragment.LoginFragment_ViewBinding$4:
+    final synthetic com.Route.project.fragment.LoginFragment_ViewBinding this$0
 com.just.agentweb.core.client.DefaultWebClient$1:
     final synthetic com.just.agentweb.core.client.DefaultWebClient this$0
 com.just.agentweb.core.web.AgentWebPermissions:
@@ -19666,13 +19673,13 @@ com.xuexiang.xutil.data.DateUtils:
     private static final java.lang.String[] ZODIAC
 kotlin.reflect.KMutableProperty:
     public abstract kotlin.reflect.KMutableProperty$Setter getSetter()
+com.Route.project.fragment.LoginFragment_ViewBinding$5:
+    final synthetic com.Route.project.fragment.LoginFragment_ViewBinding this$0
 io.reactivex.internal.operators.single.SingleNever:
     public static final io.reactivex.Single INSTANCE
 com.bumptech.glide.load.model.LazyHeaders$Builder:
     private boolean copyOnModify
     private boolean isUserAgentDefault
-com.xuexiang.templateproject.fragment.news.NewsFragment$3:
-    final synthetic com.xuexiang.templateproject.fragment.news.NewsFragment this$0
 kotlin.text.SystemProperties:
     public static final java.lang.String LINE_SEPARATOR
     public static final kotlin.text.SystemProperties INSTANCE
@@ -19689,6 +19696,8 @@ com.bumptech.glide.util.ViewPreloadSizeProvider:
     private com.bumptech.glide.util.ViewPreloadSizeProvider$SizeViewTarget viewTarget
 io.reactivex.internal.operators.flowable.FlowableWithLatestFrom$FlowableWithLatestSubscriber:
     final synthetic io.reactivex.internal.operators.flowable.FlowableWithLatestFrom this$0
+com.Route.project.utils.update.XHttpUpdateHttpServiceImpl$3:
+    final synthetic com.Route.project.utils.update.XHttpUpdateHttpServiceImpl this$0
 com.bumptech.glide.Glide:
     private final com.bumptech.glide.load.engine.Engine engine
     private final com.bumptech.glide.Glide$RequestOptionsFactory defaultRequestOptionsFactory
@@ -19706,12 +19715,12 @@ io.github.inflationx.viewpump.internal.-ReflectiveFallbackViewCreator$Companion:
     public synthetic void <init>(kotlin.jvm.internal.DefaultConstructorMarker)
 com.xuexiang.xutil.common.CollectionUtils:
     private static final java.lang.Object sLock
+com.Route.project.adapter.base.delegate.XDelegateAdapter:
+    protected int mSelectPosition
 okhttp3.internal.connection.RealConnection$1:
     final synthetic okhttp3.internal.connection.RealConnection this$0
 okhttp3.RealCall$AsyncCall:
     static final synthetic boolean $assertionsDisabled
-com.xuexiang.templateproject.core.webview.XPageWebViewFragment_ViewBinding$3:
-    final synthetic com.xuexiang.templateproject.core.webview.XPageWebViewFragment_ViewBinding this$0
 com.xuexiang.xhttp2.reflect.TypeBuilder:
     static final synthetic boolean $assertionsDisabled
 kotlin.text.CharCategory$Companion:
@@ -19744,8 +19753,6 @@ com.alibaba.android.vlayout.layout.GridLayoutHelper:
     private boolean mIgnoreExtra
 com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$2:
     final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
-com.xuexiang.templateproject.utils.TokenUtils:
-    private static java.lang.String sToken
 io.github.inflationx.viewpump.Interceptor:
     public static final io.github.inflationx.viewpump.Interceptor$Companion Companion
 com.jakewharton.disklrucache.Util:
@@ -19762,6 +19769,8 @@ io.reactivex.internal.functions.Functions:
     public static final io.reactivex.functions.Consumer ERROR_CONSUMER
     public static final io.reactivex.functions.LongConsumer EMPTY_LONG_CONSUMER
     public static final io.reactivex.functions.Consumer REQUEST_MAX
+com.Route.project.core.webview.XPageWebViewFragment_ViewBinding$2:
+    final synthetic com.Route.project.core.webview.XPageWebViewFragment_ViewBinding this$0
 org.aspectj.runtime.reflect.JoinPointImpl$StaticPartImpl:
     org.aspectj.lang.reflect.SourceLocation sourceLocation
     private int id
@@ -19769,6 +19778,8 @@ io.github.inflationx.viewpump.internal.-ReflectiveFallbackViewCreator:
     public static final io.github.inflationx.viewpump.internal.-ReflectiveFallbackViewCreator$Companion Companion
 org.aspectj.runtime.internal.CFlowStack:
     private org.aspectj.runtime.internal.cflowstack.ThreadStack stackProxy
+com.Route.project.core.webview.XPageWebViewFragment$8:
+    final synthetic com.Route.project.core.webview.XPageWebViewFragment this$0
 android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi18:
     private static boolean sIsMbrPendingIntentSupported
 com.bumptech.glide.load.model.ByteArrayLoader$ByteBufferFactory$1:
@@ -19795,6 +19806,8 @@ com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$3:
     final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section$1:
     final synthetic com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section this$0
+com.Route.project.core.webview.XPageWebViewFragment_ViewBinding$1:
+    final synthetic com.Route.project.core.webview.XPageWebViewFragment_ViewBinding this$0
 com.xuexiang.xhttp2.interceptor.BaseDynamicInterceptor:
     private boolean mIsSign
     private boolean mTimeStamp
@@ -19812,8 +19825,8 @@ com.xuexiang.xui.widget.textview.supertextview.SuperButton:
     private int gradientAngle
 com.xuexiang.xui.widget.textview.marqueen.MarqueeFactory:
     private com.xuexiang.xui.widget.textview.marqueen.MarqueeView mMarqueeView
-com.xuexiang.templateproject.core.webview.XPageWebViewFragment_ViewBinding$1:
-    final synthetic com.xuexiang.templateproject.core.webview.XPageWebViewFragment_ViewBinding this$0
+com.Route.project.core.webview.XPageWebViewFragment$7:
+    final synthetic com.Route.project.core.webview.XPageWebViewFragment this$0
 com.xuexiang.xui.widget.popupwindow.bar.Cookie:
     private android.widget.ImageView mIvIcon
     private android.widget.ImageView mBtnActionWithIcon
@@ -19841,8 +19854,6 @@ com.xuexiang.xupdate.proxy.impl.DefaultUpdateChecker$3:
     final synthetic java.lang.String val$result
     final synthetic com.xuexiang.xupdate.proxy.IUpdateProxy val$updateProxy
     final synthetic com.xuexiang.xupdate.proxy.impl.DefaultUpdateChecker this$0
-com.xuexiang.templateproject.core.webview.XPageWebViewFragment$6:
-    final synthetic com.xuexiang.templateproject.core.webview.XPageWebViewFragment this$0
 io.reactivex.internal.operators.flowable.FlowableEmpty:
     public static final io.reactivex.Flowable INSTANCE
 okhttp3.MultipartBody:
@@ -19860,8 +19871,8 @@ okhttp3.internal.cache.DiskLruCache$2:
     static final synthetic boolean $assertionsDisabled
 com.just.agentweb.core.web.controller.DefaultUIController$2:
     final synthetic com.just.agentweb.core.web.controller.DefaultUIController this$0
-com.xuexiang.templateproject.utils.sdkinit.ANRWatchDogInit:
-    private static final com.github.anrwatchdog.ANRWatchDog$ANRListener CUSTOM_LISTENER
+com.Route.project.core.webview.XPageWebViewFragment$6:
+    final synthetic com.Route.project.core.webview.XPageWebViewFragment this$0
 kotlin.text.Charsets:
     public static final java.nio.charset.Charset UTF_8
     public static final java.nio.charset.Charset UTF_16
@@ -19899,12 +19910,8 @@ com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$5:
     final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 io.github.inflationx.viewpump.ViewPump$Companion:
     static final synthetic kotlin.reflect.KProperty[] $$delegatedProperties
-com.xuexiang.templateproject.core.webview.XPageWebViewFragment_ViewBinding$2:
-    final synthetic com.xuexiang.templateproject.core.webview.XPageWebViewFragment_ViewBinding this$0
 com.xuexiang.xupdate._XUpdate:
     private static boolean sIsShowUpdatePrompter
-com.xuexiang.templateproject.utils.update.XHttpUpdateHttpServiceImpl$3:
-    final synthetic com.xuexiang.templateproject.utils.update.XHttpUpdateHttpServiceImpl this$0
 com.xuexiang.xpage.base.XPageFragment:
     private int mRequestCode
     private com.xuexiang.xpage.base.XPageFragment$OnFragmentFinishListener mFragmentFinishListener
@@ -19927,10 +19934,10 @@ com.xuexiang.xui.widget.behavior.TranslateAnimateHelper:
     public float mStartY
 okhttp3.internal.platform.AndroidPlatform:
     private final java.lang.Class sslParametersClass
+com.Route.project.fragment.LoginFragment_ViewBinding$1:
+    final synthetic com.Route.project.fragment.LoginFragment_ViewBinding this$0
 com.tencent.mmkv.MMKV:
     private static final java.util.HashMap mCreators
-com.xuexiang.templateproject.core.webview.XPageWebViewFragment$7:
-    final synthetic com.xuexiang.templateproject.core.webview.XPageWebViewFragment this$0
 kotlin.sequences.TakeSequence$iterator$1:
     final synthetic kotlin.sequences.TakeSequence this$0
 kotlin.sequences.DropSequence$iterator$1:
@@ -19953,12 +19960,18 @@ io.reactivex.internal.operators.observable.ObservableWithLatestFrom$WithLatestFr
     final synthetic io.reactivex.internal.operators.observable.ObservableWithLatestFrom this$0
 com.xuexiang.xui.widget.tabbar.TabSegment$TabItemView$1:
     final synthetic com.xuexiang.xui.widget.tabbar.TabSegment val$this$0
+com.Route.project.core.webview.XPageWebViewFragment_ViewBinding$3:
+    final synthetic com.Route.project.core.webview.XPageWebViewFragment_ViewBinding this$0
 com.just.agentweb.core.web.AgentWebConfig:
     public static int MAX_FILE_LENGTH
 butterknife.internal.Utils:
     private static final android.util.TypedValue VALUE
 com.bumptech.glide.request.transition.DrawableCrossFadeFactory$Builder:
     private final int durationMillis
+com.Route.project.core.webview.AgentWebFragment$8:
+    final synthetic com.Route.project.core.webview.AgentWebFragment this$0
+com.Route.project.fragment.news.NewsFragment$1:
+    final synthetic com.Route.project.fragment.news.NewsFragment this$0
 com.xuexiang.xrouter.model.TypeWrapper:
     protected final java.lang.reflect.Type type
 com.xuexiang.xaop.aspectj.PermissionAspectJ$1:
@@ -20003,6 +20016,8 @@ com.xuexiang.xutil.system.AppExecutors:
     private final java.util.concurrent.Executor mMainThread
 kotlin.reflect.KMutableProperty2:
     public abstract void set(java.lang.Object,java.lang.Object,java.lang.Object)
+com.Route.project.utils.TokenUtils:
+    private static java.lang.String sToken
 kotlin.text.Typography:
     public static final kotlin.text.Typography INSTANCE
 okhttp3.internal.Util:
@@ -20027,11 +20042,15 @@ com.xuexiang.xui.utils.ViewUtils:
     private static final int[] APPCOMPAT_CHECK_ATTRS
 com.xuexiang.xui.widget.statelayout.MultipleStatusView:
     private android.view.View$OnClickListener mOnRetryClickListener
+com.Route.project.core.webview.AgentWebFragment$9:
+    final synthetic com.Route.project.core.webview.AgentWebFragment this$0
 com.just.agentweb.download.ExecutorProvider:
     private final int KEEP_ALIVE_SECONDS
     public java.lang.String TAG
 com.xuexiang.xui.widget.banner.recycler.RecyclerViewBannerBase:
     protected java.util.List mTempUrlList
+com.Route.project.core.http.loader.ProgressLoader:
+    private static com.Route.project.core.http.loader.IProgressLoaderFactory sIProgressLoaderFactory
 com.just.agentweb.widget.indicator.WebIndicator:
     private float mTarget
 com.scwang.smartrefresh.header.internal.MaterialProgressDrawable$Ring:
@@ -20064,6 +20083,10 @@ kotlin._Assertions:
     public static final kotlin._Assertions INSTANCE
 com.scwang.smartrefresh.header.WaveSwipeHeader$2:
     final synthetic com.scwang.smartrefresh.header.WaveSwipeHeader this$0
+com.Route.project.modules.course.databean.Course:
+    private java.lang.String courseTeacher
+    private java.lang.String place
+    private java.lang.String introduction
 okhttp3.Dispatcher:
     static final synthetic boolean $assertionsDisabled
 com.alibaba.android.vlayout.LayoutHelper:
@@ -20086,8 +20109,6 @@ org.aspectj.runtime.internal.CFlowCounter:
     private org.aspectj.runtime.internal.cflowstack.ThreadCounter flowHeightHandler
 okhttp3.CacheControl:
     public static final okhttp3.CacheControl FORCE_NETWORK
-com.xuexiang.templateproject.fragment.LoginFragment_ViewBinding$1:
-    final synthetic com.xuexiang.templateproject.fragment.LoginFragment_ViewBinding this$0
 com.bumptech.glide.disklrucache.Util:
     static final java.nio.charset.Charset UTF_8
 com.bumptech.glide.signature.ApplicationVersionSignature:
@@ -20110,8 +20131,6 @@ okhttp3.internal.cache.DiskLruCache$Snapshot:
     private final long[] lengths
 com.alibaba.android.vlayout.RangeLayoutHelperFinder$1:
     final synthetic com.alibaba.android.vlayout.RangeLayoutHelperFinder this$0
-com.xuexiang.templateproject.core.webview.AgentWebFragment$8:
-    final synthetic com.xuexiang.templateproject.core.webview.AgentWebFragment this$0
 com.bumptech.glide.GlideBuilder$1:
     final synthetic com.bumptech.glide.GlideBuilder this$0
 org.aspectj.runtime.reflect.SourceLocationImpl:
@@ -20130,15 +20149,11 @@ kotlin.jvm.internal.CharCompanionObject:
     public static final kotlin.jvm.internal.CharCompanionObject INSTANCE
 com.xuexiang.xui.widget.slideback.SlideBackManager$1:
     final synthetic com.xuexiang.xui.widget.slideback.SlideBackManager this$0
-com.xuexiang.templateproject.adapter.base.delegate.XDelegateAdapter:
-    protected int mSelectPosition
 kotlin.math.Constants:
     public static final double LN2
     public static final double upper_taylor_2_bound
     public static final double upper_taylor_n_bound
     public static final kotlin.math.Constants INSTANCE
-com.xuexiang.templateproject.core.http.loader.ProgressLoader:
-    private static com.xuexiang.templateproject.core.http.loader.IProgressLoaderFactory sIProgressLoaderFactory
 com.zzhoujay.richtext.ig.DefaultImageGetter:
     public static final java.lang.String GLOBAL_ID
 kotlin.UByte:
@@ -20168,10 +20183,10 @@ org.aspectj.runtime.internal.cflowstack.ThreadCounterImpl11:
     private int change_count
 com.xuexiang.xhttp2.transform.func.RetryExceptionFunc$Wrapper:
     final synthetic com.xuexiang.xhttp2.transform.func.RetryExceptionFunc this$0
-com.xuexiang.templateproject.core.webview.AgentWebFragment$9:
-    final synthetic com.xuexiang.templateproject.core.webview.AgentWebFragment this$0
 kotlin.ranges.LongProgression:
     public static final kotlin.ranges.LongProgression$Companion Companion
+com.Route.project.fragment.news.NewsFragment$3:
+    final synthetic com.Route.project.fragment.news.NewsFragment this$0
 com.bumptech.glide.load.engine.prefill.BitmapPreFillRunner:
     private static final com.bumptech.glide.load.engine.prefill.BitmapPreFillRunner$Clock DEFAULT_CLOCK
 com.xuexiang.xui.widget.statelayout.StateLayoutConfig:

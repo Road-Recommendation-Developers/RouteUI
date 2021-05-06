@@ -58,8 +58,8 @@
     </string-array>
 
     <string-array name="grid_titles_entry">
-        <item>美食</item>
-        <item>甜点</item>
+        <item>课程表</item>
+        <item>待办事务</item>
         <item>烧烤</item>
         <item>夜宵</item>
         <item>水果</item>

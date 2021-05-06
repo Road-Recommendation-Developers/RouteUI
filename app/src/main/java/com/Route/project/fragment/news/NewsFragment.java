@@ -17,13 +17,19 @@
 
 package com.Route.project.fragment.news;
 
+import android.content.Intent;
+import android.net.sip.SipSession;
+import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
+import android.app.Activity;
+import com.Route.project.activity.MainActivity;
 import com.Route.project.adapter.base.broccoli.BroccoliSimpleDelegateAdapter;
 import com.Route.project.adapter.base.delegate.SimpleDelegateAdapter;
 import com.Route.project.adapter.base.delegate.SingleDelegateAdapter;
 import com.Route.project.adapter.entity.NewInfo;
+import com.Route.project.modules.course.UI.CourseActivity;
+import com.Route.project.modules.todolist.UI.TodoList;
 import com.Route.project.utils.DemoDataProvider;
 import com.Route.project.utils.Utils;
 import com.Route.project.utils.XToastUtils;
@@ -115,8 +121,27 @@ public class NewsFragment extends BaseFragment {
                     ImageLoader.get().loadImage(imageView, item.getIcon());
                     holder.text(R.id.tv_title, item.getTitle().toString().substring(0, 1));
                     holder.text(R.id.tv_sub_title, item.getTitle());
+                    //进行监听事件设置
+                    // XToastUtils.toast("选中了：" + item.getTitle()
+                    holder.click(R.id.ll_container, new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            if(item.getTitle().equals("课程表")){
+                                Intent intent=new Intent(getActivity(),CourseActivity.class);
+                                startActivity(intent);
+                            }
+                            else if(item.getTitle().equals("待办事务")){
+                                Intent intent=new Intent(getActivity(), TodoList.class);
+                                startActivity(intent);
+                            }
+                            else
+                                XToastUtils.toast("选中了：" + item.getTitle());
 
-                    holder.click(R.id.ll_container, v -> XToastUtils.toast("点击了：" + item.getTitle()));
+                        }
+                    });
+                    //if(item.getTitle().equals("课程表"))
+                    //Intent intent=new Intent(getActivity(),CourseActivity.class);
+                    //startActivity(intent);
                 }
             }
         };

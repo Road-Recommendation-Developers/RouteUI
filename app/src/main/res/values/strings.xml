@@ -73,4 +73,15 @@
     <string name="tip_ignore_message">以后不再提示此类信息</string>
     <string name="tip_title">你知道吗？</string>
 
+    <string name="time">时间:</string>
+    <string name="add">添加</string>
+    <string name="Mon">周一</string>
+    <string name="Tue">周二</string>
+    <string name="Wed">周三</string>
+    <string name="Fri">周五</string>
+    <string name="Sat">周六</string>
+    <string name="San">周日</string>
+    <string name="Thu">周四</string>
+    <string name="CourseTable">课程表</string>
+
 </resources>

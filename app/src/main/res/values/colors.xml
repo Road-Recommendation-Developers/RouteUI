@@ -25,5 +25,23 @@
     <color name="app_color_theme_8">#AC8FEF</color> <!-- Lavender -->
     <color name="app_color_theme_9">#EE85C1</color> <!-- Pink Rose -->
 
+    <color name="colorBackGround">#22c9c3c8</color>
+    <color name="colorGap">#ffffff</color>
+    <color name="colorSep">#c7bebe</color>
 
+
+    <color name="color1">#f21cf2</color>
+    <color name="color2">#ee23e615</color>
+    <color name="color3">#0869e1</color>
+    <color name="color6">#f22a1c</color>
+    <color name="color5">#eef18112</color>
+    <color name="color4">#08dde1</color>
+    <color name="color7">#a71cf2</color>
+    <color name="color9">#e71e7c6e</color>
+    <color name="color8">#c4e108</color>
+    <color name="colorToday">#e2323615</color>
+
+    <color name="bg_lightpink">#EEB4B4</color>
+    <color name="black">#363636</color>
+    <color name="white">#FFFFFF</color>
 </resources>
