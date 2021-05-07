@@ -1,10 +1,12 @@
 package com.Route.project.modules.todolist.UI;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.xuexiang.templateproject.R;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,8 +15,10 @@ import java.util.Map;
 
 
 public class TodoList extends AppCompatActivity {
+    FloatingActionButton floatingActionButton;
     private ListView listView;
     List<Map<String, Object>> arrayList=new ArrayList<Map<String,Object>>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +40,8 @@ public class TodoList extends AppCompatActivity {
                 return true;
             }
         });
+        floatingActionButton=findViewById(R.id.fab);
+        floatingActionButton.setOnClickListener(v -> toAdd());
         arrayList=getData();
         String[] from = {"title", "text"};
         int[] to= new int[]{R.id.todo_item_title, R.id.todo_item_text};
@@ -51,6 +57,14 @@ public class TodoList extends AppCompatActivity {
         //配置适配器
         listView.setAdapter(listAdapter);
     }
+
+    private void toAdd() {
+
+        Intent intent=new Intent(this,AddTodoActivity.class);
+
+        startActivity(intent);
+    }
+
 
     public List<Map<String, Object>> getData(){
         for(int i=0;i<10;i++){
