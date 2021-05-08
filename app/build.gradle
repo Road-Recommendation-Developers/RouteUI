@@ -130,6 +130,9 @@ dependencies {
 
     //美团多渠道打包
     implementation 'com.meituan.android.walle:library:1.1.6'
+
+    //osmdroid地图
+    implementation 'org.osmdroid:osmdroid-android:6.1.0'
 }
 //自动添加X-Library依赖
 apply from: 'x-library.gradle'

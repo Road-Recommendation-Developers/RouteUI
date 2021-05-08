@@ -26,6 +26,8 @@ allprojects {
         maven {
             url 'https://dl.bintray.com/umsdk/release/com/umeng/umsdk/common/2.0.2/common-2.0.2.pom'
         }
+        //引入地图
+        mavenCentral()
         //jcenter()
         // jcenter{ url 'https://jcenter.bintray.com/'}
     }

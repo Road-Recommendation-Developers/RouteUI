@@ -5,6 +5,10 @@ com.xuexiang.xui.widget.textview.marqueen.SimpleNoticeMF:
     private android.view.LayoutInflater inflater
 com.xuexiang.xupdate.UpdateManager$2:
     public void onParseResult(com.xuexiang.xupdate.entity.UpdateEntity)
+org.metalev.multitouch.controller.MultiTouchController$PositionAndScale:
+    public float getScaleX()
+    public float getScaleY()
+    public float getAngle()
 com.alibaba.android.vlayout.layout.MarginLayoutHelper:
     public void setMargin(int,int,int,int)
     public int computeMarginStart(int,boolean,boolean,com.alibaba.android.vlayout.LayoutManagerHelper)
@@ -403,6 +407,12 @@ com.xuexiang.xui.adapter.recyclerview.RecyclerViewHolder:
     public com.xuexiang.xui.adapter.recyclerview.RecyclerViewHolder textListener(int,android.text.TextWatcher)
     public com.xuexiang.xui.adapter.recyclerview.RecyclerViewHolder backgroundResId(int,int)
     public void clearViews()
+org.osmdroid.views.overlay.infowindow.InfoWindow:
+    public void <init>(android.view.View,org.osmdroid.views.MapView)
+    public static void closeAllInfoWindowsOn(org.osmdroid.views.MapView)
+    public static java.util.ArrayList getOpenedInfoWindowsOn(org.osmdroid.views.MapView)
+    public org.osmdroid.views.MapView getMapView()
+    public android.view.View getView()
 com.xuexiang.xui.widget.layout.linkage.view.LinkageLinearLayout$1:
     public int getVerticalScrollExtent()
 com.xuexiang.xui.widget.picker.widget.WheelOptions$5:
@@ -419,6 +429,8 @@ kotlin.coroutines.experimental.SequenceBuilder:
 com.xuexiang.xui.adapter.recyclerview.sticky.FullSpanUtils:
     public static void onAttachedToRecyclerView(androidx.recyclerview.widget.RecyclerView,androidx.recyclerview.widget.RecyclerView$Adapter,int)
     public static void onViewAttachedToWindow(androidx.recyclerview.widget.RecyclerView$ViewHolder,androidx.recyclerview.widget.RecyclerView$Adapter,int)
+org.osmdroid.tileprovider.tilesource.TMSOnlineTileSourceBase:
+    public void <init>(java.lang.String,int,int,int,java.lang.String,java.lang.String[])
 com.xuexiang.xui.widget.popupwindow.bar.Cookie$3:
     void <init>(com.xuexiang.xui.widget.popupwindow.bar.Cookie)
 butterknife.BindInt:
@@ -492,8 +504,16 @@ kotlin.UIntKt:
     private static final int toUInt(short)
     private static final int toUInt(int)
     private static final int toUInt(long)
+org.osmdroid.tileprovider.tilesource.QuadTreeTileSource:
+    public void <init>(java.lang.String,int,int,int,java.lang.String,java.lang.String[])
 io.reactivex.internal.operators.flowable.FlowableInternalHelper$ReplayCallable:
     void <init>(io.reactivex.Flowable)
+org.osmdroid.tileprovider.util.CloudmadeUtil:
+    public static void retrieveCloudmadeKey(android.content.Context)
+    public static void setCloudmadeKey(java.lang.String)
+    private static final java.lang.String CLOUDMADE_KEY
+    private static final java.lang.String CLOUDMADE_ID
+    private static final java.lang.String CLOUDMADE_TOKEN
 io.reactivex.internal.operators.flowable.FlowableReduceSeedSingle:
     public void <init>(org.reactivestreams.Publisher,java.lang.Object,io.reactivex.functions.BiFunction)
 com.zzhoujay.richtext.exceptions.ImageWrapperMultiSourceException:
@@ -634,6 +654,16 @@ com.bumptech.glide.load.resource.bitmap.BitmapDrawableTransformation:
     public void <init>(com.bumptech.glide.load.Transformation)
 io.reactivex.internal.operators.flowable.FlowableElementAt:
     public void <init>(io.reactivex.Flowable,long,java.lang.Object,boolean)
+org.osmdroid.views.MapView$LayoutParams:
+    public static final int TOP_LEFT
+    public static final int TOP_CENTER
+    public static final int TOP_RIGHT
+    public static final int CENTER_LEFT
+    public static final int CENTER
+    public static final int CENTER_RIGHT
+    public static final int BOTTOM_LEFT
+    public static final int BOTTOM_CENTER
+    public static final int BOTTOM_RIGHT
 com.bumptech.glide.signature.AndroidResourceSignature:
     public static com.bumptech.glide.load.Key obtain(android.content.Context)
     private void <init>(int,com.bumptech.glide.load.Key)
@@ -780,6 +810,19 @@ io.reactivex.internal.operators.completable.CompletableMergeDelayErrorArray:
 com.xuexiang.xpage.AutoPageConfiguration:
     private static final java.lang.String PAGE_CONFIG_PACKAGE_NAME
     private static final java.lang.String PAGE_CONFIG_CLASS_NAME_SUFFIX
+org.osmdroid.views.Projection:
+    public void <init>(double,int,int,org.osmdroid.util.GeoPoint,float,boolean,boolean)
+    public org.osmdroid.util.PointL toProjectedPixels(org.osmdroid.util.GeoPoint,org.osmdroid.util.PointL)
+    public android.graphics.Point toPixelsFromProjected(org.osmdroid.util.PointL,android.graphics.Point)
+    public android.graphics.Point toPixelsFromMercator(long,long,android.graphics.Point)
+    public float metersToPixels(float)
+    public org.osmdroid.api.IGeoPoint getNorthEast()
+    public org.osmdroid.api.IGeoPoint getSouthWest()
+    public android.graphics.Matrix getScaleRotateCanvasMatrix()
+    public int getTileFromMercator(long)
+    public long getOffsetX()
+    public long getOffsetY()
+    public void adjustOffsets(org.osmdroid.util.BoundingBox)
 com.just.agentweb.utils.AgentWebUtils:
     static void setIntentData(android.content.Context,android.content.Intent,java.io.File,boolean)
     static void grantPermissions(android.content.Context,android.content.Intent,android.net.Uri,boolean)
@@ -953,6 +996,35 @@ com.xuexiang.xpage.base.XPageFragment$PopCallback:
     public abstract void run()
 io.reactivex.internal.operators.maybe.MaybeTakeUntilMaybe:
     public void <init>(io.reactivex.MaybeSource,io.reactivex.MaybeSource)
+org.osmdroid.views.overlay.Marker:
+    public static void cleanDefaults()
+    public void setIcon(android.graphics.drawable.Drawable)
+    public android.graphics.drawable.Drawable getIcon()
+    public float getRotation()
+    public void setInfoWindowAnchor(float,float)
+    public void setAlpha(float)
+    public float getAlpha()
+    public void setDraggable(boolean)
+    public boolean isDraggable()
+    public void setFlat(boolean)
+    public boolean isFlat()
+    public void remove(org.osmdroid.views.MapView)
+    public void setOnMarkerClickListener(org.osmdroid.views.overlay.Marker$OnMarkerClickListener)
+    public void setOnMarkerDragListener(org.osmdroid.views.overlay.Marker$OnMarkerDragListener)
+    public void setImage(android.graphics.drawable.Drawable)
+    public void setDragOffset(float)
+    public float getDragOffset()
+    public void setPanToView(boolean)
+    public void setVisible(boolean)
+    public int getTextLabelBackgroundColor()
+    public int getTextLabelForegroundColor()
+    public int getTextLabelFontSize()
+    public boolean isDisplayed()
+    public static final float ANCHOR_CENTER
+    public static final float ANCHOR_LEFT
+    public static final float ANCHOR_TOP
+    public static final float ANCHOR_RIGHT
+    public static final float ANCHOR_BOTTOM
 android.support.v4.media.session.MediaControllerCompat$Callback$MessageHandler:
     void <init>(android.support.v4.media.session.MediaControllerCompat$Callback,android.os.Looper)
     private static final int MSG_EVENT
@@ -970,6 +1042,14 @@ android.support.v4.media.session.MediaControllerCompat$Callback$MessageHandler:
 com.xuexiang.xui.widget.edittext.verify.VerifyCodeEditText:
     public void clearInputValue()
     public float sp2px(float,android.content.Context)
+org.osmdroid.views.overlay.DefaultOverlayManager:
+    public org.osmdroid.views.overlay.TilesOverlay getTilesOverlay()
+    public void onPause()
+    public void onResume()
+    public void setOptionsMenusEnabled(boolean)
+    public boolean onCreateOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public boolean onPrepareOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public boolean onOptionsItemSelected(android.view.MenuItem,int,org.osmdroid.views.MapView)
 io.reactivex.disposables.SerialDisposable:
     public void <init>(io.reactivex.disposables.Disposable)
     public boolean set(io.reactivex.disposables.Disposable)
@@ -989,6 +1069,28 @@ com.just.agentweb.core.video.IVideo:
     public abstract boolean isVideoState()
 android.support.v4.media.session.PlaybackStateCompatApi21:
     public static java.lang.Object newInstance(int,long,long,float,long,java.lang.CharSequence,long,java.util.List,long)
+org.osmdroid.api.IMapController:
+    public abstract void animateTo(int,int)
+    public abstract void scrollBy(int,int)
+    public abstract double setZoom(double)
+    public abstract void stopPanning()
+    public abstract boolean zoomIn(java.lang.Long)
+    public abstract boolean zoomInFixing(int,int,java.lang.Long)
+    public abstract boolean zoomOut(java.lang.Long)
+    public abstract boolean zoomOutFixing(int,int)
+    public abstract boolean zoomTo(int)
+    public abstract boolean zoomTo(int,java.lang.Long)
+    public abstract boolean zoomToFixing(int,int,int,java.lang.Long)
+    public abstract boolean zoomTo(double,java.lang.Long)
+    public abstract boolean zoomTo(double)
+    public abstract boolean zoomToFixing(int,int,int)
+    public abstract boolean zoomToFixing(double,int,int,java.lang.Long)
+    public abstract boolean zoomToFixing(double,int,int)
+    public abstract void zoomToSpan(int,int)
+    public abstract void zoomToSpan(double,double)
+    public abstract void animateTo(org.osmdroid.api.IGeoPoint,java.lang.Double,java.lang.Long)
+    public abstract void animateTo(org.osmdroid.api.IGeoPoint,java.lang.Double,java.lang.Long,java.lang.Float)
+    public abstract void animateTo(org.osmdroid.api.IGeoPoint,java.lang.Double,java.lang.Long,java.lang.Float,java.lang.Boolean)
 org.aspectj.lang.annotation.AfterReturning:
     public abstract java.lang.String value()
     public abstract java.lang.String pointcut()
@@ -1047,6 +1149,8 @@ kotlin.text.UStringsKt:
 io.reactivex.internal.util.OpenHashSet:
     public void <init>(int)
     private static final int INT_PHI
+org.osmdroid.views.util.MyMath:
+    public static int getNextSquareNumberAbove(float)
 kotlin.reflect.KProperty$Accessor:
     public abstract kotlin.reflect.KProperty getProperty()
 com.bumptech.glide.request.target.CustomViewTarget$1:
@@ -1068,6 +1172,8 @@ io.reactivex.internal.operators.completable.CompletableAmb:
     public void <init>(io.reactivex.CompletableSource[],java.lang.Iterable)
 com.xuexiang.xui.widget.statelayout.StatefulLayout$2:
     void <init>(com.xuexiang.xui.widget.statelayout.StatefulLayout,int)
+org.osmdroid.tileprovider.modules.MapTileModuleProviderBase$TileLoader:
+    protected android.graphics.drawable.Drawable loadTile(org.osmdroid.tileprovider.MapTileRequestState)
 kotlin.collections.MapWithDefault:
     public abstract java.util.Map getMap()
     public abstract java.lang.Object getOrImplicitDefault(java.lang.Object)
@@ -1097,6 +1203,10 @@ com.xuexiang.xrouter.launcher._XRouter$5:
     void <init>(com.xuexiang.xrouter.launcher._XRouter,androidx.fragment.app.Fragment,int,com.xuexiang.xrouter.facade.callback.NavigationCallback,com.xuexiang.xrouter.facade.Postcard)
 com.xuexiang.xui.widget.dialog.bottomsheet.BottomSheet$BottomListSheetBuilder$1:
     void <init>(com.xuexiang.xui.widget.dialog.bottomsheet.BottomSheet$BottomListSheetBuilder)
+org.osmdroid.tileprovider.BitmapPool:
+    public void applyReusableOptions(android.graphics.BitmapFactory$Options)
+    public android.graphics.Bitmap obtainBitmapFromPool()
+    public void clearBitmapPool()
 com.xuexiang.xui.widget.picker.widget.utils.LunarCalendarUtils:
     public static int[] solarToLunar(int,int,int)
     public static int[] solarToLunarDeprecated(int,int,int)
@@ -1143,6 +1253,8 @@ com.xuexiang.xutil.common.LanguageUtils:
     private static final java.lang.String URDU_LANGUAGE
     private static final java.lang.String UG_LANGUAGE
     private static final java.lang.String EN_LANGUAGE
+org.osmdroid.util.MapTileAreaBorderComputer:
+    public int getBorder()
 com.zzhoujay.richtext.ImageHolder:
     public void setSource(java.lang.String)
     public boolean success()
@@ -1170,6 +1282,8 @@ io.reactivex.internal.operators.flowable.FlowableIntervalRange:
     public void <init>(long,long,long,long,java.util.concurrent.TimeUnit,io.reactivex.Scheduler)
 io.reactivex.internal.operators.single.SingleCache:
     public void <init>(io.reactivex.SingleSource)
+org.osmdroid.tileprovider.modules.MapTileFilesystemProvider:
+    public void <init>(org.osmdroid.tileprovider.IRegisterReceiver)
 com.xuexiang.xui.widget.textview.supertextview.CommonTextView$7:
     void <init>(com.xuexiang.xui.widget.textview.supertextview.CommonTextView)
 io.reactivex.internal.operators.completable.CompletableMerge:
@@ -1230,9 +1344,26 @@ kotlin.UIntArray:
     public static final synthetic kotlin.UIntArray box-impl(int[])
     public static final boolean equals-impl0(int[],int[])
     public boolean add-WZ4Q5Ns(int)
+org.osmdroid.views.MapController:
+    public void scrollBy(int,int)
+    public boolean zoomOutFixing(int,int)
+    public boolean zoomTo(int)
+    public boolean zoomTo(int,java.lang.Long)
+    public boolean zoomToFixing(int,int,int,java.lang.Long)
+    public boolean zoomTo(double)
+    public boolean zoomToFixing(double,int,int)
+    public boolean zoomToFixing(int,int,int)
 com.bumptech.glide.load.resource.bitmap.CircleCrop:
     private static final int VERSION
     private static final java.lang.String ID
+org.osmdroid.views.overlay.OverlayLayoutParams:
+    public static int getMaskedValue(int,int,int[])
+    public static final int LEFT
+    public static final int RIGHT
+    public static final int CENTER_HORIZONTAL
+    public static final int TOP
+    public static final int BOTTOM
+    public static final int CENTER_VERTICAL
 kotlin.jvm.functions.Function11:
     public abstract java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
 com.xuexiang.xui.utils.Utils:
@@ -1249,6 +1380,9 @@ com.xuexiang.xui.utils.Utils:
     private static final java.lang.String STATUS_BAR_HEIGHT_RES_NAME
 io.github.inflationx.viewpump.InflateRequest$Companion:
     public final io.github.inflationx.viewpump.InflateRequest$Builder builder()
+org.osmdroid.tileprovider.tilesource.BitmapTileSourceBase:
+    public void <init>(java.lang.String,int,int,int,java.lang.String)
+    public int ordinal()
 okhttp3.OkHttpClient$Builder:
     public okhttp3.OkHttpClient$Builder callTimeout(long,java.util.concurrent.TimeUnit)
     public okhttp3.OkHttpClient$Builder callTimeout(java.time.Duration)
@@ -1394,6 +1528,12 @@ com.Route.project.core.BaseSimpleListFragment:
 com.just.agentweb.js.BaseJsAccessEntrace:
     public void callJs(java.lang.String)
     public void quickCallJs(java.lang.String)
+org.osmdroid.views.drawing.OsmBitmapShader:
+    public void <init>(android.graphics.Bitmap,android.graphics.Shader$TileMode,android.graphics.Shader$TileMode)
+    public void onDrawCycle(org.osmdroid.views.Projection)
+    private final android.graphics.Matrix mMatrix
+    private int mBitmapWidth
+    private int mBitmapHeight
 org.aspectj.lang.annotation.DeclareAnnotation:
     public abstract java.lang.String value()
 io.reactivex.CompletableEmitter:
@@ -1578,8 +1718,20 @@ kotlin.jvm.internal.IntSpreadBuilder:
     public final void add(int)
     public final int[] toArray()
     private final int[] values
+org.osmdroid.views.overlay.OverlayWithIW:
+    public void <init>(android.content.Context)
+    public void setSnippet(java.lang.String)
+    public void setSubDescription(java.lang.String)
+    public java.lang.Object getRelatedObject()
+    public void setId(java.lang.String)
+    public java.lang.String getId()
+    public void setInfoWindow(org.osmdroid.views.overlay.infowindow.InfoWindow)
+    public org.osmdroid.views.overlay.infowindow.InfoWindow getInfoWindow()
+    protected java.lang.String mId
 io.reactivex.internal.operators.flowable.FlowableJoin:
     public void <init>(io.reactivex.Flowable,org.reactivestreams.Publisher,io.reactivex.functions.Function,io.reactivex.functions.Function,io.reactivex.functions.BiFunction)
+org.osmdroid.config.Configuration:
+    public static void setConfigurationProvider(org.osmdroid.config.IConfigurationProvider)
 com.xuexiang.xui.widget.imageview.strategy.IImageLoadStrategy:
     public abstract void loadImage(android.widget.ImageView,java.lang.Object,com.xuexiang.xui.widget.imageview.strategy.ILoadListener)
     public abstract void loadGifImage(android.widget.ImageView,java.lang.Object)
@@ -1643,6 +1795,33 @@ com.xuexiang.xui.widget.shadow.ShadowDrawable:
     public static void setShadowDrawable(android.view.View,int[],int,int,int,int,int)
     public static final int SHAPE_RECTANGLE
     public static final int SHAPE_ROUND
+org.osmdroid.views.MapView:
+    public void <init>(android.content.Context,org.osmdroid.tileprovider.MapTileProviderBase)
+    public void <init>(android.content.Context,org.osmdroid.tileprovider.MapTileProviderBase,android.os.Handler)
+    void setMapCenter(int,int)
+    void setMapCenter(double,double)
+    public void resetTilesScaleFactor()
+    public void zoomToBoundingBox(org.osmdroid.util.BoundingBox,boolean)
+    public double zoomToBoundingBox(org.osmdroid.util.BoundingBox,boolean,int,double,java.lang.Long)
+    public void zoomToBoundingBox(org.osmdroid.util.BoundingBox,boolean,int)
+    public double getZoomLevel(boolean)
+    boolean zoomIn()
+    boolean zoomInFixing(org.osmdroid.api.IGeoPoint)
+    boolean zoomInFixing(int,int)
+    boolean zoomOut()
+    boolean zoomOutFixing(org.osmdroid.api.IGeoPoint)
+    boolean zoomOutFixing(int,int)
+    public boolean useDataConnection()
+    public boolean isScrollableAreaLimitLatitude()
+    public boolean isScrollableAreaLimitLongitude()
+    public void invalidateMapCoordinates(android.graphics.Rect)
+    public void invalidateMapCoordinates(int,int,int,int)
+    public void removeOnFirstLayoutListener(org.osmdroid.views.MapView$OnFirstLayoutListener)
+    public void onPause()
+    public void onResume()
+    public void addMapListener(org.osmdroid.events.MapListener)
+    public void removeMapListener(org.osmdroid.events.MapListener)
+    public boolean isFlingEnabled()
 com.xuexiang.xui.widget.imageview.edit.ScaleGestureDetector:
     void <init>(com.xuexiang.xui.widget.imageview.edit.ScaleGestureDetector$OnScaleGestureListener)
     public float getCurrentSpanX()
@@ -1825,6 +2004,12 @@ com.xuexiang.xui.utils.SnackbarUtils:
     public void show()
     private static final java.lang.String TAG
     private static java.lang.ref.WeakReference mSnackbarWeakRef
+org.osmdroid.tileprovider.modules.SqliteArchiveTileWriter:
+    public void <init>(java.lang.String)
+    public java.lang.Long getExpirationTimestamp(org.osmdroid.tileprovider.tilesource.ITileSource,long)
+    public android.graphics.drawable.Drawable loadTile(org.osmdroid.tileprovider.tilesource.ITileSource,long)
+    final java.io.File db_file
+    final int questimate
 com.xuexiang.xui.widget.flowlayout.FlowTagLayout$OnInitSelectedPosition:
     public abstract boolean isSelectedPosition(int)
 com.xuexiang.xui.widget.button.shadowbutton.RippleShadowShadowButton:
@@ -1883,6 +2068,10 @@ com.xuexiang.xui.widget.banner.widget.banner.BannerItem:
     public com.xuexiang.xui.widget.banner.widget.banner.BannerItem setImgUrl(java.lang.String)
     public java.lang.String getTitle()
     public com.xuexiang.xui.widget.banner.widget.banner.BannerItem setTitle(java.lang.String)
+org.osmdroid.events.DelayedMapListener:
+    public void <init>(org.osmdroid.events.MapListener,long)
+    public void <init>(org.osmdroid.events.MapListener)
+    protected static final int DEFAULT_DELAY
 com.xuexiang.xui.widget.progress.ratingbar.RotationRatingBar$1:
     void <init>(com.xuexiang.xui.widget.progress.ratingbar.RotationRatingBar,com.xuexiang.xui.widget.progress.ratingbar.PartialView)
     final synthetic com.xuexiang.xui.widget.progress.ratingbar.RotationRatingBar this$0
@@ -1919,11 +2108,20 @@ io.reactivex.internal.operators.single.SingleDoFinally:
     public void <init>(io.reactivex.SingleSource,io.reactivex.functions.Action)
 com.bumptech.glide.load.data.ExifOrientationStream:
     private static final int SEGMENT_START_POSITION
+org.osmdroid.views.drawing.MapSnapshotHandler:
+    public void <init>(org.osmdroid.views.drawing.MapSnapshot)
 com.xuexiang.xui.widget.behavior.AnimateHelper:
     public static final int STATE_SHOW
     public static final int STATE_HIDE
 io.reactivex.internal.operators.maybe.MaybeTimeoutPublisher:
     public void <init>(io.reactivex.MaybeSource,org.reactivestreams.Publisher,io.reactivex.MaybeSource)
+org.osmdroid.library.BuildConfig:
+    public static final boolean DEBUG
+    public static final java.lang.String APPLICATION_ID
+    public static final java.lang.String BUILD_TYPE
+    public static final java.lang.String FLAVOR
+    public static final int VERSION_CODE
+    public static final java.lang.String VERSION_NAME
 android.support.v4.media.session.MediaSessionCompat$MediaSessionImplBase$MediaSessionStub:
     void <init>(android.support.v4.media.session.MediaSessionCompat$MediaSessionImplBase)
 kotlin.concurrent.ThreadsKt$thread$thread$1:
@@ -2045,6 +2243,12 @@ kotlin.UInt:
     public static final int MAX_VALUE
     public static final int SIZE_BYTES
     public static final int SIZE_BITS
+org.osmdroid.tileprovider.MapTileProviderArray:
+    protected boolean isDowngradedMode()
+    public org.osmdroid.tileprovider.modules.IFilesystemCache getTileWriter()
+    public long getQueueSize()
+    private static final int WORKING_STATUS_STARTED
+    private static final int WORKING_STATUS_FOUND
 kotlin.io.FilesKt__FilePathComponentsKt:
     private static final int getRootLength$FilesKt__FilePathComponentsKt(java.lang.String)
     public static final java.lang.String getRootName(java.io.File)
@@ -2148,6 +2352,8 @@ com.bumptech.glide.disklrucache.DiskLruCache$Value:
 kotlin.comparisons.ReversedComparator:
     public void <init>(java.util.Comparator)
     public final java.util.Comparator getComparator()
+org.osmdroid.util.DuringSplashScreen:
+    public void runDuringSplashScreen()
 kotlin.UShort:
     public static synthetic void data$annotations()
     private static final int compareTo-7apg3OU(short,byte)
@@ -2253,6 +2459,21 @@ kotlin.UByteArrayKt:
 butterknife.OnItemSelected:
     public abstract int[] value()
     public abstract butterknife.OnItemSelected$Callback callback()
+org.osmdroid.views.overlay.TilesOverlay:
+    public void <init>(org.osmdroid.tileprovider.MapTileProviderBase,android.content.Context)
+    public void setLoadingDrawable(android.graphics.drawable.Drawable)
+    public boolean useDataConnection()
+    public void setOptionsMenuEnabled(boolean)
+    public boolean isOptionsMenuEnabled()
+    public boolean onCreateOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public boolean onPrepareOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public boolean onOptionsItemSelected(android.view.MenuItem,int,org.osmdroid.views.MapView)
+    public int getLoadingBackgroundColor()
+    public int getLoadingLineColor()
+    public void setLoadingLineColor(int)
+    public void setColorFilter(android.graphics.ColorFilter)
+    public boolean isHorizontalWrapEnabled()
+    public boolean isVerticalWrapEnabled()
 com.xuexiang.xhttp2.callback.CallClazzProxy:
     public java.lang.reflect.Type getRawType()
 kotlin.coroutines.jvm.internal.DebugMetadata:
@@ -2313,6 +2534,8 @@ com.zzhoujay.richtext.RichText:
     private static final java.lang.String TAG_TARGET
 io.reactivex.internal.operators.maybe.MaybeDoFinally:
     public void <init>(io.reactivex.MaybeSource,io.reactivex.functions.Action)
+org.osmdroid.views.overlay.milestones.MilestonePixelDistanceLister:
+    public void <init>(double,double)
 com.xuexiang.xui.adapter.recyclerview.GridDividerItemDecoration:
     public void <init>(android.content.Context,int)
     public void <init>(android.content.Context,int,int)
@@ -4044,6 +4267,8 @@ com.bumptech.glide.load.resource.bitmap.VideoDecoder:
     private static final java.lang.String TAG
     public static final long DEFAULT_FRAME
     static final int DEFAULT_FRAME_OPTION
+org.osmdroid.views.overlay.milestones.MilestoneManager:
+    public void <init>(org.osmdroid.views.overlay.milestones.MilestoneLister,org.osmdroid.views.overlay.milestones.MilestoneDisplayer)
 com.zzhoujay.markdown.parser.TagFinder:
     public abstract int findCount(int,java.lang.String,int)
 com.xuexiang.xui.widget.imageview.edit.BrushDrawingView:
@@ -4132,6 +4357,12 @@ android.support.v4.media.MediaBrowserCompat$ServiceBinderWrapper:
     void getMediaItem(java.lang.String,android.support.v4.os.ResultReceiver,android.os.Messenger)
     void search(java.lang.String,android.os.Bundle,android.support.v4.os.ResultReceiver,android.os.Messenger)
     void sendCustomAction(java.lang.String,android.os.Bundle,android.support.v4.os.ResultReceiver,android.os.Messenger)
+org.osmdroid.tileprovider.modules.MapTileDownloader:
+    public void <init>(org.osmdroid.tileprovider.tilesource.ITileSource)
+    public void <init>(org.osmdroid.tileprovider.tilesource.ITileSource,org.osmdroid.tileprovider.modules.IFilesystemCache)
+    private long computeExpirationTime(java.lang.String)
+    protected long computeExpirationTime(java.lang.Long)
+    public void setTileDownloader(org.osmdroid.tileprovider.modules.TileDownloader)
 com.scwang.smartrefresh.layout.header.TwoLevelHeader:
     public com.scwang.smartrefresh.layout.header.TwoLevelHeader setMaxRage(float)
     public com.scwang.smartrefresh.layout.header.TwoLevelHeader setEnablePullToCloseTwoLevel(boolean)
@@ -4373,6 +4604,18 @@ io.reactivex.Maybe:
     public final io.reactivex.Maybe zipWith(io.reactivex.MaybeSource,io.reactivex.functions.BiFunction)
     public final io.reactivex.observers.TestObserver test()
     public final io.reactivex.observers.TestObserver test(boolean)
+org.osmdroid.util.GEMFFile:
+    public void <init>(java.lang.String,java.util.List)
+    public java.util.LinkedHashMap getSources()
+    public void selectSource(int)
+    public void acceptAnySource()
+    public java.util.Set getZoomLevels()
+    private static final long FILE_SIZE_LIMIT
+    private static final int FILE_COPY_BUFFER_SIZE
+    private static final int VERSION
+    private static final int TILE_SIZE
+    private static final int U32_SIZE
+    private static final int U64_SIZE
 android.support.v4.media.session.MediaControllerCompatApi23$TransportControls:
     public static void playFromUri(java.lang.Object,android.net.Uri,android.os.Bundle)
 io.github.inflationx.viewpump.Interceptor$Companion$invoke$1:
@@ -4414,6 +4657,8 @@ com.xuexiang.xui.widget.textview.span.AlignMiddleImageSpan:
     public static final int ALIGN_MIDDLE
 com.bumptech.glide.load.model.stream.MediaStoreVideoThumbLoader$Factory:
     public void teardown()
+org.osmdroid.tileprovider.MapTileProviderBase$ZoomOutTileLooper:
+    private static final int MAX_ZOOM_OUT_DIFF
 org.aspectj.lang.JoinPoint:
     public abstract java.lang.String toString()
     public abstract java.lang.String toShortString()
@@ -4605,6 +4850,14 @@ com.xuexiang.xui.widget.imageview.crop.CropImageType:
     public static final int CROPIMAGE_GRID_OFF
     public static final int CROPIMAGE_GRID_ON_TOUCH
     public static final int CROPIMAGE_GRID_ON
+org.osmdroid.tileprovider.modules.DatabaseFileArchive:
+    private void <init>(android.database.sqlite.SQLiteDatabase)
+    public static org.osmdroid.tileprovider.modules.DatabaseFileArchive getDatabaseFileArchive(java.io.File)
+    public java.util.Set getTileSources()
+    public static final java.lang.String TABLE
+    public static final java.lang.String COLUMN_PROVIDER
+    public static final java.lang.String COLUMN_TILE
+    public static final java.lang.String COLUMN_KEY
 okhttp3.Cache:
     public void initialize()
     public void delete()
@@ -4819,8 +5072,12 @@ io.reactivex.internal.operators.flowable.BlockingFlowableLatest:
     public void <init>(org.reactivestreams.Publisher)
 kotlin.sequences.SequencesKt__SequencesJVMKt:
     private static final kotlin.sequences.Sequence asSequence(java.util.Enumeration)
+org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerDialog:
+    public void <init>(android.content.Context,org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask)
 com.xuexiang.xui.widget.textview.supertextview.CommonTextView$5:
     void <init>(com.xuexiang.xui.widget.textview.supertextview.CommonTextView)
+org.osmdroid.tileprovider.util.StreamUtils:
+    public static final int IO_BUFFER_SIZE
 kotlin.Deprecated:
     public abstract java.lang.String message()
     public abstract kotlin.ReplaceWith replaceWith()
@@ -4923,15 +5180,50 @@ org.aspectj.internal.lang.annotation.ajcDeclareAnnotation:
     public abstract java.lang.String kind()
 kotlin.text.StringsKt___StringsKt$asIterable$$inlined$Iterable$1:
     public void <init>(java.lang.CharSequence)
+org.osmdroid.views.util.constants.MathConstants:
+    public static final double DEG2RAD
+    public static final double RAD2DEG
+    public static final double PI
+    public static final double PI_2
+    public static final double PI_4
 com.Route.project.utils.update.XHttpUpdateHttpServiceImpl:
     public void asyncGet(java.lang.String,java.util.Map,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
     public void asyncPost(java.lang.String,java.util.Map,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
+org.osmdroid.tileprovider.modules.SqlTileWriter:
+    public static void setCleanupOnStart(boolean)
+    protected static java.lang.String extractXFromKeyInSQL(int)
+    protected static java.lang.String extractYFromKeyInSQL(int)
+    public boolean purgeCache()
+    public boolean purgeCache(java.lang.String)
+    public int[] importFromFileCache(boolean)
+    public long getRowCount(java.lang.String)
+    public long getRowCount(java.lang.String,int,java.util.Collection,java.util.Collection)
+    public long getSize()
+    public long getFirstExpiry()
+    public java.lang.Long getExpirationTimestamp(org.osmdroid.tileprovider.tilesource.ITileSource,long)
+    public void runDuringSplashScreen()
+    protected java.lang.StringBuilder getWhereClause(int,android.graphics.Rect)
+    protected java.lang.StringBuilder getWhereClause(int,java.util.Collection,java.util.Collection)
+    public long delete(java.lang.String,int,java.util.Collection,java.util.Collection)
+    public static final java.lang.String DATABASE_FILENAME
+    public static final java.lang.String COLUMN_EXPIRES
+    public static final java.lang.String COLUMN_EXPIRES_INDEX
+    private static final java.lang.String primaryKey
 com.xuexiang.xhttp2.request.BaseRequest$3:
     void <init>(com.xuexiang.xhttp2.request.BaseRequest,com.xuexiang.xhttp2.callback.CallBack)
     final synthetic com.xuexiang.xhttp2.request.BaseRequest this$0
 okio.Buffer$UnsafeCursor:
     public final long resizeBuffer(long)
     public final long expandBuffer(int)
+org.osmdroid.views.overlay.FolderOverlay:
+    public void <init>(android.content.Context)
+    public void setName(java.lang.String)
+    public java.lang.String getName()
+    public void setDescription(java.lang.String)
+    public java.lang.String getDescription()
+    public java.util.List getItems()
+    public boolean remove(org.osmdroid.views.overlay.Overlay)
+    public void closeAllInfoWindows()
 com.xuexiang.xui.widget.imageview.edit.SaveSettings$Builder:
     static synthetic boolean access$000(com.xuexiang.xui.widget.imageview.edit.SaveSettings$Builder)
     static synthetic boolean access$100(com.xuexiang.xui.widget.imageview.edit.SaveSettings$Builder)
@@ -4991,6 +5283,8 @@ io.reactivex.internal.schedulers.SchedulerPoolFactory:
     public static void shutdown()
     static final java.lang.String PURGE_ENABLED_KEY
     static final java.lang.String PURGE_PERIOD_SECONDS_KEY
+com.Route.project.modules.map.UI.BaseMap:
+    private static final int REQUEST_PERMISSION_CODE
 kotlin.jvm.functions.Function22:
     public abstract java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
 io.reactivex.internal.operators.flowable.FlowableReduceMaybe:
@@ -5151,10 +5445,24 @@ com.xuexiang.xui.widget.tabbar.vertical.ITabView$TabBadge$Builder:
     public com.xuexiang.xui.widget.tabbar.vertical.ITabView$TabBadge$Builder setBadgeTextSize(float)
     public com.xuexiang.xui.widget.tabbar.vertical.ITabView$TabBadge$Builder setBadgeText(java.lang.String)
     public com.xuexiang.xui.widget.tabbar.vertical.ITabView$TabBadge$Builder setGravityOffset(int,int)
+org.osmdroid.tileprovider.tilesource.bing.ImageryMetaDataResource:
+    public static org.osmdroid.tileprovider.tilesource.bing.ImageryMetaDataResource getDefaultInstance()
+    private static final java.lang.String IMAGE_WIDTH
+    private static final java.lang.String IMAGE_HEIGHT
+    private static final java.lang.String IMAGE_URL
+    private static final java.lang.String IMAGE_URL_SUBDOMAINS
+    private static final java.lang.String ZOOM_MIN
+    private static final java.lang.String ZOOM_MAX
+    private static final java.lang.String COPYRIGHT
 com.zzhoujay.richtext.exceptions.BitmapInputStreamNullPointException:
     private static final java.lang.String MESSAGE
 com.xuexiang.xupdate.proxy.IFileEncryptor:
     public abstract java.lang.String encryptFile(java.io.File)
+org.osmdroid.tileprovider.tilesource.TileSourceFactory:
+    public static boolean containsTileSource(java.lang.String)
+    public static org.osmdroid.tileprovider.tilesource.ITileSource getTileSource(int)
+    public static void addTileSource(org.osmdroid.tileprovider.tilesource.ITileSource)
+    public static int removeTileSources(java.lang.String)
 okhttp3.internal.cache.DiskLruCache$Editor:
     public okio.Source newSource(int)
     public void abortUnlessCommitted()
@@ -5341,6 +5649,32 @@ com.xuexiang.xutil.common.logger.Logger:
     public static final java.lang.String DEFAULT_LOG_TAG
     private static final int MAX_LOG_PRIORITY
     private static final int MIN_LOG_PRIORITY
+org.osmdroid.views.overlay.Polygon:
+    public static java.util.ArrayList pointsAsCircle(org.osmdroid.util.GeoPoint,double)
+    public static java.util.ArrayList pointsAsRect(org.osmdroid.util.BoundingBox)
+    public static java.util.ArrayList pointsAsRect(org.osmdroid.util.GeoPoint,double,double)
+    public int getFillColor()
+    public int getStrokeColor()
+    public float getStrokeWidth()
+    public android.graphics.Paint getOutlinePaint()
+    public android.graphics.Paint getFillPaint()
+    public void setGeodesic(boolean)
+    public boolean isGeodesic()
+    public java.util.List getPoints()
+    public boolean isVisible()
+    public void setFillColor(int)
+    public void setStrokeColor(int)
+    public void setStrokeWidth(float)
+    public void setVisible(boolean)
+    public void setPoints(java.util.List)
+    public void addPoint(org.osmdroid.util.GeoPoint)
+    public void setHoles(java.util.List)
+    public java.util.List getHoles()
+    public org.osmdroid.util.GeoPoint getInfoWindowLocation()
+    protected void setDefaultInfoWindowLocation()
+    public void setMilestoneManagers(java.util.List)
+    public void setOnClickListener(org.osmdroid.views.overlay.Polygon$OnClickListener)
+    public double getDistance()
 com.bumptech.glide.load.engine.DataCacheKey:
     com.bumptech.glide.load.Key getSourceKey()
 io.reactivex.internal.operators.maybe.MaybeAmb:
@@ -5380,6 +5714,21 @@ com.xuexiang.xutil.XUtil:
 okhttp3.Credentials:
     public static java.lang.String basic(java.lang.String,java.lang.String)
     public static java.lang.String basic(java.lang.String,java.lang.String,java.nio.charset.Charset)
+org.osmdroid.tileprovider.tilesource.ThunderforestTileSource:
+    public static final java.lang.String mapName(int)
+    public void <init>(android.content.Context,int)
+    public static boolean haveMapId(android.content.Context)
+    public final java.lang.String retrieveMapId(android.content.Context)
+    private static final java.lang.String THUNDERFOREST_MAPID
+    public static final int CYCLE
+    public static final int TRANSPORT
+    public static final int LANDSCAPE
+    public static final int OUTDOORS
+    public static final int TRANSPORT_DARK
+    public static final int SPINAL_MAP
+    public static final int PIONEER
+    public static final int MOBILE_ATLAS
+    public static final int NEIGHBOURHOOD
 kotlin.jvm.internal.FloatCompanionObject:
     public final float getMIN_VALUE()
     public final float getMAX_VALUE()
@@ -5571,6 +5920,15 @@ android.support.v4.media.session.MediaSessionCompatApi22:
     public static void setRatingType(java.lang.Object,int)
 io.reactivex.internal.operators.flowable.FlowableRetryPredicate:
     public void <init>(io.reactivex.Flowable,long,io.reactivex.functions.Predicate)
+org.osmdroid.views.drawing.MapSnapshot:
+    public void <init>(org.osmdroid.views.drawing.MapSnapshot$MapSnapshotable,int,org.osmdroid.views.MapView)
+    public void <init>(org.osmdroid.views.drawing.MapSnapshot$MapSnapshotable,int,org.osmdroid.tileprovider.MapTileProviderBase,java.util.List,org.osmdroid.views.Projection)
+    public android.graphics.Bitmap getBitmap()
+    public static final int INCLUDE_FLAG_UPTODATE
+    public static final int INCLUDE_FLAG_EXPIRED
+    public static final int INCLUDE_FLAG_SCALED
+    public static final int INCLUDE_FLAG_NOTFOUND
+    public static final int INCLUDE_FLAGS_ALL
 kotlin.sequences.SequencesKt___SequencesKt$sortedWith$1:
     void <init>(kotlin.sequences.Sequence,java.util.Comparator)
 com.zzhoujay.richtext.RichTextConfig:
@@ -5890,6 +6248,9 @@ com.github.anrwatchdog.ANRWatchDog:
     public com.github.anrwatchdog.ANRWatchDog setLogThreadsWithoutStackTrace(boolean)
     public com.github.anrwatchdog.ANRWatchDog setIgnoreDebugger(boolean)
     private static final int DEFAULT_ANR_TIMEOUT
+org.osmdroid.views.overlay.MapEventsOverlay:
+    public void <init>(android.content.Context,org.osmdroid.events.MapEventsReceiver)
+    public void <init>(org.osmdroid.events.MapEventsReceiver)
 com.xuexiang.xrouter.core.LogisticsCenter:
     public static void suspend()
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$nullsFirst$1:
@@ -6304,8 +6665,19 @@ com.Route.project.modules.todolist.UI.TimeActivity:
 org.aspectj.internal.lang.reflect.PointcutBasedPerClauseImpl:
     public void <init>(org.aspectj.lang.reflect.PerClauseKind,java.lang.String)
     public org.aspectj.lang.reflect.PointcutExpression getPointcutExpression()
+org.osmdroid.tileprovider.util.StorageUtils:
+    public static java.io.File getStorage(android.content.Context)
+    public static boolean isAvailable()
+    public static java.lang.String getSdCardPath()
+    public static boolean isWritable()
+    public static java.util.Map getAllStorageLocations()
+    public static final java.lang.String SD_CARD
+    public static final java.lang.String EXTERNAL_SD_CARD
+    private static final java.lang.String TAG
 io.reactivex.functions.IntFunction:
     public abstract java.lang.Object apply(int)
+org.osmdroid.views.overlay.milestones.MilestoneLineDisplayer$1:
+    void <init>(org.osmdroid.views.overlay.milestones.MilestoneLineDisplayer,int)
 org.reactivestreams.FlowAdapters$ReactiveToFlowProcessor:
     public void <init>(java.util.concurrent.Flow$Processor)
 com.Route.project.core.webview.UIController:
@@ -6333,6 +6705,20 @@ io.reactivex.flowables.ConnectableFlowable:
     public io.reactivex.Flowable autoConnect()
     public io.reactivex.Flowable autoConnect(int)
     public io.reactivex.Flowable autoConnect(int,io.reactivex.functions.Consumer)
+org.osmdroid.views.overlay.OverlayManager:
+    public abstract org.osmdroid.views.overlay.Overlay get(int)
+    public abstract int size()
+    public abstract void add(int,org.osmdroid.views.overlay.Overlay)
+    public abstract org.osmdroid.views.overlay.Overlay remove(int)
+    public abstract org.osmdroid.views.overlay.Overlay set(int,org.osmdroid.views.overlay.Overlay)
+    public abstract org.osmdroid.views.overlay.TilesOverlay getTilesOverlay()
+    public abstract java.lang.Iterable overlaysReversed()
+    public abstract void setOptionsMenusEnabled(boolean)
+    public abstract boolean onCreateOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public abstract boolean onPrepareOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public abstract boolean onOptionsItemSelected(android.view.MenuItem,int,org.osmdroid.views.MapView)
+    public abstract void onPause()
+    public abstract void onResume()
 com.xuexiang.xui.widget.picker.widget.listener.CustomListener:
     public abstract void customLayout(android.view.View)
 com.just.agentweb.core.client.MiddlewareWebClientBase:
@@ -6343,6 +6729,8 @@ io.reactivex.internal.operators.completable.CompletableResumeNext:
     public void <init>(io.reactivex.CompletableSource,io.reactivex.functions.Function)
 com.bumptech.glide.load.Option:
     public static com.bumptech.glide.load.Option disk(java.lang.String,com.bumptech.glide.load.Option$CacheKeyUpdater)
+org.osmdroid.views.overlay.gestures.RotationGestureDetector:
+    public void <init>(org.osmdroid.views.overlay.gestures.RotationGestureDetector$RotationListener)
 kotlin.sequences.SequencesKt__SequencesKt:
     private static final kotlin.sequences.Sequence Sequence(kotlin.jvm.functions.Function0)
     public static final kotlin.sequences.Sequence asSequence(java.util.Iterator)
@@ -6665,6 +7053,8 @@ kotlin.jvm.functions.FunctionN:
 com.bumptech.glide.util.MultiClassKey:
     public void <init>(java.lang.Class,java.lang.Class)
     public void set(java.lang.Class,java.lang.Class)
+org.osmdroid.views.overlay.milestones.MilestoneDisplayer:
+    public void <init>(double,boolean)
 io.reactivex.internal.operators.flowable.FlowableSkipLast:
     public void <init>(io.reactivex.Flowable,int)
 com.xuexiang.xui.widget.textview.label.LabelTextView:
@@ -6679,6 +7069,13 @@ com.xuexiang.xui.widget.progress.loading.ARCLoadingView:
     private static final int DEFAULT_ARC_WIDTH
     private static final int DEFAULT_SPEED_OF_DEGREE
     private static final int DEFAULT_ARC_DEGREE
+org.osmdroid.tileprovider.tilesource.bing.ImageryMetaData:
+    private static final java.lang.String STATUS_CODE
+    private static final java.lang.String AUTH_RESULT_CODE
+    private static final java.lang.String AUTH_RESULT_CODE_VALID
+    private static final java.lang.String RESOURCE_SETS
+    private static final java.lang.String ESTIMATED_TOTAL
+    private static final java.lang.String RESOURCE
 org.aspectj.runtime.reflect.ConstructorSignatureImpl:
     void <init>(int,java.lang.Class,java.lang.Class[],java.lang.String[],java.lang.Class[])
     void <init>(java.lang.String)
@@ -6692,6 +7089,12 @@ org.aspectj.internal.lang.reflect.DeclarePrecedenceImpl:
     private org.aspectj.lang.reflect.TypePattern[] precedenceList
 io.reactivex.internal.operators.flowable.FlowableWindowBoundarySelector:
     public void <init>(io.reactivex.Flowable,org.reactivestreams.Publisher,io.reactivex.functions.Function,int)
+org.osmdroid.views.overlay.IOverlayMenuProvider:
+    public abstract boolean onCreateOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public abstract boolean onPrepareOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public abstract boolean onOptionsItemSelected(android.view.MenuItem,int,org.osmdroid.views.MapView)
+    public abstract boolean isOptionsMenuEnabled()
+    public abstract void setOptionsMenuEnabled(boolean)
 kotlin.properties.Delegates$observable$1:
     public void <init>(kotlin.jvm.functions.Function3,java.lang.Object,java.lang.Object)
     protected void afterChange(kotlin.reflect.KProperty,java.lang.Object,java.lang.Object)
@@ -6728,6 +7131,16 @@ io.reactivex.internal.operators.mixed.FlowableSwitchMapSingle:
     public void <init>(io.reactivex.Flowable,io.reactivex.functions.Function,boolean)
 io.reactivex.internal.operators.maybe.MaybeUsing:
     public void <init>(java.util.concurrent.Callable,io.reactivex.functions.Function,io.reactivex.functions.Consumer,boolean)
+org.osmdroid.config.DefaultConfigurationProvider:
+    public void setCacheMapTileCount(short)
+    public void setHttpHeaderDateTimeFormat(java.text.SimpleDateFormat)
+    public void setHttpProxy(java.net.Proxy)
+    public void setUserAgentHttpHeader(java.lang.String)
+    public void setExpirationOverrideDuration(java.lang.Long)
+    public void setTileGCFrequencyInMillis(long)
+    public void setTileGCBulkSize(int)
+    public void setTileGCBulkPauseInMillis(long)
+    public static final java.lang.String DEFAULT_USER_AGENT
 com.xuexiang.xutil.common.ClickUtils:
     public static boolean isFastDoubleClick(android.view.View)
     public static boolean isFastDoubleClick(android.view.View,long)
@@ -7078,6 +7491,9 @@ com.xuexiang.xui.widget.imageview.photoview.gestures.CupcakeGestureDetector:
     private static final java.lang.String LOG_TAG
 io.reactivex.internal.operators.flowable.FlowableInternalHelper$SimpleGenerator:
     void <init>(io.reactivex.functions.Consumer)
+org.osmdroid.api.IGeoPoint:
+    public abstract int getLatitudeE6()
+    public abstract int getLongitudeE6()
 io.reactivex.internal.operators.maybe.MaybeToFlowable:
     public io.reactivex.MaybeSource source()
 kotlin.jvm.functions.Function20:
@@ -7106,6 +7522,9 @@ com.bumptech.glide.load.engine.executor.GlideExecutor$DefaultThreadFactory:
     private static final int DEFAULT_PRIORITY
 com.bumptech.glide.manager.SupportRequestManagerFragment:
     private static final java.lang.String TAG
+org.osmdroid.views.util.PathProjection:
+    public static android.graphics.Path toPixels(org.osmdroid.views.Projection,java.util.List,android.graphics.Path)
+    public static android.graphics.Path toPixels(org.osmdroid.views.Projection,java.util.List,android.graphics.Path,boolean)
 kotlin.jvm.internal.ShortSpreadBuilder:
     public void <init>(int)
     protected int getSize(short[])
@@ -7125,6 +7544,8 @@ com.bumptech.glide.load.resource.bitmap.BitmapTransitionOptions:
     public com.bumptech.glide.load.resource.bitmap.BitmapTransitionOptions crossFade(com.bumptech.glide.request.transition.DrawableCrossFadeFactory)
     public com.bumptech.glide.load.resource.bitmap.BitmapTransitionOptions transitionUsing(com.bumptech.glide.request.transition.TransitionFactory)
     public com.bumptech.glide.load.resource.bitmap.BitmapTransitionOptions crossFade(com.bumptech.glide.request.transition.DrawableCrossFadeFactory$Builder)
+org.osmdroid.util.ListPointL:
+    public int size()
 io.reactivex.internal.operators.maybe.MaybeObserveOn:
     public void <init>(io.reactivex.MaybeSource,io.reactivex.Scheduler)
 com.xuexiang.xui.widget.tabbar.vertical.XTabView:
@@ -7134,6 +7555,10 @@ com.xuexiang.xui.widget.tabbar.vertical.XTabView:
     public synthetic bridge com.xuexiang.xui.widget.tabbar.vertical.ITabView setBadge(com.xuexiang.xui.widget.tabbar.vertical.ITabView$TabBadge)
 com.zzhoujay.markdown.style.CodeSpan:
     private static final float radius
+org.osmdroid.util.MapTileList:
+    public void put(int,int,int,int,int)
+    public void put(int)
+    public long[] toArray()
 com.bumptech.glide.ListPreloader$PreloadTargetQueue:
     void <init>(int)
 com.xuexiang.xui.widget.popupwindow.good.GoodView$1:
@@ -7182,12 +7607,40 @@ io.reactivex.internal.operators.flowable.FlowableGroupBy:
     public void <init>(io.reactivex.Flowable,io.reactivex.functions.Function,io.reactivex.functions.Function,int,boolean,io.reactivex.functions.Function)
 com.alibaba.android.vlayout.OrientationHelperEx$1:
     public void offsetChild(android.view.View,int)
+org.osmdroid.views.overlay.ItemizedOverlayWithFocus:
+    public void <init>(android.content.Context,java.util.List,org.osmdroid.views.overlay.ItemizedIconOverlay$OnItemGestureListener)
+    public void <init>(java.util.List,org.osmdroid.views.overlay.ItemizedIconOverlay$OnItemGestureListener,android.content.Context)
+    public void <init>(java.util.List,android.graphics.drawable.Drawable,android.graphics.drawable.Drawable,int,org.osmdroid.views.overlay.ItemizedIconOverlay$OnItemGestureListener,android.content.Context)
+    private void calculateDrawSettings()
+    public void setDescriptionBoxPadding(int)
+    public void setDescriptionBoxCornerWidth(int)
+    public void setDescriptionTitleExtraLineHeight(int)
+    public void setMarkerBackgroundColor(int)
+    public void setMarkerTitleForegroundColor(int)
+    public void setMarkerDescriptionForegroundColor(int)
+    public void setFontSize(int)
+    public void setDescriptionMaxWidth(int)
+    public void setDescriptionLineHeight(int)
+    public org.osmdroid.views.overlay.OverlayItem getFocusedItem()
+    public void setFocusedItem(int)
+    public void unSetFocusedItem()
+    public void setFocusedItem(org.osmdroid.views.overlay.OverlayItem)
+    public void setFocusItemsOnTap(boolean)
+    private final int DEFAULTMARKER_BACKGROUNDCOLOR
+    private int FONT_SIZE_DP
+    private int fontSizePixels
 com.bumptech.glide.load.resource.gif.StreamGifDecoder:
     private static final java.lang.String TAG
 org.aspectj.runtime.reflect.LockSignatureImpl:
     void <init>(java.lang.Class)
     void <init>(java.lang.String)
     public java.lang.Class getParameterType()
+org.osmdroid.util.PointL:
+    public void <init>(long,long)
+    public void <init>(org.osmdroid.util.PointL)
+    public final void offset(long,long)
+org.osmdroid.util.Distance:
+    public static double getSquaredDistanceToLine(double,double,double,double,double,double)
 com.bumptech.glide.load.resource.bitmap.FitCenter:
     private static final java.lang.String ID
 org.aspectj.runtime.reflect.FieldSignatureImpl:
@@ -7231,6 +7684,10 @@ com.zzhoujay.richtext.ig.ImageLoader:
     public abstract int onSizeReady(int,int)
     public abstract void onFailure(java.lang.Exception)
     public abstract void onResourceReady(com.zzhoujay.richtext.ig.ImageWrapper)
+org.osmdroid.tileprovider.modules.GEMFFileArchive:
+    private void <init>(java.io.File)
+    public static org.osmdroid.tileprovider.modules.GEMFFileArchive getGEMFFileArchive(java.io.File)
+    public java.util.Set getTileSources()
 com.xuexiang.xhttp2.XHttp:
     public static java.lang.Object custom(java.lang.Class)
     public static void clearCache()
@@ -7338,6 +7795,8 @@ org.aspectj.lang.Aspects:
     private static java.lang.reflect.Method checkHasAspect(java.lang.reflect.Method,java.lang.Class)
     private static final java.lang.String ASPECTOF
     private static final java.lang.String HASASPECT
+org.osmdroid.views.overlay.milestones.MilestoneLineDisplayer:
+    public void <init>(android.graphics.Paint)
 io.reactivex.internal.operators.single.SingleAmb:
     public void <init>(io.reactivex.SingleSource[],java.lang.Iterable)
 okhttp3.internal.tls.OkHostnameVerifier:
@@ -7983,6 +8442,17 @@ io.reactivex.internal.operators.flowable.FlowableLastMaybe:
     public void <init>(org.reactivestreams.Publisher)
 com.bumptech.glide.load.resource.bitmap.BitmapImageDecoderResourceDecoder:
     private static final java.lang.String TAG
+org.osmdroid.tileprovider.tilesource.MapQuestTileSource:
+    public void <init>(android.content.Context)
+    public void <init>(java.lang.String,java.lang.String)
+    public void <init>(java.lang.String,int,int,int,java.lang.String)
+    public void <init>(java.lang.String,int,int,int,java.lang.String,java.lang.String,java.lang.String)
+    public final void retrieveMapBoxMapId(android.content.Context)
+    public final void retrieveAccessToken(android.content.Context)
+    public void setMapboxMapid(java.lang.String)
+    public void setAccessToken(java.lang.String)
+    private static final java.lang.String MAPBOX_MAPID
+    private static final java.lang.String ACCESS_TOKEN
 io.reactivex.internal.operators.flowable.FlowableCache:
     public void <init>(io.reactivex.Flowable,int)
     boolean isConnected()
@@ -8024,6 +8494,10 @@ com.xuexiang.xui.widget.flowlayout.FlowTagLayout:
     public static final int FLOW_TAG_CHECKED_SINGLE
     public static final int FLOW_TAG_CHECKED_MULTI
     public static final int FLOW_TAG_DISPLAY
+org.osmdroid.tileprovider.MapTileCache:
+    public boolean containsTile(long)
+    public void setTileRemovedListener(org.osmdroid.tileprovider.MapTileCache$TileRemovedListener)
+    public int getSize()
 kotlin.properties.Delegates:
     public final kotlin.properties.ReadWriteProperty notNull()
     public final kotlin.properties.ReadWriteProperty observable(java.lang.Object,kotlin.jvm.functions.Function3)
@@ -8084,6 +8558,8 @@ okhttp3.internal.http.HttpHeaders:
     private static java.lang.String readQuotedString(okio.Buffer)
     private static java.lang.String readToken(okio.Buffer)
     private static java.lang.String repeat(char,int)
+org.osmdroid.views.overlay.milestones.MilestoneMeterDistanceSliceLister:
+    public void setMeterDistanceSlice(double,double)
 com.xuexiang.xui.widget.textview.span.MarginImageSpan:
     public void <init>(android.graphics.drawable.Drawable,int,int,int)
     public void <init>(android.graphics.drawable.Drawable,int,int,int,int)
@@ -8117,6 +8593,8 @@ com.bumptech.glide.gifdecoder.GifHeaderParser:
     static final int MIN_FRAME_DELAY
     static final int DEFAULT_FRAME_DELAY
     private static final int MAX_BLOCK_SIZE
+com.Route.project.modules.map.databean.PermissionUtils:
+    public static final int GOTO_SEETING_CODE
 com.xuexiang.xui.widget.banner.anim.BaseAnimator:
     public com.xuexiang.xui.widget.banner.anim.BaseAnimator duration(long)
     public com.xuexiang.xui.widget.banner.anim.BaseAnimator delay(long)
@@ -8423,6 +8901,9 @@ com.Route.project.core.http.subscriber.TipRequestSubscriber:
     public void <init>(java.lang.String)
 okhttp3.OkHttpClient$1:
     public okhttp3.Call newWebSocketCall(okhttp3.OkHttpClient,okhttp3.Request)
+org.osmdroid.tileprovider.tilesource.IStyledTileSource:
+    public abstract void setStyle(java.lang.Object)
+    public abstract java.lang.Object getStyle()
 com.scwang.smartrefresh.header.BuildConfig:
     public static final boolean DEBUG
     public static final java.lang.String APPLICATION_ID
@@ -8430,6 +8911,8 @@ com.scwang.smartrefresh.header.BuildConfig:
     public static final java.lang.String FLAVOR
     public static final int VERSION_CODE
     public static final java.lang.String VERSION_NAME
+org.osmdroid.views.overlay.milestones.MilestonePathDisplayer:
+    public void <init>(double,boolean,android.graphics.Path,android.graphics.Paint)
 com.bumptech.glide.request.target.ViewTarget:
     public void <init>(android.view.View,boolean)
     public static void setTagId(int)
@@ -8640,6 +9123,9 @@ io.github.inflationx.viewpump.internal.-ViewPumpActivityFactory:
     public abstract android.view.View onActivityCreateView(android.view.View,android.view.View,java.lang.String,android.content.Context,android.util.AttributeSet)
 kotlin.text.MatcherMatchResult$groupValues$1:
     void <init>(kotlin.text.MatcherMatchResult)
+org.osmdroid.views.overlay.TilesOverlay$1:
+    void <init>(org.osmdroid.views.overlay.TilesOverlay)
+    final synthetic org.osmdroid.views.overlay.TilesOverlay this$0
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$7:
     void <init>(boolean[])
 org.aspectj.runtime.reflect.CatchClauseSignatureImpl:
@@ -8649,6 +9135,36 @@ org.aspectj.runtime.reflect.CatchClauseSignatureImpl:
     java.lang.String parameterName
 com.just.agentweb.core.web.IAgentWebSettings:
     public abstract android.webkit.WebSettings getWebSettings()
+org.osmdroid.views.overlay.compass.CompassOverlay:
+    public void <init>(android.content.Context,org.osmdroid.views.MapView)
+    public void <init>(android.content.Context,org.osmdroid.views.overlay.compass.IOrientationProvider,org.osmdroid.views.MapView)
+    private android.graphics.Point calculatePointOnCircle(float,float,float,float)
+    private void drawTriangle(android.graphics.Canvas,float,float,float,float,android.graphics.Paint)
+    private void createCompassFramePicture()
+    private void createCompassRosePicture()
+    private void createPointerPicture()
+    public void onPause()
+    public void onResume()
+    public void setCompassCenter(float,float)
+    public void setCompassInCenter(boolean)
+    public boolean isCompassInCenter()
+    public void setAzimuthOffset(float)
+    public float getAzimuthOffset()
+    public org.osmdroid.views.overlay.compass.IOrientationProvider getOrientationProvider()
+    public void setOrientationProvider(org.osmdroid.views.overlay.compass.IOrientationProvider)
+    public void setOptionsMenuEnabled(boolean)
+    public boolean isOptionsMenuEnabled()
+    public boolean onCreateOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public boolean onPrepareOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public boolean onOptionsItemSelected(android.view.MenuItem,int,org.osmdroid.views.MapView)
+    public boolean enableCompass(org.osmdroid.views.overlay.compass.IOrientationProvider)
+    public boolean enableCompass()
+    public float getOrientation()
+    public void setPointerMode(boolean)
+    public boolean isPointerMode()
+    private boolean wasEnabledOnPause
+    private final float mCompassRadius
+    private boolean mOptionsMenuEnabled
 io.reactivex.internal.operators.completable.CompletablePeek:
     public void <init>(io.reactivex.CompletableSource,io.reactivex.functions.Consumer,io.reactivex.functions.Consumer,io.reactivex.functions.Action,io.reactivex.functions.Action,io.reactivex.functions.Action,io.reactivex.functions.Action)
 com.xuexiang.xui.widget.imageview.preview.ui.BasePhotoFragment:
@@ -8708,6 +9224,10 @@ com.xuexiang.xhttp2.request.BaseRequest:
     public io.reactivex.disposables.Disposable execute(com.xuexiang.xhttp2.callback.CallBack)
     protected io.reactivex.Observable toObservable(io.reactivex.Observable,com.xuexiang.xhttp2.callback.CallBackProxy)
     public io.reactivex.disposables.Disposable execute(com.xuexiang.xhttp2.callback.CallBackProxy)
+org.osmdroid.util.PointReducer:
+    public static java.util.ArrayList reduceWithTolerance(java.util.ArrayList,double)
+    private static void douglasPeuckerReduction(java.util.ArrayList,boolean[],double,int,int)
+    public static double orthogonalDistance(org.osmdroid.util.GeoPoint,org.osmdroid.util.GeoPoint,org.osmdroid.util.GeoPoint)
 com.zzhoujay.richtext.ext.Base64$Coder:
     public abstract boolean process(byte[],int,int,boolean)
     public abstract int maxOutputSize(int)
@@ -8871,6 +9391,44 @@ com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section:
     public com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section setLeftIconSize(int,int)
     public void removeFrom(com.xuexiang.xui.widget.grouplist.XUIGroupListView)
     public com.xuexiang.xui.widget.grouplist.XUIGroupListSectionHeaderFooterView createSectionFooter(java.lang.CharSequence)
+org.osmdroid.util.TileSystem:
+    public static int MapSize(int)
+    public static double GroundResolution(double,int)
+    public static double MapScale(double,int,int)
+    public static java.lang.String TileXYToQuadKey(int,int,int)
+    public static android.graphics.Point QuadKeyToTileXY(java.lang.String,android.graphics.Point)
+    public static long Clip(long,long,long)
+    private int clipTile(int,int)
+    public android.graphics.Point LatLongToPixelXY(double,double,int,android.graphics.Point)
+    public org.osmdroid.util.PointL LatLongToPixelXY(double,double,double,org.osmdroid.util.PointL)
+    public org.osmdroid.util.PointL LatLongToPixelXYMapSize(double,double,double,org.osmdroid.util.PointL)
+    public org.osmdroid.util.GeoPoint PixelXYToLatLong(int,int,int,org.osmdroid.util.GeoPoint)
+    public org.osmdroid.util.GeoPoint PixelXYToLatLong(int,int,double,org.osmdroid.util.GeoPoint)
+    public org.osmdroid.util.GeoPoint PixelXYToLatLongWithoutWrap(int,int,double,org.osmdroid.util.GeoPoint)
+    public org.osmdroid.util.GeoPoint PixelXYToLatLongMapSize(int,int,double,org.osmdroid.util.GeoPoint,boolean,boolean)
+    public org.osmdroid.util.GeoPoint PixelXYToLatLongMapSizeWithoutWrap(int,int,double,org.osmdroid.util.GeoPoint)
+    public android.graphics.Point PixelXYToTileXY(int,int,android.graphics.Point)
+    public android.graphics.Point PixelXYToTileXY(int,int,double,android.graphics.Point)
+    public android.graphics.Rect PixelXYToTileXY(android.graphics.Rect,double,android.graphics.Rect)
+    public android.graphics.Point TileXYToPixelXY(int,int,android.graphics.Point)
+    public org.osmdroid.util.PointL TileXYToPixelXY(int,int,double,org.osmdroid.util.PointL)
+    public double getBoundingBoxZoom(org.osmdroid.util.BoundingBox,int,int)
+    public double getLongitudeZoom(double,double,int)
+    public double getLatitudeZoom(double,double,int)
+    public double getRandomLongitude(double)
+    public double getRandomLatitude(double,double)
+    public double getRandomLatitude(double)
+    public int getTileXFromLongitude(double,int)
+    public int getTileYFromLatitude(double,int)
+    public double getLatitudeFromTileY(int,int)
+    public double getLongitudeFromTileX(int,int)
+    public static final double EarthRadius
+    public static final double MinLatitude
+    public static final double MaxLatitude
+    public static final double MinLongitude
+    public static final double MaxLongitude
+    public static final int primaryKeyMaxZoomLevel
+    public static final int projectionZoomLevel
 com.xuexiang.xui.widget.layout.linkage.PosIndicator:
     private void restorePosIfNeeded()
     public void initStartAndEndPos(int,int)
@@ -8912,8 +9470,19 @@ com.xuexiang.xui.widget.layout.linkage.PosIndicator:
     public static final java.lang.String TAG
 com.bumptech.glide.load.model.ByteBufferFileLoader:
     private static final java.lang.String TAG
+org.osmdroid.tileprovider.modules.MBTilesFileArchive:
+    private void <init>(android.database.sqlite.SQLiteDatabase)
+    public static org.osmdroid.tileprovider.modules.MBTilesFileArchive getDatabaseFileArchive(java.io.File)
+    public java.util.Set getTileSources()
+    public static final java.lang.String TABLE_TILES
+    public static final java.lang.String COL_TILES_ZOOM_LEVEL
+    public static final java.lang.String COL_TILES_TILE_COLUMN
+    public static final java.lang.String COL_TILES_TILE_ROW
+    public static final java.lang.String COL_TILES_TILE_DATA
 com.bumptech.glide.load.model.stream.MediaStoreImageThumbLoader$Factory:
     public void teardown()
+org.osmdroid.views.overlay.infowindow.BasicInfoWindow:
+    public static final int UNDEFINED_RES_ID
 butterknife.Setter:
     public abstract void set(android.view.View,java.lang.Object,int)
 com.xuexiang.xui.widget.popupwindow.bar.CookieBar:
@@ -9118,6 +9687,22 @@ com.just.agentweb.core.url.UrlLoaderImpl:
     private void safeLoadUrl(java.lang.String)
     private void safeReload()
     public com.just.agentweb.core.url.HttpHeaders getHttpHeaders()
+org.osmdroid.tileprovider.tilesource.bing.BingMapTileSource:
+    public void <init>(java.lang.String)
+    public static void retrieveBingKey(android.content.Context)
+    public static java.lang.String getBingKey()
+    public static void setBingKey(java.lang.String)
+    public java.lang.String getStyle()
+    public synthetic bridge java.lang.Object getStyle()
+    public synthetic bridge void setStyle(java.lang.Object)
+    private static final java.lang.String BING_KEY
+    public static final java.lang.String IMAGERYSET_AERIAL
+    public static final java.lang.String IMAGERYSET_AERIALWITHLABELS
+    public static final java.lang.String IMAGERYSET_ROAD
+    private static final java.lang.String FILENAME_ENDING
+    private static final java.lang.String BASE_URL_PATTERN
+org.osmdroid.util.MapTileListComputer:
+    public abstract org.osmdroid.util.MapTileList computeFromSource(org.osmdroid.util.MapTileList,org.osmdroid.util.MapTileList)
 io.reactivex.internal.operators.single.SingleDelayWithSingle:
     public void <init>(io.reactivex.SingleSource,io.reactivex.SingleSource)
 com.xuexiang.xrouter.annotation.Interceptor:
@@ -9153,6 +9738,10 @@ org.aspectj.lang.annotation.After:
     public abstract java.lang.String argNames()
 kotlin.coroutines.experimental.SequenceBuilderKt__SequenceBuilderKt$buildSequence$$inlined$Sequence$1:
     public void <init>(kotlin.jvm.functions.Function2)
+org.osmdroid.tileprovider.TileStates:
+    public java.util.Collection getRunAfters()
+    public boolean isDone()
+    public int getTotal()
 com.xuexiang.xutil.common.RegexUtils:
     public static boolean isMobileSimple(java.lang.CharSequence)
     public static boolean isMobileExact(java.lang.CharSequence)
@@ -9218,6 +9807,20 @@ io.reactivex.SingleEmitter:
     public abstract void setCancellable(io.reactivex.functions.Cancellable)
     public abstract boolean isDisposed()
     public abstract boolean tryOnError(java.lang.Throwable)
+org.osmdroid.views.overlay.ItemizedOverlay:
+    public void <init>(android.content.Context,android.graphics.drawable.Drawable)
+    public void <init>(android.graphics.drawable.Drawable)
+    protected abstract org.osmdroid.views.overlay.OverlayItem createItem(int)
+    public int getDrawnItemsLimit()
+    public void setDrawnItemsLimit(int)
+    protected final void populate()
+    public java.util.List getDisplayedItems()
+    protected boolean hitTest(org.osmdroid.views.overlay.OverlayItem,android.graphics.drawable.Drawable,int,int)
+    public void setDrawFocusedItem(boolean)
+    public void setFocus(org.osmdroid.views.overlay.OverlayItem)
+    public org.osmdroid.views.overlay.OverlayItem getFocus()
+    public void setOnFocusChangeListener(org.osmdroid.views.overlay.ItemizedOverlay$OnFocusChangeListener)
+    private android.graphics.Rect screenRect
 org.reactivestreams.FlowAdapters$FlowToReactiveSubscriber:
     public void onSubscribe(java.util.concurrent.Flow$Subscription)
     public void onNext(java.lang.Object)
@@ -9371,6 +9974,8 @@ com.xuexiang.xrouter.model.RouteInfo:
     public com.xuexiang.xrouter.model.RouteInfo setRawType(javax.lang.model.element.Element)
 com.xuexiang.xui.widget.XUIWrapContentExpandableListView:
     public void <init>(android.content.Context,int)
+org.osmdroid.tileprovider.modules.IArchiveFile:
+    public abstract java.util.Set getTileSources()
 com.xuexiang.xupdate.UpdateManager$1:
     public void onParseResult(com.xuexiang.xupdate.entity.UpdateEntity)
 com.xuexiang.xui.utils.SpanUtils$SpaceSpan:
@@ -9512,6 +10117,8 @@ okhttp3.internal.connection.RealConnection:
     static okhttp3.internal.connection.RealConnection testConnection(okhttp3.internal.connection.RealConnectionPool,okhttp3.Route,java.net.Socket,long)
     private static final java.lang.String NPE_THROW_WITH_NULL
     private static final int MAX_TUNNEL_ATTEMPTS
+org.osmdroid.views.overlay.NonAcceleratedOverlay:
+    public void <init>(android.content.Context)
 com.just.agentweb.core.url.UrlLoaderImpl$2:
     void <init>(com.just.agentweb.core.url.UrlLoaderImpl)
 com.Route.project.utils.update.XHttpUpdateHttpServiceImpl$2:
@@ -10023,6 +10630,14 @@ com.zzhoujay.richtext.RichTextPool:
     public void recycle()
     private static final java.lang.String TAG
     private static final int MAX_RICH_TEXT_SIZE
+org.osmdroid.tileprovider.ExpirableBitmapDrawable:
+    public static boolean isDrawableExpired(android.graphics.drawable.Drawable)
+    public static void setDrawableExpired(android.graphics.drawable.Drawable)
+    public static final int UP_TO_DATE
+    public static final int EXPIRED
+    public static final int SCALED
+    public static final int NOT_FOUND
+    private static final int defaultStatus
 com.bumptech.glide.load.resource.drawable.ResourceDrawableDecoder:
     private static final java.lang.String ANDROID_PACKAGE_NAME
     private static final int MISSING_RESOURCE_ID
@@ -10238,6 +10853,9 @@ io.reactivex.internal.operators.single.SingleZipArray:
     public void <init>(io.reactivex.SingleSource[],io.reactivex.functions.Function)
 com.bumptech.glide.load.resource.bitmap.CenterCrop:
     private static final java.lang.String ID
+org.osmdroid.tileprovider.modules.IFilesystemCache:
+    public abstract java.lang.Long getExpirationTimestamp(org.osmdroid.tileprovider.tilesource.ITileSource,long)
+    public abstract android.graphics.drawable.Drawable loadTile(org.osmdroid.tileprovider.tilesource.ITileSource,long)
 kotlin.reflect.KFunction$DefaultImpls:
     public static synthetic void isInline$annotations()
     public static synthetic void isExternal$annotations()
@@ -10551,6 +11169,8 @@ kotlin.text.StringsKt___StringsKt:
     public static final java.util.List zipWithNext(java.lang.CharSequence,kotlin.jvm.functions.Function2)
     public static final java.lang.Iterable asIterable(java.lang.CharSequence)
     public static final kotlin.sequences.Sequence asSequence(java.lang.CharSequence)
+org.osmdroid.util.SplashScreenable:
+    public abstract void runDuringSplashScreen()
 okhttp3.internal.ws.WebSocketProtocol:
     static void validateCloseCode(int)
     public static java.lang.String acceptHeader(java.lang.String)
@@ -10889,6 +11509,9 @@ com.bumptech.glide.load.engine.prefill.BitmapPreFiller:
     private com.bumptech.glide.load.engine.prefill.BitmapPreFillRunner current
 okio.AsyncTimeout:
     private static final int TIMEOUT_WRITE_SIZE
+org.osmdroid.util.TileLooper:
+    public boolean isHorizontalWrapEnabled()
+    public boolean isVerticalWrapEnabled()
 com.xuexiang.xhttp2.reflect.TypeBuilder:
     private void <init>(java.lang.Class,com.xuexiang.xhttp2.reflect.TypeBuilder)
     public static com.xuexiang.xhttp2.reflect.TypeBuilder newInstance(java.lang.Class)
@@ -10926,6 +11549,8 @@ com.meituan.android.walle.ApkUtil:
     private static final int ZIP_EOCD_REC_SIG
     private static final int UINT16_MAX_VALUE
     private static final int ZIP_EOCD_COMMENT_LENGTH_FIELD_OFFSET
+org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerDialog$1:
+    void <init>(org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerDialog,android.content.Context)
 io.reactivex.internal.operators.maybe.MaybeToObservable:
     public void <init>(io.reactivex.MaybeSource)
     public io.reactivex.MaybeSource source()
@@ -11007,6 +11632,9 @@ kotlin.jvm.JvmClassMappingKt:
     public static final kotlin.reflect.KClass getAnnotationClass(java.lang.annotation.Annotation)
 com.xuexiang.xutil.system.KeyboardUtils$2:
     void <init>(android.app.Activity,android.view.View,int)
+org.osmdroid.tileprovider.MapTileRequestState:
+    public void <init>(long,org.osmdroid.tileprovider.modules.MapTileModuleProviderBase[],org.osmdroid.tileprovider.IMapTileProviderCallback)
+    public org.osmdroid.tileprovider.modules.MapTileModuleProviderBase getCurrentProvider()
 io.reactivex.internal.operators.maybe.MaybeEqualSingle:
     public void <init>(io.reactivex.MaybeSource,io.reactivex.MaybeSource,io.reactivex.functions.BiPredicate)
 kotlin.HashCodeKt:
@@ -11205,6 +11833,10 @@ okhttp3.internal.http.ExchangeCodec:
     public static final int DISCARD_STREAM_TIMEOUT_MILLIS
 com.xuexiang.xui.widget.statelayout.StatusLoader$Adapter:
     public abstract android.view.View getView(com.xuexiang.xui.widget.statelayout.StatusLoader$Holder,android.view.View,int)
+org.osmdroid.views.overlay.compass.IOrientationProvider:
+    public abstract boolean startOrientationProvider(org.osmdroid.views.overlay.compass.IOrientationConsumer)
+    public abstract float getLastKnownOrientation()
+    public abstract void destroy()
 com.zzhoujay.richtext.exceptions.ImageDecodeException:
     private static final java.lang.String IMAGE_DECODE_FAILURE
 io.reactivex.internal.operators.completable.CompletableConcatArray:
@@ -11232,6 +11864,15 @@ kotlin.jvm.internal.FloatSpreadBuilder:
     private final float[] values
 com.jakewharton.disklrucache.Util:
     static java.lang.String readFully(java.io.Reader)
+org.metalev.multitouch.controller.MultiTouchController$PointInfo:
+    public void set(org.metalev.multitouch.controller.MultiTouchController$PointInfo)
+    public int getNumTouchPoints()
+    public float[] getXs()
+    public float[] getYs()
+    public int[] getPointerIds()
+    public float getPressure()
+    public float[] getPressures()
+    public int getAction()
 android.support.v4.os.IResultReceiver$Stub$Proxy:
     public java.lang.String getInterfaceDescriptor()
 kotlin.jvm.internal.PackageReference:
@@ -11353,6 +11994,23 @@ com.xuexiang.xutil.common.CollectionUtils$OnModifyCollectionListener:
     public abstract void onModifyCollection(java.util.Iterator,java.lang.Object)
 io.reactivex.internal.operators.single.SingleOnErrorReturn:
     public void <init>(io.reactivex.SingleSource,io.reactivex.functions.Function,java.lang.Object)
+org.osmdroid.views.overlay.PathOverlay:
+    public void <init>(int,android.content.Context)
+    public void <init>(int,float,android.content.Context)
+    public void <init>(int)
+    public void <init>(int,float)
+    public void setColor(int)
+    public void setAlpha(int)
+    public void addGreatCircle(org.osmdroid.util.GeoPoint,org.osmdroid.util.GeoPoint)
+    public void addGreatCircle(org.osmdroid.util.GeoPoint,org.osmdroid.util.GeoPoint,int)
+    public android.graphics.Paint getPaint()
+    public void setPaint(android.graphics.Paint)
+    public void clearPath()
+    public void addPoint(org.osmdroid.api.IGeoPoint)
+    public void addPoint(double,double)
+    public varargs void addPoints(org.osmdroid.api.IGeoPoint[])
+    public void addPoints(java.util.List)
+    public int getNumberOfPoints()
 com.xuexiang.xui.widget.button.RippleView:
     public void animateRipple(float,float)
     public java.lang.Boolean isCentered()
@@ -11475,6 +12133,10 @@ org.aspectj.runtime.reflect.JoinPointImpl$StaticPartImpl:
     public org.aspectj.lang.reflect.SourceLocation getSourceLocation()
     public final java.lang.String toShortString()
     public final java.lang.String toLongString()
+org.osmdroid.tileprovider.modules.INetworkAvailablityCheck:
+    public abstract boolean getWiFiNetworkAvailable()
+    public abstract boolean getCellularDataNetworkAvailable()
+    public abstract boolean getRouteToPathExists(int)
 kotlin.text.StringsKt__StringNumberConversionsKt:
     public static final java.lang.Byte toByteOrNull(java.lang.String)
     public static final java.lang.Byte toByteOrNull(java.lang.String,int)
@@ -11494,6 +12156,10 @@ kotlin.contracts.ContractBuilder:
     public abstract kotlin.contracts.CallsInPlace callsInPlace(kotlin.Function,kotlin.contracts.InvocationKind)
 com.xuexiang.xui.widget.picker.widget.BasePickerView$5:
     void <init>(com.xuexiang.xui.widget.picker.widget.BasePickerView)
+org.osmdroid.tileprovider.util.Counters:
+    public static void printToLogcat()
+    public static void reset()
+    static final java.lang.String TAG
 io.reactivex.subscribers.DefaultSubscriber:
     protected final void cancel()
 io.reactivex.internal.schedulers.NewThreadScheduler:
@@ -11551,6 +12217,23 @@ io.reactivex.internal.operators.single.SingleInternalHelper:
     public static io.reactivex.functions.Function toObservable()
 com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinnerBaseAdapter:
     public com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinnerBaseAdapter setBackgroundSelector(int)
+org.osmdroid.tileprovider.tilesource.HEREWeGoTileSource:
+    public void <init>(android.content.Context)
+    private void retrieveDomainOverride(android.content.Context)
+    public void <init>(java.lang.String,java.lang.String,java.lang.String)
+    public void <init>(java.lang.String,int,int,int,java.lang.String)
+    public void <init>(java.lang.String,int,int,int,java.lang.String,java.lang.String,java.lang.String)
+    public void setDomainOverride(java.lang.String)
+    public final void retrieveAppCode(android.content.Context)
+    public final void retrieveMapBoxMapId(android.content.Context)
+    public final void retrieveAppId(android.content.Context)
+    public void setHereWeGoMapid(java.lang.String)
+    public void setAppId(java.lang.String)
+    public void setAppCode(java.lang.String)
+    private static final java.lang.String HEREWEGO_MAPID
+    private static final java.lang.String HEREWEGO_APPID
+    private static final java.lang.String APPCODE
+    private static final java.lang.String HEREWEGO_DOMAIN_OVERRIDE
 com.xuexiang.xui.widget.banner.recycler.layout.OverFlyingLayoutManager:
     public void <init>(android.content.Context)
     public void <init>(int,boolean)
@@ -11746,6 +12429,8 @@ kotlin.text.StringsKt___StringsKt$groupingBy$1:
 com.zzhoujay.markdown.parser.TagGetter:
     public abstract java.lang.CharSequence get(int,com.zzhoujay.markdown.parser.Line,int)
     public abstract java.lang.CharSequence get(int,java.lang.CharSequence,int)
+org.osmdroid.tileprovider.tilesource.ITileSource:
+    public abstract int ordinal()
 kotlin.sequences.TakeSequence:
     public void <init>(kotlin.sequences.Sequence,int)
     public kotlin.sequences.Sequence drop(int)
@@ -11956,6 +12641,8 @@ com.bumptech.glide.load.engine.cache.ExternalCacheDiskCacheFactory:
     public void <init>(android.content.Context)
     public void <init>(android.content.Context,int)
     public void <init>(android.content.Context,java.lang.String,int)
+org.osmdroid.tileprovider.IMapTileProviderCallback:
+    public abstract boolean useDataConnection()
 org.intellij.lang.annotations.MagicConstant:
     public abstract long[] intValues()
     public abstract java.lang.String[] stringValues()
@@ -12028,6 +12715,21 @@ com.xuexiang.xutil.system.KeyboardUtils$1:
     void <init>(android.app.Activity)
 kotlin.text.RegexKt:
     private static final java.util.Set fromInt(int)
+org.osmdroid.views.overlay.Polyline:
+    public java.util.ArrayList getPoints()
+    public int getColor()
+    public float getWidth()
+    public android.graphics.Paint getPaint()
+    public boolean isVisible()
+    public void setGeodesic(boolean)
+    public boolean isGeodesic()
+    public void setVisible(boolean)
+    public void setOnClickListener(org.osmdroid.views.overlay.Polyline$OnClickListener)
+    public void addPoint(org.osmdroid.util.GeoPoint)
+    public boolean isCloseTo(org.osmdroid.util.GeoPoint,double,org.osmdroid.views.MapView)
+    public org.osmdroid.util.GeoPoint getInfoWindowLocation()
+    public void setMilestoneManagers(java.util.List)
+    public double getDistance()
 com.scwang.smartrefresh.layout.api.RefreshKernel:
     public abstract com.scwang.smartrefresh.layout.api.RefreshKernel requestRemeasureHeightFor(com.scwang.smartrefresh.layout.api.RefreshInternal)
 kotlin.jvm.functions.Function19:
@@ -12342,6 +13044,10 @@ com.xuexiang.xutil.display.ImageUtils:
     private static boolean isSpace(java.lang.String)
     private static int calculateInSampleSize(android.graphics.BitmapFactory$Options,int,int)
     private static byte[] input2Byte(java.io.InputStream)
+org.osmdroid.tileprovider.modules.ArchiveFileFactory:
+    public static boolean isFileExtensionRegistered(java.lang.String)
+    public static void registerArchiveFileProvider(java.lang.Class,java.lang.String)
+    public static java.util.Set getRegisteredExtensions()
 com.xuexiang.xui.widget.tabbar.TabSegment:
     public void <init>(android.content.Context,boolean)
     public void clearOnTabSelectedListeners()
@@ -12478,6 +13184,8 @@ com.just.agentweb.widget.indicator.IndicatorController:
 org.aspectj.lang.reflect.CodeSignature:
     public abstract java.lang.Class[] getParameterTypes()
     public abstract java.lang.Class[] getExceptionTypes()
+org.osmdroid.util.Delay:
+    public void <init>(long)
 io.reactivex.internal.operators.single.SingleTimer:
     public void <init>(long,java.util.concurrent.TimeUnit,io.reactivex.Scheduler)
 com.xuexiang.xui.widget.banner.recycler.BannerLayout$OnBannerItemClickListener:
@@ -12535,6 +13243,9 @@ android.support.v4.os.ResultReceiver:
     public void <init>(android.os.Handler)
 kotlin.coroutines.experimental.jvm.internal.CoroutineIntrinsics:
     public static final kotlin.coroutines.experimental.Continuation normalizeContinuation(kotlin.coroutines.experimental.Continuation)
+org.osmdroid.tileprovider.tilesource.FileBasedTileSource:
+    public void <init>(java.lang.String,int,int,int,java.lang.String,java.lang.String[])
+    public static org.osmdroid.tileprovider.tilesource.ITileSource getSource(java.lang.String)
 com.bumptech.glide.load.model.FileLoader:
     private static final java.lang.String TAG
 io.reactivex.internal.operators.completable.CompletableMergeDelayErrorIterable:
@@ -12753,6 +13464,9 @@ com.xuexiang.xui.widget.textview.marqueen.ComplexViewMF:
     private android.view.LayoutInflater inflater
 android.support.v4.media.MediaBrowserCompat$CustomActionResultReceiver:
     void <init>(java.lang.String,android.os.Bundle,android.support.v4.media.MediaBrowserCompat$CustomActionCallback,android.os.Handler)
+org.osmdroid.tileprovider.util.StorageUtils$StorageInfo:
+    public java.lang.String getDisplayName()
+    public void setDisplayName(java.lang.String)
 kotlin.reflect.KClass:
     public abstract java.lang.String getSimpleName()
     public abstract java.lang.String getQualifiedName()
@@ -12967,8 +13681,52 @@ io.reactivex.subjects.MaybeSubject:
     public boolean hasComplete()
     public boolean hasObservers()
     int observerCount()
+org.osmdroid.config.IConfigurationProvider:
+    public abstract void setGpsWaitTime(long)
+    public abstract void setDebugMode(boolean)
+    public abstract void setDebugMapView(boolean)
+    public abstract void setDebugTileProviders(boolean)
+    public abstract void setDebugMapTileDownloader(boolean)
+    public abstract void setMapViewHardwareAccelerated(boolean)
+    public abstract void setUserAgentValue(java.lang.String)
+    public abstract void setCacheMapTileCount(short)
+    public abstract void setTileDownloadThreads(short)
+    public abstract void setTileFileSystemThreads(short)
+    public abstract void setTileDownloadMaxQueueSize(short)
+    public abstract void setTileFileSystemMaxQueueSize(short)
+    public abstract void setTileFileSystemCacheMaxBytes(long)
+    public abstract void setTileFileSystemCacheTrimBytes(long)
+    public abstract void setHttpHeaderDateTimeFormat(java.text.SimpleDateFormat)
+    public abstract void setHttpProxy(java.net.Proxy)
+    public abstract void setOsmdroidBasePath(java.io.File)
+    public abstract void setOsmdroidTileCache(java.io.File)
+    public abstract void setUserAgentHttpHeader(java.lang.String)
+    public abstract void save(android.content.Context,android.content.SharedPreferences)
+    public abstract void setExpirationExtendedDuration(long)
+    public abstract void setExpirationOverrideDuration(java.lang.Long)
+    public abstract void setAnimationSpeedDefault(int)
+    public abstract void setAnimationSpeedShort(int)
+    public abstract void setMapViewRecyclerFriendly(boolean)
+    public abstract void setCacheMapTileOvershoot(short)
+    public abstract void setTileGCFrequencyInMillis(long)
+    public abstract void setTileGCBulkSize(int)
+    public abstract void setTileGCBulkPauseInMillis(long)
+    public abstract void setMapTileDownloaderFollowRedirects(boolean)
 kotlin.js.JsName:
     public abstract java.lang.String name()
+org.osmdroid.util.RectL:
+    public void <init>(org.osmdroid.util.RectL)
+    public static org.osmdroid.util.RectL getBounds(org.osmdroid.util.RectL,long,long,double,org.osmdroid.util.RectL)
+    public static long getRotatedX(long,long,double,long,long)
+    public static long getRotatedY(long,long,double,long,long)
+    public void set(org.osmdroid.util.RectL)
+    public boolean contains(long,long)
+    public void inset(long,long)
+    public final long width()
+    public final long height()
+    public void offset(long,long)
+    public void union(long,long,long,long)
+    public void union(org.osmdroid.util.RectL)
 com.Route.project.core.http.loader.MiniProgressLoaderFactory:
     public com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context)
     public com.xuexiang.xhttp2.subsciber.impl.IProgressLoader create(android.content.Context,java.lang.String)
@@ -13207,6 +13965,12 @@ org.aspectj.lang.Aspects14:
     private static java.lang.reflect.Method checkHasAspect(java.lang.reflect.Method,java.lang.Class)
     private static final java.lang.String ASPECTOF
     private static final java.lang.String HASASPECT
+org.osmdroid.tileprovider.tilesource.TileSourcePolicy:
+    public boolean acceptsBulkDownload()
+    public static final int FLAG_NO_BULK
+    public static final int FLAG_NO_PREVENTIVE
+    public static final int FLAG_USER_AGENT_MEANINGFUL
+    public static final int FLAG_USER_AGENT_NORMALIZED
 com.xuexiang.xupdate.proxy.impl.DefaultUpdateChecker$3:
     public void onParseResult(com.xuexiang.xupdate.entity.UpdateEntity)
 com.just.agentweb.core.web.AgentWebUIControllerImplBase:
@@ -13358,6 +14122,13 @@ okhttp3.MultipartBody:
     public java.lang.String boundary()
     public int size()
     public okhttp3.MultipartBody$Part part(int)
+org.osmdroid.views.overlay.LinearRing:
+    public java.util.ArrayList getPoints()
+    public double getDistance()
+    public void setGeodesic(boolean)
+    public boolean isGeodesic()
+    boolean isCloseTo(org.osmdroid.util.GeoPoint,double,org.osmdroid.views.Projection,boolean)
+    public org.osmdroid.util.GeoPoint getCenter(org.osmdroid.util.GeoPoint)
 com.xuexiang.xutil.net.NetworkUtils:
     public static void openWirelessSettings()
     private static android.net.NetworkInfo getActiveNetworkInfo()
@@ -13458,6 +14229,12 @@ com.xuexiang.xui.widget.dialog.strategy.IDialogStrategy:
     public static final int NO_ICON
 io.reactivex.internal.operators.flowable.FlowableRepeat:
     public void <init>(io.reactivex.Flowable,long)
+org.osmdroid.views.overlay.mylocation.SimpleLocationOverlay:
+    public void <init>(android.content.Context)
+    public void <init>(android.graphics.Bitmap)
+    public void setLocation(org.osmdroid.util.GeoPoint)
+    public org.osmdroid.util.GeoPoint getMyLocation()
+    public void setPersonIcon(android.graphics.Bitmap,android.graphics.Point)
 com.xuexiang.xpage.logger.PageLog:
     public static void setLogger(com.xuexiang.xpage.logger.ILogger)
     public static void debug(boolean)
@@ -13497,12 +14274,28 @@ org.aspectj.internal.lang.reflect.SignaturePatternImpl:
 io.reactivex.internal.operators.flowable.FlowableSingleSingle:
     public void <init>(io.reactivex.Flowable,java.lang.Object)
     public io.reactivex.Flowable fuseToFlowable()
+org.metalev.multitouch.controller.MultiTouchController:
+    public void <init>(org.metalev.multitouch.controller.MultiTouchController$MultiTouchObjectCanvas)
+    protected void setHandleSingleTouchEvents(boolean)
+    protected boolean getHandleSingleTouchEvents()
+    public int getMode()
+    private static final long EVENT_SETTLE_TIME_INTERVAL
+    private static final float MAX_MULTITOUCH_POS_JUMP_SIZE
+    private static final float MAX_MULTITOUCH_DIM_JUMP_SIZE
+    private static final float MIN_MULTITOUCH_SEPARATION
+    public static final int MAX_TOUCH_POINTS
+    public static final boolean DEBUG
+    private static final int MODE_NOTHING
+    private static final int MODE_DRAG
+    private static final int MODE_PINCH
 io.reactivex.internal.operators.parallel.ParallelFlatMap:
     public void <init>(io.reactivex.parallel.ParallelFlowable,io.reactivex.functions.Function,boolean,int,int)
 io.reactivex.internal.operators.single.SingleDoOnSubscribe:
     public void <init>(io.reactivex.SingleSource,io.reactivex.functions.Consumer)
 kotlin.coroutines.jvm.internal.RunSuspendKt:
     public static final void runSuspend(kotlin.jvm.functions.Function1)
+org.osmdroid.views.overlay.milestones.MilestoneBitmapDisplayer:
+    public void <init>(double,boolean,android.graphics.Bitmap,int,int)
 kotlin.coroutines.experimental.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnchecked$$inlined$buildContinuationByInvokeCall$IntrinsicsKt__IntrinsicsJvmKt$1:
     public void <init>(kotlin.coroutines.experimental.Continuation,kotlin.jvm.functions.Function1,kotlin.coroutines.experimental.Continuation)
 org.aspectj.internal.lang.annotation.ajcDeclarePrecedence:
@@ -13513,6 +14306,19 @@ com.bumptech.glide.load.data.mediastore.ThumbFetcher$ImageThumbnailQuery:
     private static final java.lang.String PATH_SELECTION
 io.reactivex.internal.operators.flowable.FlowableTimeInterval:
     public void <init>(io.reactivex.Flowable,java.util.concurrent.TimeUnit,io.reactivex.Scheduler)
+org.osmdroid.views.overlay.OverlayItem:
+    public void <init>(java.lang.String,java.lang.String,org.osmdroid.api.IGeoPoint)
+    public void <init>(java.lang.String,java.lang.String,java.lang.String,org.osmdroid.api.IGeoPoint)
+    public java.lang.String getUid()
+    public void setMarker(android.graphics.drawable.Drawable)
+    public void setMarkerHotspot(org.osmdroid.views.overlay.OverlayItem$HotspotPlace)
+    public android.graphics.drawable.Drawable getDrawable()
+    public int getWidth()
+    public int getHeight()
+    protected final java.lang.String mUid
+    public static final int ITEM_STATE_FOCUSED_MASK
+    public static final int ITEM_STATE_PRESSED_MASK
+    public static final int ITEM_STATE_SELECTED_MASK
 kotlin.text.MatchResult:
     public abstract java.lang.String getValue()
     public abstract kotlin.text.MatchGroupCollection getGroups()
@@ -13596,6 +14402,34 @@ com.xuexiang.xui.utils.StatusBarUtils:
     private static final int STATUSBAR_TYPE_ANDROID6
     private static final int STATUS_BAR_DEFAULT_HEIGHT_DP
     private static java.lang.Integer sTransparentValue
+org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay:
+    public void <init>(org.osmdroid.views.MapView)
+    public void <init>(org.osmdroid.views.overlay.mylocation.IMyLocationProvider,org.osmdroid.views.MapView)
+    public void setDirectionArrow(android.graphics.Bitmap,android.graphics.Bitmap)
+    public void onResume()
+    public void onPause()
+    public void setDrawAccuracyEnabled(boolean)
+    public boolean isDrawAccuracyEnabled()
+    public org.osmdroid.views.overlay.mylocation.IMyLocationProvider getMyLocationProvider()
+    protected void setMyLocationProvider(org.osmdroid.views.overlay.mylocation.IMyLocationProvider)
+    public void setPersonHotspot(float,float)
+    public void setEnableAutoStop(boolean)
+    public boolean getEnableAutoStop()
+    public void setOptionsMenuEnabled(boolean)
+    public boolean isOptionsMenuEnabled()
+    public boolean onCreateOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public boolean onPrepareOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public boolean onOptionsItemSelected(android.view.MenuItem,int,org.osmdroid.views.MapView)
+    public org.osmdroid.util.GeoPoint getMyLocation()
+    public android.location.Location getLastFix()
+    public void enableFollowLocation()
+    public boolean enableMyLocation(org.osmdroid.views.overlay.mylocation.IMyLocationProvider)
+    public boolean enableMyLocation()
+    public boolean runOnFirstFix(java.lang.Runnable)
+    public void setPersonIcon(android.graphics.Bitmap)
+    protected final float mScale
+    private boolean mOptionsMenuEnabled
+    private boolean wasEnabledOnPause
 com.xuexiang.xui.utils.ViewUtils$ViewGroupHelper:
     public static void offsetDescendantRect(android.view.ViewGroup,android.view.View,android.graphics.Rect)
     static void offsetDescendantMatrix(android.view.ViewParent,android.view.View,android.graphics.Matrix)
@@ -13720,6 +14554,14 @@ com.xuexiang.xui.widget.actionbar.TitleBar:
     public static final int CENTER_CENTER
     public static final int CENTER_LEFT
     public static final int CENTER_RIGHT
+org.osmdroid.views.overlay.gridlines.LatLonGridlineOverlay2:
+    public void setDecimalFormatter(java.text.DecimalFormat)
+    public void setLineColor(int)
+    public void setFontColor(int)
+    public void setFontSizeDp(short)
+    public void setBackgroundColor(int)
+    public void setLineWidth(float)
+    public void setMultiplier(float)
 kotlin.text.MatchGroupCollection:
     public abstract kotlin.text.MatchGroup get(int)
 okhttp3.Cookie:
@@ -13748,6 +14590,25 @@ com.xuexiang.xutil.file.CleanUtils:
     private static java.io.File getFileByPath(java.lang.String)
 io.reactivex.internal.fuseable.FuseToMaybe:
     public abstract io.reactivex.Maybe fuseToMaybe()
+org.osmdroid.tileprovider.MapTileProviderBasic:
+    public void <init>(android.content.Context)
+    public org.osmdroid.tileprovider.modules.IFilesystemCache getTileWriter()
+org.osmdroid.util.GeometryMath:
+    public static final android.graphics.Rect getBoundingBoxForRotatatedRectangle(android.graphics.Rect,float,android.graphics.Rect)
+    public static final android.graphics.Rect getBoundingBoxForRotatatedRectangle(android.graphics.Rect,android.graphics.Point,float,android.graphics.Rect)
+    public static final double DEG2RAD
+    public static final double RAD2DEG
+org.osmdroid.tileprovider.tilesource.MapBoxTileSource:
+    public void <init>(android.content.Context)
+    public void <init>(java.lang.String,java.lang.String)
+    public void <init>(java.lang.String,int,int,int,java.lang.String)
+    public void <init>(java.lang.String,int,int,int,java.lang.String,java.lang.String,java.lang.String)
+    public final void retrieveMapBoxMapId(android.content.Context)
+    public final void retrieveAccessToken(android.content.Context)
+    public void setMapboxMapid(java.lang.String)
+    public void setAccessToken(java.lang.String)
+    private static final java.lang.String MAPBOX_MAPID
+    private static final java.lang.String ACCESS_TOKEN
 io.reactivex.internal.operators.completable.CompletableMergeIterable:
     public void <init>(java.lang.Iterable)
 kotlin.jvm.functions.Function17:
@@ -13783,6 +14644,10 @@ com.xuexiang.xupdate._XUpdate:
     public static com.xuexiang.xupdate.listener.OnInstallListener getOnInstallListener()
     public static void startInstallApk(android.content.Context,java.io.File)
     public static com.xuexiang.xupdate.listener.OnUpdateFailureListener getOnUpdateFailureListener()
+org.osmdroid.tileprovider.cachemanager.CacheManager$3:
+    void <init>(org.osmdroid.tileprovider.cachemanager.CacheManager)
+org.osmdroid.views.MapView$MapViewZoomListener:
+    public void onVisibilityChanged(boolean)
 com.xuexiang.xpage.base.XPageFragment:
     public void setFragmentResult(int,android.content.Intent)
     public int getRequestCode()
@@ -13867,6 +14732,10 @@ kotlin.ranges.RangesKt__RangesJVMKt:
     public static final kotlin.ranges.ClosedFloatingPointRange rangeTo(float,float)
 com.xuexiang.xui.widget.XUIWrapContentListView:
     public void <init>(android.content.Context,int)
+org.osmdroid.tileprovider.modules.NetworkAvailabliltyCheck:
+    public boolean getWiFiNetworkAvailable()
+    public boolean getCellularDataNetworkAvailable()
+    public boolean getRouteToPathExists(int)
 com.xuexiang.xutil.display.ScreenUtils:
     public static int getScreenWidth()
     public static int getScreenHeight()
@@ -14008,6 +14877,9 @@ com.xuexiang.xui.widget.dialog.bottomsheet.BottomSheet$BottomGridSheetBuilder:
     public static final int SECOND_LINE
 com.xuexiang.xui.widget.imageview.edit.PhotoEditor$4:
     void <init>(com.xuexiang.xui.widget.imageview.edit.PhotoEditor,android.view.View,com.xuexiang.xui.widget.imageview.edit.ViewType)
+org.osmdroid.views.overlay.mylocation.IMyLocationProvider:
+    public abstract boolean startLocationProvider(org.osmdroid.views.overlay.mylocation.IMyLocationConsumer)
+    public abstract android.location.Location getLastKnownLocation()
 com.xuexiang.xui.widget.textview.label.LabelImageView:
     public boolean isLabelVisual()
 android.support.v4.media.session.MediaSessionCompat$MediaSessionImplBase$MessageHandler:
@@ -14122,6 +14994,12 @@ com.xuexiang.xui.widget.flowlayout.BaseTagAdapter:
     public com.xuexiang.xui.widget.flowlayout.BaseTagAdapter setSelectedPosition(java.lang.Integer)
     public varargs com.xuexiang.xui.widget.flowlayout.BaseTagAdapter setSelectedPositions(java.lang.Integer[])
     public com.xuexiang.xui.widget.flowlayout.BaseTagAdapter setSelectedPositions(java.util.List)
+org.osmdroid.api.IProjection:
+    public abstract android.graphics.Point toPixels(org.osmdroid.api.IGeoPoint,android.graphics.Point)
+    public abstract org.osmdroid.api.IGeoPoint fromPixels(int,int)
+    public abstract float metersToEquatorPixels(float)
+    public abstract org.osmdroid.api.IGeoPoint getNorthEast()
+    public abstract org.osmdroid.api.IGeoPoint getSouthWest()
 com.xuexiang.xutil.file.FileUtils$OnReplaceListener:
     public abstract boolean onReplace()
 org.aspectj.runtime.reflect.InitializerSignatureImpl:
@@ -14131,6 +15009,11 @@ org.aspectj.runtime.reflect.InitializerSignatureImpl:
     private java.lang.reflect.Constructor constructor
 butterknife.OnClick:
     public abstract int[] value()
+org.osmdroid.util.TileSystemWebMercator:
+    private static final double MinLatitude
+    private static final double MaxLatitude
+    private static final double MinLongitude
+    private static final double MaxLongitude
 io.reactivex.internal.operators.single.SingleDoOnEvent:
     public void <init>(io.reactivex.SingleSource,io.reactivex.functions.BiConsumer)
 io.reactivex.internal.operators.flowable.FlowableZipIterable:
@@ -14139,6 +15022,8 @@ kotlin.collections.CollectionsKt__IteratorsKt:
     private static final java.util.Iterator iterator(java.util.Iterator)
     public static final java.util.Iterator withIndex(java.util.Iterator)
     public static final void forEach(java.util.Iterator,kotlin.jvm.functions.Function1)
+org.osmdroid.tileprovider.cachemanager.CacheManager$4:
+    void <init>(org.osmdroid.tileprovider.cachemanager.CacheManager)
 com.tencent.mmkv.MMKV:
     public static java.lang.String initialize(java.lang.String)
     public static java.lang.String getRootDir()
@@ -14210,6 +15095,8 @@ com.xuexiang.xui.widget.popupwindow.PopWindow:
     public void showUp2(android.view.View)
     private int mPopupWidth
     private int mPopupHeight
+org.osmdroid.views.MapController$ReplayController:
+    public void zoomToSpan(int,int)
 com.bumptech.glide.request.transition.ViewAnimationFactory$ConcreteViewTransitionAnimationFactory:
     void <init>(android.view.animation.Animation)
 kotlin.sequences.TakeSequence$iterator$1:
@@ -14263,6 +15150,20 @@ com.xuexiang.xui.adapter.recyclerview.DividerItemDecoration:
     public void <init>(android.content.Context,int,int,int)
     public void <init>(android.content.Context,int,int,int,int)
     public com.xuexiang.xui.adapter.recyclerview.DividerItemDecoration setDivider(android.graphics.drawable.Drawable)
+org.osmdroid.tileprovider.constants.OpenStreetMapTileProviderConstants:
+    public static final int MINIMUM_ZOOMLEVEL
+    public static final java.lang.String TILE_PATH_EXTENSION
+    public static final long ONE_SECOND
+    public static final long ONE_MINUTE
+    public static final long ONE_HOUR
+    public static final long ONE_DAY
+    public static final long ONE_WEEK
+    public static final long ONE_YEAR
+    public static final long DEFAULT_MAXIMUM_CACHED_FILE_AGE
+    public static final long TILE_EXPIRY_TIME_MILLISECONDS
+    public static final java.lang.String HTTP_EXPIRES_HEADER
+    public static final java.lang.String HTTP_CACHECONTROL_HEADER
+    public static final java.lang.String HTTP_EXPIRES_HEADER_FORMAT
 com.xuexiang.xhttp2.callback.CallBackProxy:
     public java.lang.reflect.Type getType()
 io.reactivex.observers.ResourceCompletableObserver:
@@ -14282,6 +15183,13 @@ org.aspectj.lang.annotation.DeclareError:
     public abstract java.lang.String value()
 io.reactivex.MaybeConverter:
     public abstract java.lang.Object apply(io.reactivex.Maybe)
+org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask:
+    private void <init>(org.osmdroid.tileprovider.cachemanager.CacheManager,org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerAction,org.osmdroid.util.IterableWithSize,int,int)
+    public void <init>(org.osmdroid.tileprovider.cachemanager.CacheManager,org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerAction,java.util.List,int,int)
+    public void <init>(org.osmdroid.tileprovider.cachemanager.CacheManager,org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerAction,java.util.ArrayList,int,int)
+    public void <init>(org.osmdroid.tileprovider.cachemanager.CacheManager,org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerAction,org.osmdroid.util.BoundingBox,int,int)
+    static synthetic org.osmdroid.tileprovider.cachemanager.CacheManager access$000(org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask)
+    public void addCallback(org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerCallback)
 com.bumptech.glide.load.model.stream.HttpUriLoader$Factory:
     public void teardown()
 io.reactivex.internal.operators.maybe.MaybeDelaySubscriptionOtherPublisher:
@@ -14383,6 +15291,13 @@ butterknife.internal.Utils:
     public static varargs java.util.List listFilteringNull(java.lang.Object[])
     public static java.lang.Object findOptionalViewAsType(android.view.View,int,java.lang.String,java.lang.Class)
     public static java.lang.Object castParam(java.lang.Object,java.lang.String,int,java.lang.String,int,java.lang.Class)
+org.osmdroid.util.MapTileListBorderComputer:
+    public void <init>(int,boolean)
+    public int getBorder()
+    public boolean isIncludeAll()
+    public org.osmdroid.util.MapTileList computeFromSource(org.osmdroid.util.MapTileList,org.osmdroid.util.MapTileList)
+    private final int mBorder
+    private final boolean mIncludeAll
 com.xuexiang.xui.widget.XUIWrapContentScrollView:
     public void <init>(android.content.Context,int)
 io.reactivex.internal.operators.flowable.FlowableOnBackpressureDrop:
@@ -14434,11 +15349,21 @@ com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$14:
     final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 com.xuexiang.xaop.util.AppExecutors:
     public com.xuexiang.xaop.util.AppExecutors updatePoolIO(int)
+org.osmdroid.views.CustomZoomButtonsController$OnZoomListener:
+    public abstract void onVisibilityChanged(boolean)
 com.bumptech.glide.request.transition.DrawableCrossFadeFactory$Builder:
     public com.bumptech.glide.request.transition.DrawableCrossFadeFactory$Builder setCrossFadeEnabled(boolean)
     public com.bumptech.glide.request.transition.DrawableCrossFadeFactory build()
     private boolean isCrossFadeEnabled
     private static final int DEFAULT_DURATION_MS
+org.osmdroid.views.overlay.Overlay:
+    public void <init>(android.content.Context)
+    public org.osmdroid.util.BoundingBox getBounds()
+    public void setEnabled(boolean)
+    public void onPause()
+    public void onResume()
+    protected static final float SHADOW_X_SKEW
+    protected static final float SHADOW_Y_SCALE
 org.aspectj.internal.lang.annotation.ajcDeclareParents:
     public abstract java.lang.String targetTypePattern()
     public abstract java.lang.String parentTypes()
@@ -14645,12 +15570,20 @@ com.xuexiang.xutil.data.ConvertTools:
     public static void fillUnsignedShortToBytesBigEndian(int,byte[],int)
     public static short bytesToShortLittleEndian(byte[],int)
     public static short bytesToShortBigEndian(byte[],int)
+org.osmdroid.util.LocationUtils:
+    public static android.location.Location getLastKnownLocation(android.location.LocationManager)
+    private static android.location.Location getLastKnownLocation(android.location.LocationManager,java.lang.String)
 com.Route.project.core.http.subscriber.NoTipRequestSubscriber:
     public void <init>(com.xuexiang.xhttp2.model.XHttpRequest)
     public void <init>(java.lang.String)
 android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi28:
     void <init>(android.content.Context,java.lang.String,android.os.Bundle)
     void <init>(java.lang.Object)
+org.osmdroid.util.MapTileListZoomComputer:
+    public void <init>(int)
+    public int getZoomDelta()
+    public org.osmdroid.util.MapTileList computeFromSource(org.osmdroid.util.MapTileList,org.osmdroid.util.MapTileList)
+    private final int mZoomDelta
 com.bumptech.glide.load.engine.prefill.PreFillType$Builder:
     public void <init>(int)
     public void <init>(int,int)
@@ -14684,6 +15617,18 @@ kotlin.Lazy:
     public abstract boolean isInitialized()
 io.reactivex.internal.operators.completable.CompletableLift:
     public void <init>(io.reactivex.CompletableSource,io.reactivex.CompletableOperator)
+org.osmdroid.views.overlay.ItemizedIconOverlay:
+    public void <init>(java.util.List,android.graphics.drawable.Drawable,org.osmdroid.views.overlay.ItemizedIconOverlay$OnItemGestureListener,android.content.Context)
+    public void <init>(java.util.List,org.osmdroid.views.overlay.ItemizedIconOverlay$OnItemGestureListener,android.content.Context)
+    public void <init>(android.content.Context,java.util.List,org.osmdroid.views.overlay.ItemizedIconOverlay$OnItemGestureListener)
+    protected org.osmdroid.views.overlay.OverlayItem createItem(int)
+    public boolean addItem(org.osmdroid.views.overlay.OverlayItem)
+    public void addItem(int,org.osmdroid.views.overlay.OverlayItem)
+    public boolean addItems(java.util.List)
+    public void removeAllItems()
+    public void removeAllItems(boolean)
+    public boolean removeItem(org.osmdroid.views.overlay.OverlayItem)
+    public org.osmdroid.views.overlay.OverlayItem removeItem(int)
 io.reactivex.schedulers.SchedulerRunnableIntrospection:
     public abstract java.lang.Runnable getWrappedRunnable()
 com.xuexiang.xui.widget.textview.badge.BadgeView:
@@ -14702,6 +15647,9 @@ com.xuexiang.xui.widget.textview.badge.BadgeView:
     public static final int DEFAULT_TEXT_SIZE
     public static final int DEFAULT_BADGE_PADDING
     public static final int DEFAULT_GRAVITY_OFFSET
+org.osmdroid.tileprovider.cachemanager.CacheManager$2:
+    void <init>(org.osmdroid.tileprovider.cachemanager.CacheManager,android.content.Context,org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask,android.content.Context)
+    final synthetic org.osmdroid.tileprovider.cachemanager.CacheManager this$0
 kotlin.reflect.KTypeProjection$Companion:
     public final kotlin.reflect.KTypeProjection getSTAR()
     public final kotlin.reflect.KTypeProjection invariant(kotlin.reflect.KType)
@@ -14932,6 +15880,14 @@ com.alibaba.android.vlayout.layout.FixAreaLayoutHelper:
     public int computeMarginEnd(int,boolean,boolean,com.alibaba.android.vlayout.LayoutManagerHelper)
     public int computePaddingStart(int,boolean,boolean,com.alibaba.android.vlayout.LayoutManagerHelper)
     public int computePaddingEnd(int,boolean,boolean,com.alibaba.android.vlayout.LayoutManagerHelper)
+org.osmdroid.views.overlay.CopyrightOverlay:
+    public void <init>(android.content.Context)
+    public void setTextSize(int)
+    public void setTextColor(int)
+    public void setAlignBottom(boolean)
+    public void setAlignRight(boolean)
+    public void setOffset(int,int)
+    final android.util.DisplayMetrics dm
 com.xuexiang.xupdate.service.DownloadService:
     private static final int DOWNLOAD_NOTIFY_ID
     private static final java.lang.String CHANNEL_ID
@@ -15193,6 +16149,14 @@ io.reactivex.internal.operators.observable.ObservablePublishAlt:
     public io.reactivex.ObservableSource source()
 io.github.inflationx.viewpump.internal.-ViewPumpLayoutInflater$ActivityViewCreator:
     public void <init>(io.github.inflationx.viewpump.internal.-ViewPumpLayoutInflater,android.view.View)
+org.osmdroid.views.overlay.mylocation.DirectedLocationOverlay:
+    public void <init>(android.content.Context)
+    public void setDirectionArrow(android.graphics.Bitmap)
+    public void setShowAccuracy(boolean)
+    public void setLocation(org.osmdroid.util.GeoPoint)
+    public org.osmdroid.util.GeoPoint getLocation()
+    public void setAccuracy(int)
+    public void setBearing(float)
 com.scwang.smartrefresh.header.flyrefresh.MountainSceneView:
     protected static final int WIDTH
     protected static final int HEIGHT
@@ -15409,6 +16373,17 @@ android.support.v4.media.MediaBrowserCompatApi26:
 io.reactivex.internal.operators.flowable.FlowablePublishClassic:
     public abstract org.reactivestreams.Publisher publishSource()
     public abstract int publishBufferSize()
+org.osmdroid.views.overlay.gestures.RotationGestureOverlay:
+    public void <init>(android.content.Context,org.osmdroid.views.MapView)
+    public void <init>(org.osmdroid.views.MapView)
+    public boolean isOptionsMenuEnabled()
+    public boolean onCreateOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public boolean onOptionsItemSelected(android.view.MenuItem,int,org.osmdroid.views.MapView)
+    public boolean onPrepareOptionsMenu(android.view.Menu,int,org.osmdroid.views.MapView)
+    public void setOptionsMenuEnabled(boolean)
+    private boolean mOptionsMenuEnabled
+    final long deltaTime
+    private static final boolean SHOW_ROTATE_MENU_ITEMS
 com.zzhoujay.markdown.BuildConfig:
     public static final boolean DEBUG
     public static final java.lang.String APPLICATION_ID
@@ -15416,6 +16391,8 @@ com.zzhoujay.markdown.BuildConfig:
     public static final java.lang.String FLAVOR
     public static final int VERSION_CODE
     public static final java.lang.String VERSION_NAME
+org.osmdroid.views.overlay.TilesOverlay$OverlayTileLooper:
+    public void <init>(org.osmdroid.views.overlay.TilesOverlay,boolean,boolean)
 com.xuexiang.xui.widget.guidview.GuideImageView:
     public void <init>(android.content.Context,android.util.AttributeSet,int)
     private static final int DEFAULT_ANIM_COUNTER
@@ -15488,6 +16465,9 @@ org.aspectj.internal.lang.reflect.PointcutImpl:
 com.Route.project.core.SimpleListAdapter:
     public static final java.lang.String KEY_TITLE
     public static final java.lang.String KEY_SUB_TITLE
+org.osmdroid.tileprovider.cachemanager.CacheManager$ListWrapper:
+    private void <init>(java.util.List)
+    synthetic void <init>(java.util.List,org.osmdroid.tileprovider.cachemanager.CacheManager$1)
 kotlin.jvm.PurelyImplements:
     public abstract java.lang.String value()
 kotlin.ranges.CharRange:
@@ -15558,6 +16538,16 @@ com.xuexiang.xui.utils.ViewUtils:
 com.scwang.smartrefresh.layout.adapter.SmartViewHolder$1:
     void <init>(com.scwang.smartrefresh.layout.adapter.SmartViewHolder,com.scwang.smartrefresh.layout.adapter.SmartViewHolder$OnViewItemClickListener,int)
     final synthetic com.scwang.smartrefresh.layout.adapter.SmartViewHolder this$0
+org.osmdroid.views.overlay.MinimapOverlay:
+    public void <init>(android.content.Context,android.os.Handler,org.osmdroid.tileprovider.MapTileProviderBase,int)
+    public void <init>(android.content.Context,android.os.Handler,org.osmdroid.tileprovider.MapTileProviderBase)
+    public void <init>(android.content.Context,android.os.Handler)
+    public void setTileSource(org.osmdroid.tileprovider.tilesource.ITileSource)
+    public void setZoomDifference(int)
+    public boolean isOptionsMenuEnabled()
+    public void setWidth(int)
+    public void setHeight(int)
+    public void setPadding(int)
 com.bumptech.glide.load.resource.bitmap.BitmapDrawableResource:
     public void <init>(android.graphics.drawable.BitmapDrawable,com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool)
 com.xuexiang.xui.widget.statelayout.MultipleStatusView:
@@ -15819,6 +16809,20 @@ kotlin.sequences.SequencesKt___SequencesKt:
     public static final double sumOfDouble(kotlin.sequences.Sequence)
 com.scwang.smartrefresh.header.BezierCircleHeader:
     protected static final int TARGET_DEGREE
+org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions:
+    public static org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions getDefaultStyle()
+    public org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions setPointStyle(android.graphics.Paint)
+    public org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions setSelectedPointStyle(android.graphics.Paint)
+    public org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions setRadius(float)
+    public org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions setSelectedRadius(float)
+    public org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions setIsClickable(boolean)
+    public org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions setCellSize(int)
+    public org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions setAlgorithm(org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions$RenderingAlgorithm)
+    public org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions setSymbol(org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions$Shape)
+    public org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions setTextStyle(android.graphics.Paint)
+    public org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions setMinZoomShowLabels(int)
+    public org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions setMaxNShownLabels(int)
+    public org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions setLabelPolicy(org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions$LabelPolicy)
 org.aspectj.internal.lang.reflect.DeclareParentsImpl:
     public void <init>(java.lang.String,java.lang.String,boolean,org.aspectj.lang.reflect.AjType)
     public org.aspectj.lang.reflect.AjType getDeclaringType()
@@ -15899,6 +16903,9 @@ kotlin.jvm.functions.Function15:
 com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$13:
     void <init>(com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy,android.content.DialogInterface$OnClickListener)
     final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
+org.osmdroid.util.UrlBackoff:
+    public void clear()
+    public void setExponentialBackoffDurationInMillis(long[])
 io.reactivex.internal.operators.flowable.FlowableScalarXMap$ScalarXMapFlowable:
     void <init>(java.lang.Object,io.reactivex.functions.Function)
 io.reactivex.internal.operators.maybe.AbstractMaybeWithUpstream:
@@ -15985,6 +16992,12 @@ kotlin.text.Regex$Companion:
     public final kotlin.text.Regex fromLiteral(java.lang.String)
     public final java.lang.String escape(java.lang.String)
     public final java.lang.String escapeReplacement(java.lang.String)
+org.osmdroid.views.CustomZoomButtonsController:
+    public org.osmdroid.views.CustomZoomButtonsDisplay getDisplay()
+    public void setShowFadeOutDelays(int,int)
+org.osmdroid.views.drawing.OsmPath:
+    public void <init>(android.graphics.Path)
+    public void onDrawCycle(org.osmdroid.views.Projection)
 com.xuexiang.xui.widget.textview.marqueen.DisplayEntity:
     public void <init>(java.lang.String)
     public void <init>(java.lang.String,java.lang.String,long,int)
@@ -16056,6 +17069,9 @@ io.reactivex.observers.BaseTestConsumer:
     protected boolean timeout
 com.bumptech.glide.load.engine.cache.ExternalPreferredCacheDiskCacheFactory$1:
     void <init>(android.content.Context,java.lang.String)
+org.osmdroid.events.ZoomEvent:
+    public org.osmdroid.views.MapView getSource()
+    public double getZoomLevel()
 com.bumptech.glide.load.ImageHeaderParser:
     public abstract int getOrientation(java.nio.ByteBuffer,com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool)
     public static final int UNKNOWN_ORIENTATION
@@ -16081,6 +17097,9 @@ com.xuexiang.xui.widget.edittext.MultiLineEditText:
     public com.xuexiang.xui.widget.edittext.MultiLineEditText setIsShowSurplusNumber(boolean)
     public boolean isEmpty()
     public boolean isNotEmpty()
+org.osmdroid.tileprovider.cachemanager.CacheManager$1:
+    void <init>(org.osmdroid.tileprovider.cachemanager.CacheManager,android.content.Context,org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask,android.content.Context)
+    final synthetic org.osmdroid.tileprovider.cachemanager.CacheManager this$0
 io.reactivex.internal.operators.flowable.FlowablePublish:
     public static io.reactivex.flowables.ConnectableFlowable create(io.reactivex.Flowable,int)
     private void <init>(org.reactivestreams.Publisher,io.reactivex.Flowable,java.util.concurrent.atomic.AtomicReference,int)
@@ -16252,6 +17271,11 @@ android.support.v4.media.ParceledListSliceAdapterApi21:
     static java.lang.Object newInstance(java.util.List)
 io.reactivex.internal.operators.maybe.MaybeFlatMapIterableFlowable:
     public void <init>(io.reactivex.MaybeSource,io.reactivex.functions.Function)
+org.osmdroid.SensorEventListenerProxy:
+    public void <init>(android.hardware.SensorManager)
+    public boolean startListening(android.hardware.SensorEventListener,int,int)
+    public void stopListening()
+    private final android.hardware.SensorManager mSensorManager
 io.reactivex.internal.operators.single.SingleDoOnTerminate:
     public void <init>(io.reactivex.SingleSource,io.reactivex.functions.Action)
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$1:
@@ -16324,6 +17348,8 @@ com.zzhoujay.richtext.ext.Base64$Decoder:
     public int maxOutputSize(int)
     private static final int SKIP
     private static final int EQUALS
+org.osmdroid.views.overlay.milestones.MilestoneMiddleLister:
+    public void <init>(double)
 com.xuexiang.xui.widget.banner.transform.RotateDownTransformer:
     private static final float ROT_MOD
 com.bumptech.glide.util.ByteBufferUtil:
@@ -16456,6 +17482,50 @@ com.xuexiang.xhttp2.interceptor.HttpLoggingInterceptor:
     public com.xuexiang.xhttp2.interceptor.HttpLoggingInterceptor$Level getLevel()
 io.reactivex.internal.operators.flowable.FlowableOnErrorNext:
     public void <init>(io.reactivex.Flowable,io.reactivex.functions.Function,boolean)
+org.osmdroid.tileprovider.cachemanager.CacheManager:
+    public void <init>(org.osmdroid.views.MapView)
+    public void <init>(org.osmdroid.views.MapView,org.osmdroid.tileprovider.modules.IFilesystemCache)
+    public void <init>(org.osmdroid.tileprovider.MapTileProviderBase,org.osmdroid.tileprovider.modules.IFilesystemCache,int,int)
+    public void <init>(org.osmdroid.tileprovider.tilesource.ITileSource,org.osmdroid.tileprovider.modules.IFilesystemCache,int,int)
+    public static android.graphics.Point getMapTileFromCoordinates(double,double,int)
+    public static org.osmdroid.util.GeoPoint getCoordinatesFromMapTile(int,int,int)
+    public static java.util.List getTilesCoverage(org.osmdroid.util.BoundingBox,int,int)
+    public static java.util.Collection getTilesCoverage(org.osmdroid.util.BoundingBox,int)
+    static org.osmdroid.util.IterableWithSize getTilesCoverageIterable(org.osmdroid.util.BoundingBox,int,int)
+    public static android.graphics.Rect getTilesRect(org.osmdroid.util.BoundingBox,int)
+    public static java.util.List getTilesCoverage(java.util.ArrayList,int,int)
+    public static java.util.Collection getTilesCoverage(java.util.ArrayList,int)
+    public int getPendingJobs()
+    public boolean checkTile(long)
+    public boolean isTileToBeDownloaded(org.osmdroid.tileprovider.tilesource.ITileSource,long)
+    public int possibleTilesInArea(org.osmdroid.util.BoundingBox,int,int)
+    public int possibleTilesCovered(java.util.ArrayList,int,int)
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask execute(org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask)
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask downloadAreaAsync(android.content.Context,org.osmdroid.util.BoundingBox,int,int)
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask downloadAreaAsync(android.content.Context,java.util.ArrayList,int,int)
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask downloadAreaAsync(android.content.Context,org.osmdroid.util.BoundingBox,int,int,org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerCallback)
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask downloadAreaAsync(android.content.Context,java.util.ArrayList,int,int,org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerCallback)
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask downloadAreaAsyncNoUI(android.content.Context,java.util.ArrayList,int,int,org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerCallback)
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask downloadAreaAsyncNoUI(android.content.Context,org.osmdroid.util.BoundingBox,int,int,org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerCallback)
+    public void cancelAllJobs()
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask downloadAreaAsync(android.content.Context,java.util.List,int,int)
+    public void setVerifyCancel(boolean)
+    public boolean getVerifyCancel()
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerDialog getDownloadingDialog(android.content.Context,org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask)
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerDialog getCleaningDialog(android.content.Context,org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask)
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerAction getDownloadingAction()
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerAction getCleaningAction()
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask cleanAreaAsync(android.content.Context,org.osmdroid.util.BoundingBox,int,int)
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask cleanAreaAsync(android.content.Context,java.util.ArrayList,int,int)
+    public org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerTask cleanAreaAsync(android.content.Context,java.util.List,int,int)
+    public org.osmdroid.util.BoundingBox extendedBoundsFromGeoPoints(java.util.ArrayList,int)
+    public long currentCacheUsage()
+    public long cacheCapacity()
+    public long directorySize(java.io.File)
+    public void setTileDownloader(org.osmdroid.tileprovider.modules.TileDownloader)
+    protected final int mMinZoomLevel
+    protected final int mMaxZoomLevel
+    protected boolean verifyCancel
 kotlin.text.MatchResult$Destructured:
     private final java.lang.String component1()
     private final java.lang.String component2()
@@ -16505,6 +17575,12 @@ com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinner:
     public com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinner setDropDownBackgroundSelector(int)
 io.reactivex.internal.operators.maybe.MaybeSwitchIfEmpty:
     public void <init>(io.reactivex.MaybeSource,io.reactivex.MaybeSource)
+org.osmdroid.util.constants.GeoConstants:
+    public static final int RADIUS_EARTH_METERS
+    public static final double METERS_PER_STATUTE_MILE
+    public static final double METERS_PER_NAUTICAL_MILE
+    public static final double FEET_PER_METER
+    public static final int EQUATORCIRCUMFENCE
 com.Route.project.core.http.subscriber.TipProgressLoadingSubscriber:
     public void <init>(com.Route.project.core.BaseFragment)
     public void <init>(com.xuexiang.xhttp2.subsciber.impl.IProgressLoader)
@@ -16672,6 +17748,9 @@ kotlin.io.FileTreeWalk:
     public final kotlin.io.FileTreeWalk onLeave(kotlin.jvm.functions.Function1)
     public final kotlin.io.FileTreeWalk onFail(kotlin.jvm.functions.Function2)
     public final kotlin.io.FileTreeWalk maxDepth(int)
+org.osmdroid.tileprovider.modules.MapTileSqlCacheProvider:
+    public void <init>(org.osmdroid.tileprovider.IRegisterReceiver,org.osmdroid.tileprovider.tilesource.ITileSource,long)
+    public boolean hasTile(long)
 com.bumptech.glide.load.model.MultiModelLoaderFactory:
     private com.bumptech.glide.load.model.ModelLoaderFactory getFactory(com.bumptech.glide.load.model.MultiModelLoaderFactory$Entry)
     synchronized void prepend(java.lang.Class,java.lang.Class,com.bumptech.glide.load.model.ModelLoaderFactory)
@@ -16790,6 +17869,11 @@ org.aspectj.lang.reflect.DeclareParents:
     public abstract java.lang.reflect.Type[] getParentTypes()
 com.xuexiang.xrouter.core.Warehouse:
     static void clear()
+org.osmdroid.views.overlay.compass.InternalCompassOrientationProvider:
+    public void <init>(android.content.Context)
+    public boolean startOrientationProvider(org.osmdroid.views.overlay.compass.IOrientationConsumer)
+    public float getLastKnownOrientation()
+    public void destroy()
 com.xuexiang.xui.widget.picker.widget.WheelTime:
     public void <init>(android.view.View,boolean[],int,int)
     private void setLunar(int,int,int,boolean,int,int,int)
@@ -16844,6 +17928,14 @@ org.aspectj.runtime.internal.CFlowCounter:
     public void inc()
     public void dec()
     public boolean isValid()
+org.osmdroid.tileprovider.MapTileProviderBase:
+    public void setTileLoadFailureImage(android.graphics.drawable.Drawable)
+    protected void putExpiredTileIntoCache(org.osmdroid.tileprovider.MapTileRequestState,android.graphics.drawable.Drawable)
+    public void setTileRequestCompleteHandler(android.os.Handler)
+    public abstract org.osmdroid.tileprovider.modules.IFilesystemCache getTileWriter()
+    public abstract long getQueueSize()
+    public static final int MAPTILE_SUCCESS_ID
+    public static final int MAPTILE_FAIL_ID
 kotlin.collections.CollectionsKt___CollectionsKt$groupingBy$1:
     public void <init>(java.lang.Iterable,kotlin.jvm.functions.Function1)
     public java.util.Iterator sourceIterator()
@@ -16862,6 +17954,9 @@ com.alibaba.android.vlayout.VirtualLayoutManager$LayoutStateWrapper:
     static final int SCOLLING_OFFSET_NaN
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$8:
     public void <init>(boolean[])
+org.osmdroid.tileprovider.modules.OfflineTileProvider:
+    public void <init>(org.osmdroid.tileprovider.IRegisterReceiver,java.io.File[])
+    public org.osmdroid.tileprovider.modules.IArchiveFile[] getArchives()
 io.reactivex.internal.operators.flowable.FlowableError:
     public void <init>(java.util.concurrent.Callable)
 com.xuexiang.xutil.net.JsonUtil:
@@ -17065,6 +18160,17 @@ com.bumptech.glide.load.engine.executor.GlideExecutor$Builder:
     public static final long NO_THREAD_TIMEOUT
 org.jetbrains.annotations.Nullable:
     public abstract java.lang.String value()
+org.osmdroid.views.overlay.IconOverlay:
+    public void <init>(org.osmdroid.api.IGeoPoint,android.graphics.drawable.Drawable)
+    public org.osmdroid.api.IGeoPoint getPosition()
+    public org.osmdroid.views.overlay.IconOverlay set(org.osmdroid.api.IGeoPoint,android.graphics.drawable.Drawable)
+    public org.osmdroid.views.overlay.IconOverlay moveTo(android.view.MotionEvent,org.osmdroid.views.MapView)
+    public org.osmdroid.views.overlay.IconOverlay moveTo(org.osmdroid.api.IGeoPoint,org.osmdroid.views.MapView)
+    public static final float ANCHOR_CENTER
+    public static final float ANCHOR_LEFT
+    public static final float ANCHOR_TOP
+    public static final float ANCHOR_RIGHT
+    public static final float ANCHOR_BOTTOM
 kotlin.WasExperimental:
     public abstract java.lang.Class[] markerClass()
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$5:
@@ -17562,6 +18668,17 @@ okhttp3.CacheControl:
     public int sMaxAgeSeconds()
     public boolean noTransform()
     public boolean immutable()
+org.osmdroid.api.IMapView:
+    public abstract org.osmdroid.api.IMapController getController()
+    public abstract org.osmdroid.api.IProjection getProjection()
+    public abstract int getZoomLevel()
+    public abstract double getZoomLevelDouble()
+    public abstract double getMaxZoomLevel()
+    public abstract double getLatitudeSpanDouble()
+    public abstract double getLongitudeSpanDouble()
+    public abstract org.osmdroid.api.IGeoPoint getMapCenter()
+    public abstract void setBackgroundColor(int)
+    public static final java.lang.String LOGTAG
 com.bumptech.glide.load.engine.prefill.PreFillQueue:
     public void <init>(java.util.Map)
     public int getSize()
@@ -17831,6 +18948,13 @@ org.aspectj.lang.annotation.Around:
     public abstract java.lang.String argNames()
 io.github.inflationx.viewpump.internal.-ReflectionUtils:
     private static final java.lang.String TAG
+org.osmdroid.views.overlay.gridlines.LatLonGridlineOverlay:
+    private static void applyMarkerAttributes(org.osmdroid.views.overlay.Marker)
+    public static org.osmdroid.views.overlay.FolderOverlay getLatLonGrid(android.content.Context,org.osmdroid.views.MapView)
+    private static double[] getStartEndPointsNS(double,double,int)
+    private static double[] getStartEndPointsWE(double,double,int)
+    private static double getIncrementor(int)
+    public static void setDefaults()
 com.xuexiang.xui.adapter.recyclerview.sticky.StickyItemDecoration:
     public void <init>(com.xuexiang.xui.adapter.recyclerview.sticky.StickyHeadContainer,int)
     private int findFirstCompletelyVisiblePosition(androidx.recyclerview.widget.RecyclerView$LayoutManager)
@@ -17914,6 +19038,8 @@ com.xuexiang.xpage.utils.TitleUtils:
     public static android.view.ViewGroup getRootView(android.app.Activity)
 com.xuexiang.xui.widget.progress.HorizontalProgressView$1:
     void <init>(com.xuexiang.xui.widget.progress.HorizontalProgressView)
+org.osmdroid.tileprovider.modules.MapTileAssetsProvider:
+    public void <init>(org.osmdroid.tileprovider.IRegisterReceiver,android.content.res.AssetManager)
 org.aspectj.internal.lang.reflect.DeclareSoftImpl:
     public void <init>(org.aspectj.lang.reflect.AjType,java.lang.String,java.lang.String)
     public org.aspectj.lang.reflect.AjType getDeclaringType()
@@ -18008,6 +19134,11 @@ kotlin.sequences.SequencesKt__SequenceBuilderKt:
     private static final int State_Ready
     private static final int State_Done
     private static final int State_Failed
+org.osmdroid.LocationListenerProxy:
+    public void <init>(android.location.LocationManager)
+    public boolean startListening(android.location.LocationListener,long,float)
+    public void stopListening()
+    private final android.location.LocationManager mLocationManager
 com.xuexiang.xpage.base.XPageActivity:
     public static void unInit()
     protected java.lang.String getPageName()
@@ -18205,6 +19336,14 @@ com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool:
     private static final int DEFAULT_SIZE
     static final int MAX_OVER_SIZE_MULTIPLE
     private static final int SINGLE_ARRAY_MAX_SIZE_DIVISOR
+org.osmdroid.views.overlay.GroundOverlay2:
+    public void setImage(android.graphics.Bitmap)
+    public android.graphics.Bitmap getImage()
+    public void setPosition(org.osmdroid.util.GeoPoint,org.osmdroid.util.GeoPoint)
+    public float getBearing()
+    public void setBearing(float)
+    public void setTransparency(float)
+    public float getTransparency()
 com.xuexiang.xutil.system.PermissionUtils$PermissionActivity:
     public static void start(android.content.Context)
 android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$4:
@@ -18232,6 +19371,8 @@ com.xuexiang.xui.widget.imageview.photoview.PhotoViewAttacher:
     static final int EDGE_LEFT
     static final int EDGE_RIGHT
     static final int EDGE_BOTH
+org.osmdroid.tileprovider.util.ManifestUtil:
+    public static java.lang.String retrieveKey(android.content.Context,java.lang.String)
 com.xuexiang.xutil.net.JSONUtils:
     public static java.lang.Long getLong(org.json.JSONObject,java.lang.String,java.lang.Long)
     public static java.lang.Long getLong(java.lang.String,java.lang.String,java.lang.Long)
@@ -18284,6 +19425,10 @@ kotlin.coroutines.experimental.SafeContinuation:
     public void <init>(kotlin.coroutines.experimental.Continuation,java.lang.Object)
     public void <init>(kotlin.coroutines.experimental.Continuation)
     public final java.lang.Object getResult()
+org.osmdroid.tileprovider.modules.ZipFileArchive:
+    private void <init>(java.util.zip.ZipFile)
+    public static org.osmdroid.tileprovider.modules.ZipFileArchive getZipFileArchive(java.io.File)
+    public java.util.Set getTileSources()
 kotlin.ranges.ULongProgression:
     public final long getStep()
 com.xuexiang.xui.utils.ResUtils:
@@ -18344,6 +19489,10 @@ com.xuexiang.xutil.app.ProcessUtils:
 kotlin.coroutines.ContinuationInterceptor:
     public abstract kotlin.coroutines.CoroutineContext$Element get(kotlin.coroutines.CoroutineContext$Key)
     public abstract kotlin.coroutines.CoroutineContext minusKey(kotlin.coroutines.CoroutineContext$Key)
+org.osmdroid.views.overlay.milestones.MilestoneMeterDistanceLister:
+    public void <init>(double)
+    public void <init>(double[])
+    public void setSideEffectLastEpsilon(double)
 com.zzhoujay.markdown.parser.StyleBuilderImpl:
     private static final float scale_h1
     private static final float scale_h2
@@ -18384,6 +19533,20 @@ org.intellij.lang.annotations.Language:
     public abstract java.lang.String value()
     public abstract java.lang.String prefix()
     public abstract java.lang.String suffix()
+org.osmdroid.views.overlay.mylocation.GpsMyLocationProvider:
+    public void <init>(android.content.Context)
+    public void clearLocationSources()
+    public void addLocationSource(java.lang.String)
+    public java.util.Set getLocationSources()
+    public long getLocationUpdateMinTime()
+    public void setLocationUpdateMinTime(long)
+    public float getLocationUpdateMinDistance()
+    public void setLocationUpdateMinDistance(float)
+    public boolean startLocationProvider(org.osmdroid.views.overlay.mylocation.IMyLocationConsumer)
+    public android.location.Location getLastKnownLocation()
+    private long mLocationUpdateMinTime
+    private float mLocationUpdateMinDistance
+    private final java.util.Set locationSources
 com.scwang.smartrefresh.header.fungame.FunGameView:
     protected static final int STATUS_GAME_PREPARE
     protected static final int STATUS_GAME_PLAY
@@ -18506,6 +19669,14 @@ com.xuexiang.xui.widget.picker.widget.WheelTime$3:
     void <init>(com.xuexiang.xui.widget.picker.widget.WheelTime,java.util.List,java.util.List)
 io.reactivex.observers.ResourceMaybeObserver:
     public final void add(io.reactivex.disposables.Disposable)
+org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerDialog$2:
+    void <init>(org.osmdroid.tileprovider.cachemanager.CacheManager$CacheManagerDialog)
+org.osmdroid.views.overlay.ClickableIconOverlay:
+    protected void <init>(java.lang.Object)
+    public static org.osmdroid.views.overlay.ClickableIconOverlay find(java.util.List,int)
+    public org.osmdroid.views.overlay.ClickableIconOverlay set(int,org.osmdroid.api.IGeoPoint,android.graphics.drawable.Drawable,java.lang.Object)
+    public int getID()
+    public java.lang.Object getData()
 okhttp3.internal.http.HttpDate:
     public static final long MAX_DATE
 io.reactivex.internal.operators.flowable.FlowableScanSeed:
@@ -18772,8 +19943,17 @@ kotlin.sequences.TransformingSequence$iterator$1:
 io.github.inflationx.viewpump.ViewPumpContextWrapper:
     public static final android.view.View onActivityCreateView(android.app.Activity,android.view.View,android.view.View,java.lang.String,android.content.Context,android.util.AttributeSet)
     public static final io.github.inflationx.viewpump.internal.-ViewPumpActivityFactory get$viewpump_release(android.app.Activity)
+org.osmdroid.tileprovider.tilesource.CloudmadeTileSource:
+    public void setStyle(java.lang.Integer)
+    public java.lang.Integer getStyle()
+    public synthetic bridge java.lang.Object getStyle()
+    public synthetic bridge void setStyle(java.lang.Object)
 butterknife.Action:
     public abstract void apply(android.view.View,int)
+org.osmdroid.events.ScrollEvent:
+    public org.osmdroid.views.MapView getSource()
+    public int getX()
+    public int getY()
 com.xuexiang.xui.widget.textview.label.LabelViewHelper:
     public int getLabelStrokeWidth()
     public void setLabelStrokeWidth(android.view.View,int)
@@ -18839,8 +20019,39 @@ com.Route.project.core.webview.AgentWebFragment:
     public static final java.lang.String KEY_URL
 com.xuexiang.xui.widget.actionbar.TitleUtils$3:
     void <init>(androidx.fragment.app.Fragment)
+org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlay:
+    public void <init>(org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlay$PointAdapter,org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlayOptions)
+    public void <init>(org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlay$PointAdapter)
+    public java.lang.Integer getSelectedPoint()
+    public org.osmdroid.util.BoundingBox getBoundingBox()
+    public void setOnClickListener(org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlay$OnClickListener)
+    private final org.osmdroid.util.BoundingBox mBoundingBox
 com.bumptech.glide.manager.DefaultConnectivityMonitor:
     private static final java.lang.String TAG
+org.osmdroid.views.overlay.ScaleBarOverlay:
+    public void <init>(org.osmdroid.views.MapView)
+    public void <init>(android.content.Context,int,int)
+    private void <init>(org.osmdroid.views.MapView,android.content.Context,int,int)
+    public void setMinZoom(double)
+    public void setScaleBarOffset(int,int)
+    public void setLineWidth(float)
+    public void setTextSize(float)
+    public void setUnitsOfMeasure(org.osmdroid.views.overlay.ScaleBarOverlay$UnitsOfMeasure)
+    public org.osmdroid.views.overlay.ScaleBarOverlay$UnitsOfMeasure getUnitsOfMeasure()
+    public void drawLatitudeScale(boolean)
+    public void drawLongitudeScale(boolean)
+    public void setCentred(boolean)
+    public void setAlignBottom(boolean)
+    public void setAlignRight(boolean)
+    public android.graphics.Paint getBarPaint()
+    public void setBarPaint(android.graphics.Paint)
+    public android.graphics.Paint getTextPaint()
+    public void setTextPaint(android.graphics.Paint)
+    public void setBackgroundPaint(android.graphics.Paint)
+    public void setEnableAdjustLength(boolean)
+    public void setMaxLength(float)
+    public void disableScaleBar()
+    public void enableScaleBar()
 com.xuexiang.xui.widget.textview.marqueen.MarqueeFactory$ViewHolder:
     public void <init>(android.view.View,java.lang.Object,int)
     public android.view.View getView()
@@ -18858,6 +20069,10 @@ org.jetbrains.annotations.NotNull:
     public abstract java.lang.String value()
 okhttp3.Request:
     public java.lang.Object tag()
+org.osmdroid.views.overlay.simplefastpoint.SimplePointTheme:
+    public void <init>(java.util.List)
+    public void <init>(java.util.List,boolean)
+    public void <init>(java.util.List,boolean,boolean)
 io.reactivex.subjects.Subject:
     public abstract boolean hasObservers()
     public abstract boolean hasThrowable()
@@ -18967,6 +20182,12 @@ io.reactivex.internal.queue.MpscLinkedQueue:
     public boolean offer(java.lang.Object,java.lang.Object)
 io.reactivex.internal.operators.single.SingleFlatMap:
     public void <init>(io.reactivex.SingleSource,io.reactivex.functions.Function)
+org.osmdroid.views.util.constants.OverlayConstants:
+    public static final int NOT_SET
+    public static final int DEFAULT_ZOOMLEVEL_MINIMAP_DIFFERENCE
+org.osmdroid.tileprovider.modules.TileWriter:
+    public static long getUsedCacheSpace()
+    public java.lang.Long getExpirationTimestamp(org.osmdroid.tileprovider.tilesource.ITileSource,long)
 butterknife.OnLongClick:
     public abstract int[] value()
 com.bumptech.glide.load.engine.cache.DiskCacheAdapter:
@@ -19145,6 +20366,8 @@ com.xuexiang.xutil.security.Base64Utils:
     private static final byte[] BASE_64_DECODE_CHARS
 kotlin.io.FileTreeWalk$FileTreeWalkIterator$SingleFileState:
     final synthetic kotlin.io.FileTreeWalk$FileTreeWalkIterator this$0
+org.osmdroid.util.GEMFFile$GEMFInputStream:
+    final synthetic org.osmdroid.util.GEMFFile this$0
 com.alibaba.android.vlayout.VirtualLayoutManager$LayoutParams:
     public int zIndex
     private int mOriginWidth
@@ -19184,6 +20407,8 @@ com.just.agentweb.core.AgentWeb$AgentBuilder:
     private androidx.fragment.app.Fragment mFragment
 io.github.inflationx.viewpump.InflateRequest$Companion:
     public synthetic void <init>(kotlin.jvm.internal.DefaultConstructorMarker)
+org.osmdroid.tileprovider.tilesource.BitmapTileSourceBase:
+    private final int mOrdinal
 com.xuexiang.xui.widget.textview.MarqueeTextView:
     private boolean mIsRolling
     private final java.lang.Object mLock
@@ -19193,6 +20418,8 @@ io.reactivex.internal.schedulers.ImmediateThinScheduler:
     public static final io.reactivex.Scheduler INSTANCE
 com.just.agentweb.js.BaseJsAccessEntrace:
     public static final java.lang.String TAG
+org.osmdroid.views.drawing.OsmBitmapShader:
+    private static final org.osmdroid.util.PointL sPoint
 io.reactivex.internal.operators.observable.ObservableSkipUntil$SkipUntil:
     final synthetic io.reactivex.internal.operators.observable.ObservableSkipUntil this$0
 kotlin.KotlinVersion$Companion:
@@ -19204,6 +20431,8 @@ com.xuexiang.xui.utils.SnackbarUtils:
     private static int sColorConfirm
     private static int sColorWarning
     private static int sColorDanger
+org.osmdroid.tileprovider.modules.SqliteArchiveTileWriter:
+    static boolean hasInited
 com.just.agentweb.download.Downloader:
     private volatile long mAverageSpeed
 com.xuexiang.xui.widget.popupwindow.ViewTooltip$TooltipView:
@@ -19327,6 +20556,17 @@ com.bumptech.glide.disklrucache.DiskLruCache$Value:
     final synthetic com.bumptech.glide.disklrucache.DiskLruCache this$0
 kotlin.UShort:
     public static final kotlin.UShort$Companion Companion
+org.osmdroid.views.overlay.TilesOverlay:
+    private android.content.Context ctx
+    private boolean mOptionsMenuEnabled
+    private boolean horizontalWrapEnabled
+    private boolean verticalWrapEnabled
+    public static final int MENU_MAP_MODE
+    public static final int MENU_TILE_SOURCE_STARTING_ID
+    public static final int MENU_OFFLINE
+    public static final int MENU_SNAPSHOT
+    public static final int MENU_STATES
+    public static final android.graphics.ColorFilter INVERT_COLORS
 com.xuexiang.xrouter.launcher._XRouter$6:
     final synthetic com.xuexiang.xrouter.launcher._XRouter this$0
 com.zzhoujay.richtext.RichText:
@@ -19383,6 +20623,8 @@ com.xuexiang.xui.widget.imageview.crop.CropImageType:
     public static int ROTATE_NINETY_DEGREES
 com.xuexiang.xhttp2.request.CustomRequest$2:
     final synthetic com.xuexiang.xhttp2.request.CustomRequest this$0
+org.osmdroid.tileprovider.modules.DatabaseFileArchive:
+    static final java.lang.String[] tile_column
 com.bumptech.glide.load.engine.cache.SafeKeyGenerator$1:
     final synthetic com.bumptech.glide.load.engine.cache.SafeKeyGenerator this$0
 com.xuexiang.xui.widget.banner.recycler.BannerLayout$IndicatorAdapter$1:
@@ -19397,6 +20639,11 @@ com.zzhoujay.richtext.ig.DefaultImageGetter$1:
     final synthetic com.zzhoujay.richtext.ig.DefaultImageGetter this$0
 com.xuexiang.xpage.base.XPageActivity$2:
     final synthetic com.xuexiang.xpage.base.XPageActivity this$0
+org.osmdroid.tileprovider.modules.SqlTileWriter:
+    private static final java.lang.String[] expireQueryColumn
+org.osmdroid.views.overlay.FolderOverlay:
+    protected java.lang.String mName
+    protected java.lang.String mDescription
 com.xuexiang.xui.widget.imageview.edit.SaveSettings$Builder:
     private boolean isTransparencyEnabled
     private boolean isClearViewsEnabled
@@ -19409,6 +20656,15 @@ com.just.agentweb.core.web.controller.AbsAgentWebUIController:
     private com.just.agentweb.widget.WebParentLayout mWebParentLayout
 kotlin.jvm.internal.EnumCompanionObject:
     public static final kotlin.jvm.internal.EnumCompanionObject INSTANCE
+org.osmdroid.tileprovider.tilesource.bing.ImageryMetaDataResource:
+    public int m_imageWidth
+org.osmdroid.tileprovider.tilesource.TileSourceFactory:
+    public static final org.osmdroid.tileprovider.tilesource.OnlineTileSourceBase CLOUDMADESTANDARDTILES
+    public static final org.osmdroid.tileprovider.tilesource.OnlineTileSourceBase CLOUDMADESMALLTILES
+    public static final org.osmdroid.tileprovider.tilesource.OnlineTileSourceBase FIETS_OVERLAY_NL
+    public static final org.osmdroid.tileprovider.tilesource.OnlineTileSourceBase BASE_OVERLAY_NL
+    public static final org.osmdroid.tileprovider.tilesource.OnlineTileSourceBase ROADS_OVERLAY_NL
+    public static final org.osmdroid.tileprovider.tilesource.OnlineTileSourceBase OPEN_SEAMAP
 com.xuexiang.xui.utils.SpanUtils:
     private final int mTypeCharSequence
     private final int mTypeImage
@@ -19420,6 +20676,9 @@ com.xuexiang.xutil.security.EncryptUtils:
     private static final char[] hexDigits
 kotlin.ranges.LongProgression$Companion:
     public synthetic void <init>(kotlin.jvm.internal.DefaultConstructorMarker)
+org.osmdroid.tileprovider.tilesource.ThunderforestTileSource:
+    private static final java.lang.String[] uiMap
+    private static final java.lang.String[] baseUrl
 kotlin.jvm.internal.FloatCompanionObject:
     private static final float MIN_VALUE
     private static final float MAX_VALUE
@@ -19520,6 +20779,8 @@ com.zzhoujay.markdown.MarkDownParser$1:
     final synthetic com.zzhoujay.markdown.MarkDownParser this$0
 com.just.agentweb.core.web.controller.DefaultUIController$4:
     final synthetic com.just.agentweb.core.web.controller.DefaultUIController this$0
+org.osmdroid.views.overlay.ItemizedOverlayWithFocus:
+    private android.content.Context mContext
 org.aspectj.lang.Aspects:
     private static final java.lang.Class[] EMPTY_CLASS_ARRAY
     private static final java.lang.Class[] PEROBJECT_CLASS_ARRAY
@@ -19557,6 +20818,10 @@ com.bumptech.glide.manager.RequestManagerRetriever:
     private final android.os.Bundle tempBundle
 kotlin.reflect.KProperty:
     public abstract kotlin.reflect.KProperty$Getter getGetter()
+org.osmdroid.views.MapController$ReplayController$ReplayClass:
+    final synthetic org.osmdroid.views.MapController$ReplayController this$1
+org.osmdroid.tileprovider.tilesource.MapQuestTileSource:
+    private static final java.lang.String[] mapBoxBaseUrl
 okhttp3.internal.http2.Http2Stream:
     static final synthetic boolean $assertionsDisabled
 kotlin.properties.Delegates:
@@ -19600,6 +20865,8 @@ com.bumptech.glide.request.target.ViewTarget:
     private static boolean isTagUsedAtLeastOnce
 com.xuexiang.xui.widget.progress.loading.RotateLoadingView:
     private boolean mIsAutoMode
+org.osmdroid.views.overlay.compass.CompassOverlay:
+    public static final int MENU_COMPASS
 com.xuexiang.xui.widget.imageview.preview.ui.BasePhotoFragment:
     static final synthetic boolean $assertionsDisabled
 com.bumptech.glide.load.resource.bitmap.Downsampler:
@@ -19759,6 +21026,10 @@ io.github.inflationx.viewpump.Interceptor:
     public static final io.github.inflationx.viewpump.Interceptor$Companion Companion
 com.jakewharton.disklrucache.Util:
     static final java.nio.charset.Charset UTF_8
+org.metalev.multitouch.controller.MultiTouchController$PointInfo:
+    private int numPoints
+    private float pressureMid
+    private int action
 kotlin.jvm.internal.PackageReference:
     private final java.lang.String moduleName
 com.xuexiang.xui.widget.imageview.preview.loader.GlideMediaLoader$2:
@@ -19806,6 +21077,8 @@ com.jakewharton.disklrucache.DiskLruCache$Editor:
     private boolean committed
 com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$3:
     final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
+org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlay$StyledLabelledPoint:
+    final synthetic org.osmdroid.views.overlay.simplefastpoint.SimpleFastPointOverlay this$0
 com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section$1:
     final synthetic com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section this$0
 com.Route.project.core.webview.XPageWebViewFragment_ViewBinding$1:
@@ -19814,6 +21087,8 @@ com.xuexiang.xhttp2.interceptor.BaseDynamicInterceptor:
     private boolean mIsSign
     private boolean mTimeStamp
     private boolean mAccessToken
+org.osmdroid.tileprovider.modules.TileWriter$2:
+    final synthetic org.osmdroid.tileprovider.modules.TileWriter this$0
 com.just.agentweb.js.BaseJsAccessEntrace$1:
     final synthetic com.just.agentweb.js.BaseJsAccessEntrace this$0
 com.bumptech.glide.load.engine.executor.GlideExecutor$UncaughtThrowableStrategy:
@@ -19829,6 +21104,10 @@ com.xuexiang.xui.widget.textview.marqueen.MarqueeFactory:
     private com.xuexiang.xui.widget.textview.marqueen.MarqueeView mMarqueeView
 com.Route.project.core.webview.XPageWebViewFragment$7:
     final synthetic com.Route.project.core.webview.XPageWebViewFragment this$0
+org.osmdroid.tileprovider.util.StorageUtils$StorageInfo:
+    public final boolean internal
+    public final int display_number
+    java.lang.String displayName
 com.xuexiang.xui.widget.popupwindow.bar.Cookie:
     private android.widget.ImageView mIvIcon
     private android.widget.ImageView mBtnActionWithIcon
@@ -19836,6 +21115,8 @@ com.bumptech.glide.load.resource.gif.GifFrameLoader:
     private com.bumptech.glide.load.Transformation transformation
 kotlin.coroutines.experimental.SafeContinuation$Fail:
     private final java.lang.Throwable exception
+org.osmdroid.tileprovider.MapTileProviderBase$ScaleTileLooper:
+    protected android.graphics.Rect mSrcRect
 com.just.agentweb.js.JsInterfaceHolderImpl:
     private com.just.agentweb.core.AgentWeb$SecurityType mSecurityType
 kotlin.ranges.UIntRange$Companion:
@@ -19873,6 +21154,8 @@ okhttp3.internal.cache.DiskLruCache$2:
     static final synthetic boolean $assertionsDisabled
 com.just.agentweb.core.web.controller.DefaultUIController$2:
     final synthetic com.just.agentweb.core.web.controller.DefaultUIController this$0
+org.osmdroid.views.overlay.OverlayItem:
+    protected static final android.graphics.Point DEFAULT_MARKER_SIZE
 com.Route.project.core.webview.XPageWebViewFragment$6:
     final synthetic com.Route.project.core.webview.XPageWebViewFragment this$0
 kotlin.text.Charsets:
@@ -19887,6 +21170,8 @@ com.xuexiang.xui.utils.StatusBarUtils:
     public static float sVirtualDensity
     public static float sVirtualDensityDpi
     private static int sStatusbarHeight
+org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay:
+    public static final int MENU_MY_LOCATION
 com.xuexiang.xui.utils.ViewUtils$ViewGroupHelper:
     private static final java.lang.ThreadLocal MATRIX_THREAD_LOCAL
     private static final java.lang.ThreadLocal RECT_F_THREAD_LOCAL
@@ -19974,6 +21259,8 @@ com.Route.project.core.webview.AgentWebFragment$8:
     final synthetic com.Route.project.core.webview.AgentWebFragment this$0
 com.Route.project.fragment.news.NewsFragment$1:
     final synthetic com.Route.project.fragment.news.NewsFragment this$0
+org.osmdroid.views.overlay.Overlay:
+    protected org.osmdroid.util.BoundingBox mBounds
 com.xuexiang.xrouter.model.TypeWrapper:
     protected final java.lang.reflect.Type type
 com.xuexiang.xaop.aspectj.PermissionAspectJ$1:
@@ -20032,6 +21319,10 @@ com.scwang.smartrefresh.header.storehouse.StoreHouseBarItem:
     public int index
 com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog:
     private final android.os.Handler handler
+org.osmdroid.views.overlay.gestures.RotationGestureOverlay:
+    private static final int MENU_ENABLED
+    private static final int MENU_ROTATE_CCW
+    private static final int MENU_ROTATE_CW
 kotlin.jvm.internal.IntCompanionObject:
     public static final kotlin.jvm.internal.IntCompanionObject INSTANCE
 com.just.agentweb.core.client.DefaultWebClient$Builder:
@@ -20067,6 +21358,10 @@ kotlin.jvm.internal.LongCompanionObject:
     public static final kotlin.jvm.internal.LongCompanionObject INSTANCE
 com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$7:
     final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
+org.osmdroid.views.drawing.OsmPath:
+    protected final android.graphics.Point mReferencePoint
+    private double mLastZoomLevel
+    private static final org.osmdroid.util.GeoPoint sReferenceGeoPoint
 io.reactivex.internal.operators.completable.CompletableNever:
     public static final io.reactivex.Completable INSTANCE
 io.reactivex.observers.BaseTestConsumer:
@@ -20103,6 +21398,8 @@ com.alibaba.android.vlayout.layout.RangeGridLayoutHelper$GridRangeStyle:
     private boolean mIgnoreExtra
 io.github.inflationx.viewpump.InflateResult:
     public static final io.github.inflationx.viewpump.InflateResult$Companion Companion
+org.osmdroid.tileprovider.modules.MapTileSqlCacheProvider:
+    private static final java.lang.String[] columns
 com.xuexiang.xrouter.launcher._XRouter$2:
     final synthetic com.xuexiang.xrouter.launcher._XRouter this$0
 com.scwang.smartrefresh.header.WaterDropHeader$1:
@@ -20125,6 +21422,16 @@ io.reactivex.internal.operators.completable.CompletableEmpty:
     public static final io.reactivex.Completable INSTANCE
 okhttp3.internal.connection.Transmitter:
     static final synthetic boolean $assertionsDisabled
+org.osmdroid.views.overlay.gridlines.LatLonGridlineOverlay:
+    static final java.text.DecimalFormat df
+    public static int lineColor
+    public static int fontColor
+    public static short fontSizeDp
+    public static int backgroundColor
+    public static float lineWidth
+    public static boolean DEBUG
+    public static boolean DEBUG2
+    private static float multiplier
 com.bumptech.glide.module.AppliesOptions:
     public abstract void applyOptions(android.content.Context,com.bumptech.glide.GlideBuilder)
 com.bumptech.glide.request.RequestFutureTarget:
@@ -20141,6 +21448,8 @@ com.xuexiang.xui.adapter.listview.XListAdapter:
     protected int mSelectPosition
 com.xuexiang.xhttp2.subsciber.DownloadSubscriber$4:
     final synthetic com.xuexiang.xhttp2.subsciber.DownloadSubscriber this$0
+org.osmdroid.views.overlay.GroundOverlay2:
+    protected float mBearing
 org.aspectj.runtime.internal.AroundClosure:
     protected int bitflags
 kotlin.coroutines.experimental.SafeContinuation:
@@ -20169,6 +21478,10 @@ com.alibaba.android.vlayout.VirtualLayoutManager$3:
 org.aspectj.runtime.internal.cflowstack.ThreadStackImpl11:
     private java.util.Hashtable stacks
     private int change_count
+org.osmdroid.util.GEMFFile$GEMFRange:
+    final synthetic org.osmdroid.util.GEMFFile this$0
+org.osmdroid.views.overlay.DefaultOverlayManager$1$1:
+    final synthetic org.osmdroid.views.overlay.DefaultOverlayManager$1 this$1
 android.support.v4.media.session.MediaControllerCompat:
     private final android.support.v4.media.session.MediaSessionCompat$Token mToken
     private final java.util.HashSet mRegisteredCallbacks

@@ -29,6 +29,7 @@ import com.Route.project.adapter.base.delegate.SimpleDelegateAdapter;
 import com.Route.project.adapter.base.delegate.SingleDelegateAdapter;
 import com.Route.project.adapter.entity.NewInfo;
 import com.Route.project.modules.course.UI.CourseActivity;
+import com.Route.project.modules.map.UI.BaseMap;
 import com.Route.project.modules.todolist.UI.TodoList;
 import com.Route.project.utils.DemoDataProvider;
 import com.Route.project.utils.Utils;
@@ -132,6 +133,10 @@ public class NewsFragment extends BaseFragment {
                             }
                             else if(item.getTitle().equals("待办事务")){
                                 Intent intent=new Intent(getActivity(), TodoList.class);
+                                startActivity(intent);
+                            }
+                            else if(item.getTitle().equals("地图")){
+                                Intent intent=new Intent(getActivity(), BaseMap.class);
                                 startActivity(intent);
                             }
                             else
