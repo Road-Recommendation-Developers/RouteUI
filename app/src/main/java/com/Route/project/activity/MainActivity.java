@@ -17,6 +17,7 @@
 
 package com.Route.project.activity;
 
+import android.content.ClipData;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -31,6 +32,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 
+import com.Route.project.fragment.message.MessageFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.xuexiang.templateproject.R;
@@ -95,6 +97,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
         initViews();
 
         initListeners();
+        //handleNavigationItemSelected(R.id.nav_message);
     }
 
     @Override
@@ -113,13 +116,15 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
         //主页内容填充
         BaseFragment[] fragments = new BaseFragment[]{
                 new NewsFragment(),
+                new MessageFragment(),
                 new TrendingFragment(),
                 new ProfileFragment()
         };
         FragmentAdapter<BaseFragment> adapter = new FragmentAdapter<>(getSupportFragmentManager(), fragments);
-        viewPager.setOffscreenPageLimit(mTitles.length - 1);
+        viewPager.setOffscreenPageLimit(mTitles.length-1);
         viewPager.setAdapter(adapter);
         GuideTipsDialog.showTips(this);
+
     }
 
     private void initHeader() {
@@ -160,6 +165,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
         navView.setNavigationItemSelectedListener(menuItem -> {
             if (menuItem.isCheckable()) {
                 drawerLayout.closeDrawers();
+                System.out.println(menuItem);
                 return handleNavigationItemSelected(menuItem);
             } else {
                 switch (menuItem.getItemId()) {
@@ -189,6 +195,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                 MenuItem item = bottomNavigation.getMenu().getItem(position);
                 toolbar.setTitle(item.getTitle());
                 item.setChecked(true);
+                System.out.println("Selected "+position+",Page is "+item);
                 updateSideNavStatus(item);
             }
 
@@ -207,10 +214,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
      * @return
      */
     private boolean handleNavigationItemSelected(@NonNull MenuItem menuItem) {
+        System.out.println("Side items Selected:"+menuItem);
+
         int index = CollectionUtils.arrayIndexOf(mTitles, menuItem.getTitle());
+        System.out.println(index);
         if (index != -1) {
             toolbar.setTitle(menuItem.getTitle());
             viewPager.setCurrentItem(index, false);
+
             return true;
         }
         return false;
@@ -254,11 +265,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int index = CollectionUtils.arrayIndexOf(mTitles, menuItem.getTitle());
+        System.out.println("Bottom items Selected:"+menuItem);
         if (index != -1) {
             toolbar.setTitle(menuItem.getTitle());
-            viewPager.setCurrentItem(index, false);
-
+            viewPager.setCurrentItem(index, true);
             updateSideNavStatus(menuItem);
+
             return true;
         }
         return false;
@@ -271,6 +283,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
      */
     private void updateSideNavStatus(MenuItem menuItem) {
         MenuItem side = navView.getMenu().findItem(menuItem.getItemId());
+        System.out.println("Side items updated:"+menuItem);
         if (side != null) {
             side.setChecked(true);
         }
