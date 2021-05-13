@@ -11,7 +11,6 @@ public class AddTodoActivity extends AppCompatActivity {
     ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_todo_add);
         imageView=findViewById(R.id.calendar);
@@ -22,4 +21,6 @@ public class AddTodoActivity extends AppCompatActivity {
         Intent intent=new Intent(this,TimeActivity.class);
         startActivity(intent);
     }
+
+    
 }

@@ -124,6 +124,8 @@
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity android:name="com.Route.project.modules.course.UI.CourseActivity">
         </activity>
+        <activity android:name="com.Route.project.modules.course.UI.FreeActivity">
+        </activity>
         <activity android:name="com.Route.project.modules.todolist.UI.TodoList">
         </activity>
         <activity android:name="com.Route.project.modules.todolist.UI.AddTodoActivity">

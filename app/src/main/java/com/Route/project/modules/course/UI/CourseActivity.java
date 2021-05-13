@@ -1,5 +1,6 @@
 package com.Route.project.modules.course.UI;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 import android.widget.SimpleAdapter;
+import com.Route.project.modules.map.UI.BaseMap;
 import com.xuexiang.templateproject.R;
 import com.Route.project.modules.course.databean.Course;
 import com.Route.project.modules.course.process.InputCourseData;
@@ -42,6 +44,10 @@ public class CourseActivity extends AppCompatActivity implements AdapterView.OnI
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getBaseContext(),"即将为您导航!",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(getBaseContext(), BaseMap.class);
+                intent.putExtra("destinationLat",27.905831143677858);
+                intent.putExtra("destinationLon",112.91826347971147);
+                startActivity(intent);
                 //Toast.m
                 return true;
             }
@@ -92,7 +98,7 @@ public class CourseActivity extends AppCompatActivity implements AdapterView.OnI
                 }
             }
             if(map.isEmpty()){
-                map.put("text","null");
+                map.put("text","Free");
                 data_list.add(map);
             }
                 //InputDataToTheCourseTableAndDisplay(day,time,coursename,location);

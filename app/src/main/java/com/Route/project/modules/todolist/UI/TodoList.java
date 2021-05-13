@@ -69,8 +69,8 @@ public class TodoList extends AppCompatActivity {
     public List<Map<String, Object>> getData(){
         for(int i=0;i<10;i++){
             Map<String,Object>value =new HashMap<String,Object>();
-            value.put("title","title");
-            value.put("text","text");
+            value.put("title","Task "+i);
+            value.put("text","Going to finish");
             arrayList.add(value);
         }
         return arrayList;

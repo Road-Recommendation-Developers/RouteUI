@@ -29,6 +29,7 @@ import com.Route.project.adapter.base.delegate.SimpleDelegateAdapter;
 import com.Route.project.adapter.base.delegate.SingleDelegateAdapter;
 import com.Route.project.adapter.entity.NewInfo;
 import com.Route.project.modules.course.UI.CourseActivity;
+import com.Route.project.modules.course.UI.FreeActivity;
 import com.Route.project.modules.map.UI.BaseMap;
 import com.Route.project.modules.todolist.UI.TodoList;
 import com.Route.project.utils.DemoDataProvider;
@@ -131,6 +132,10 @@ public class NewsFragment extends BaseFragment {
                                 Intent intent=new Intent(getActivity(),CourseActivity.class);
                                 startActivity(intent);
                             }
+                            else if(item.getTitle().equals("无课表")){
+                                Intent intent=new Intent(getActivity(), FreeActivity.class);
+                                startActivity(intent);
+                            }
                             else if(item.getTitle().equals("待办事务")){
                                 Intent intent=new Intent(getActivity(), TodoList.class);
                                 startActivity(intent);
@@ -139,6 +144,7 @@ public class NewsFragment extends BaseFragment {
                                 Intent intent=new Intent(getActivity(), BaseMap.class);
                                 startActivity(intent);
                             }
+
                             else
                                 XToastUtils.toast("选中了：" + item.getTitle());
 

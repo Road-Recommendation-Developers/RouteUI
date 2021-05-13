@@ -133,6 +133,10 @@ dependencies {
 
     //osmdroid地图
     implementation 'org.osmdroid:osmdroid-android:6.1.0'
+    compile 'org.osmdroid:osmdroid-android:6.1.4'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'com.google.code.gson:gson:2.8.5'
+    compile 'com.squareup.okhttp3:okhttp:3.10.0'
 }
 //自动添加X-Library依赖
 apply from: 'x-library.gradle'
